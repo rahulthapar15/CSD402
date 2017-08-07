@@ -158,6 +158,9 @@ header p {
 .content-text:hover {
   border-left:1px solid #bdbdbd;
 }
+.content-highlight{
+  color: #F35043
+}
 
 .big-text {
   vertical-align:top;
