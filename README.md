@@ -1,11 +1,6 @@
 #### CSD 402 : Internet And Web Systems
 ---
-###### Assignment 0 :
-```
-Webpage for Resume :[Submission]( https://rahulthapar15.github.io/CSD402/Assignment0/) 
-```
-
-###### Assignment 1 :
-```
-Coming soon
-```
+| Assignment # | About                           | Submission Link                                                    |
+|--------------|---------------------------------|--------------------------------------------------------------------|
+| 0            | Create webpage for your resume. | [Submission]( https://rahulthapar15.github.io/CSD402/Assignment0/) |
+| 1            | Magazine page                   |                                                                    |
