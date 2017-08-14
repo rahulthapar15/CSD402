@@ -2,7 +2,7 @@
 ---
 ###### Assignment 0 :
 ```
-Webpage for Resume : https://rahulthapar15.github.io/CSD402/Assignment0/
+Webpage for Resume :[Submission]( https://rahulthapar15.github.io/CSD402/Assignment0/) 
 ```
 
 ###### Assignment 1 :
