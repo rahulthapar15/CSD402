@@ -3,4 +3,4 @@
 | Assignment # | About                           | Submission Link                                                    |
 |--------------|---------------------------------|--------------------------------------------------------------------|
 | 0            | Create webpage for your resume. | [Submission]( https://rahulthapar15.github.io/CSD402/Assignment0/) |
-| 1            | Magazine page                   |                                                                    |
+| 1            | Magazine page                   | [Submission]( https://rahulthapar15.github.io/CSD402/Assignment1:Magazine/)|
