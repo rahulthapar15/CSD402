@@ -14,14 +14,39 @@ body{
     margin-left: 330px;
     transform: translate(-50%, -50%);
 }
+.card h2{
+    font-size: 22px;
+    color: #232529;
+    letter-spacing: 2px;
+    margin-left: 20%;
+    margin-top: 25%;
+    position: fixed;
+}
 .back{
     display: inline-block;
     width: 70%;
     height: 60%;
-     border-radius: 10px;
+    border-radius: 10px;
     background: #232529;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.back h1{
+    font-size: 22px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 70%;
+    margin-top: 10%;
+    position: fixed;
+}
+
+.back text{
+    font-size: 12px;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 70%;
+    margin-top: 20%;
+    position: fixed;
 }
