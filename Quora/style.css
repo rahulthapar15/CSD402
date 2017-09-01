@@ -22,15 +22,7 @@ body{
     margin-top: 25%;
     position: fixed;
 }
-.card container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  min-width: 500px;
-  min-height: 250px;
-  padding: 40px;
-  background-color: rebeccapurple;
-}
+
 p.input-container {
   width: 100%;
   position: relative;
@@ -38,6 +30,7 @@ p.input-container {
   margin-bottom: 25px;
   margin-left: 30px;
   padding: 15px;
+  background: transparent;
 }
 input {
   width: 70%;
