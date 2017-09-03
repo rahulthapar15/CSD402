@@ -125,4 +125,66 @@ input:focus {
 main.html
 ----------------------- */
 
+.block {
+  margin-bottom: 25px;
+  background: #394264;
+  border-radius: 5px;
+}
+header {
+  height: 80px;
+}
+.header-menu {
+  font-size: 17px;
+  line-height: 80px;
+}
+.header-menu li {
+  position: relative;
+}
+.header-menu-tab {
+  padding: 0 27px;
+  display: block;
+  line-height: 74px;
+  font-size: 17px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+.header-menu-tab:hover {
+  background: #50597b;
+  border-bottom: 4px solid #11a8ab;
+  text-decoration: none;
+}
+.header-menu li:hover {
+  text-decoration: none;
+  -webkit-transform: rotate(360deg);
+}
+.horizontal-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.horizontal-list li {
+  float: left;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p, a {
+  color: #fff;
+}
