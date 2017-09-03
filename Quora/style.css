@@ -1,22 +1,26 @@
 body{
-    background: #393942;
+      background: #393942;  
+     /* background: #fff;  */
 }
 
 .card{
     display: inline-block;
     width : 450px;
     height: 120%;
-    background: white;
-    box-shadow: 0px 0px 2px 0px #888888;
+     background: white; 
+     /* background-image: url("back1.gif"); */
+    background-color: white; 
+     /* background: linear-gradient(125deg,#6300C6,#E0004D);  */
+    box-shadow: 0px 0px 2px 0px #232529;
     border-radius: 10px;
     position: fixed;
     top: 50%;
-    margin-left: 330px;
+    margin-left: 260px;
     transform: translate(-50%, -50%);
 }
 .card h2{
     font-size: 22px;
-    color: #232529;
+    color: #393942;
     letter-spacing: 2px;
     margin-left: 20%;
     margin-top: 25%;
@@ -32,7 +36,7 @@ body{
     text-align: center;
     cursor: pointer;
     font-size:21px;
-    margin-top: 270px;
+    margin-top: 250px;
     margin-left: 50px;
     position: fixed;
 }
@@ -74,16 +78,18 @@ p.input-container {
 }
 input {
   width: 70%;
-  height: 20px;
+  height: 25px;
   font-size: 22px;
   letter-spacing: 3px;
   border: none;
+  color: #393942;
+  padding: 12px;
   border-bottom: 1px solid #888888;
   background-color: transparent;
 }
 input:focus {
   outline: none;
-  border-bottom: 1px solid #232529;
+  border-bottom: 1px solid #888888;
 }
 .back{
     display: inline-block;
@@ -94,6 +100,7 @@ input:focus {
     position: fixed;
     top: 50%;
     left: 50%;
+    box-shadow: 0px 0px 12px 0px #232529;
     transform: translate(-50%, -50%);
 }
 .back h1{
@@ -113,4 +120,9 @@ input:focus {
     margin-top: 20%;
     position: fixed;
 }
+
+/* ------------------------
+main.html
+----------------------- */
+
 
