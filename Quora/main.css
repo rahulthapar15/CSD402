@@ -15,3 +15,33 @@ body{
   margin-top: -1%;
   display: block;
 }
+
+.left-container{
+    display: inline-block;
+    float: left;
+    position: fixed;
+    margin-top: 62px;
+    width: 20%;
+    height: 350px;
+    background: red;
+}
+.feed-container{
+    display: inline-block;
+    float: left;
+    margin-left: 22%;
+    position: fixed;
+    margin-top: 65px;
+    width: 50%;
+    height: 960px;
+    background: turquoise;
+}
+.right-container{
+    display: inline-block;
+    float: left;
+    margin-left: 74%;
+    position: fixed;
+    margin-top: 65px;
+    width: 20%;
+    height: 50px;
+    background: blue;
+}
