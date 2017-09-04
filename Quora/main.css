@@ -88,6 +88,18 @@ ul {
   -webkit-transition: background .2s;
   transition: background .2s;
 }
+.feed-menu-notify {
+  position: relative;
+  line-height: 1px;
+  padding: 0 6px;
+  font-weight: 700;
+  background: #FF4600;
+  border-radius: 100%;
+  width: 1px;
+  top: 39px;
+  right: -10px;
+}
+
 .feed-box-tab:hover {
   background: #50597b;
  border-bottom: 4px solid #11a8ab;
