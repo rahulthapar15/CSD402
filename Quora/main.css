@@ -263,3 +263,15 @@ ul {
 .horizontal-list li {
   float: left;
 }
+
+/* MAPS */
+.maps{
+  display: block;
+  border-radius: 4px;
+  width: 300px;
+  height: 500px;
+  margin-left:23px;
+  background: #50597b;
+}
+
+/* API KEY : AIzaSyA04dd78rAqR1YyD1An0qMyJg3qIEuYMe0  */

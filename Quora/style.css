@@ -115,10 +115,10 @@ input:focus {
 }
 
 .back text{
-    font-size: 12px;
+    font-size: 18px;
     color: white;
     letter-spacing: 2px;
-    margin-left: 70%;
+    margin-left: 60%;
     margin-top: 20%;
     position: fixed;
 }
