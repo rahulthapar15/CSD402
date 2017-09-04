@@ -1,5 +1,5 @@
 body{
-    background: #1f253d;
+    background: #151B32;
 }
 input[type=text]::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -56,7 +56,7 @@ span{
     box-shadow: 0px 0px 2px 0px #888888;
     border-radius: 4px; */
     border-radius: 5px;
-    background: #394264;
+    background: #1F2840;
     color: white
 }
 .left-container h4{
@@ -102,7 +102,6 @@ ul {
 }
 .askQuestion{
     display: inline-block;
-    box-shadow: 0px 0px 2px 0px #11a8ab;
     border-radius: 4px;
     background: #394264;
     position: relative;
@@ -111,17 +110,21 @@ ul {
     width: 95%;
     height: 80px;
 }
+.askQuestion:hover{
+  box-shadow: 0px 0px 20px 0px #11a8ab;
+}
 .askQuestion p{
     letter-spacing: 2px;
     padding-left: 1%;
     color: white;
+    text-align: center;
     cursor: pointer;
 }
 
 .feeds{
     display: inline-block;
     box-shadow: 0px 0px 1px 0px #888888;
-    border-radius: 4px;
+    border-radius: 9px;
     background: white;
     position: relative;
     margin-left: 18px;
@@ -129,14 +132,36 @@ ul {
     width: 95%;
     height: 200px;
 }
-.feeds:hover{
-    box-shadow: 0px 0px 12px 0px #394264;
-    border-bottom: 24px solid #11a8ab;
-}
-.feeds p{
-    color: black;
+.feeds h5{
+    color: grey;
     letter-spacing: 3px;
+    margin-top: 15px;
+    margin-left: 5px;
 }
+
+.feeds h1{
+  color: black;
+  margin-top: 20px;
+  margin-left:15px;
+  font-size: 20px;
+}
+
+.feeds upvote{
+  display: block;
+  width: 60px;
+  height: 20px;
+  background: #38CC94;
+  margin-left:16px;
+  margin-top: 8%;
+  box-shadow: 0px 0px 1px 0px #38CC94;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+}
+
+
 .right-container{
     display: inline-block;
     margin-left: 74%;
@@ -150,7 +175,7 @@ ul {
 }
 
 .bottom-container{
-    background: #394264;
+    background: #1F2840;
     height: 100px; 
     width:100%;
     position: fixed;
