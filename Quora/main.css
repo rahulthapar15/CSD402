@@ -57,10 +57,11 @@ span{
     border-radius: 4px; */
     border-radius: 5px;
     background: #394264;
+    color: white
 }
 .left-container h4{
     text-align: center;
-    color: black;
+    color: white;
     font-size: 15px;
     margin-left: -80px;
 }
@@ -101,9 +102,9 @@ ul {
 }
 .askQuestion{
     display: inline-block;
-    box-shadow: 0px 0px 2px 0px #888888;
+    box-shadow: 0px 0px 2px 0px #11a8ab;
     border-radius: 4px;
-    background: white;
+    background: #394264;
     position: relative;
     margin-left: 18px;
     margin-top: 10px;
@@ -113,7 +114,8 @@ ul {
 .askQuestion p{
     letter-spacing: 2px;
     padding-left: 1%;
-    color: grey;
+    color: white;
+    cursor: pointer;
 }
 
 .feeds{
@@ -128,7 +130,8 @@ ul {
     height: 200px;
 }
 .feeds:hover{
-    box-shadow: 0px 0px 12px 0px #888888;
+    box-shadow: 0px 0px 12px 0px #394264;
+    border-bottom: 24px solid #11a8ab;
 }
 .feeds p{
     color: black;
@@ -147,13 +150,14 @@ ul {
 }
 
 .bottom-container{
-    background: transparent;
+    background: #394264;
     height: 100px; 
     width:100%;
     position: fixed;
     left: 0;
     /* bottom: 0; */
     margin-top: 690px;
+    color: white;
 
 }
 .block {
@@ -176,7 +180,7 @@ ul {
   font-size: 17px;
   -webkit-transition: background .3s;
   transition: background .3s;
-  color: black;
+  color: white;
 }
 .nav-menu-tab:hover {
   background: #50597b;
