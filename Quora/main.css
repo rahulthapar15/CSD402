@@ -130,7 +130,7 @@ ul {
     margin-left: 18px;
     margin-top: 30px;
     width: 95%;
-    height: 200px;
+    height: 250px;
 }
 .feeds h5{
     color: grey;
@@ -145,21 +145,36 @@ ul {
   margin-left:15px;
   font-size: 20px;
 }
-
+.feeds answer-section{
+  display: block;
+  background: white;
+  width: 90%;
+  margin-left: 10px;
+  height: 80px;
+  padding-top:0.5%;
+}
+.feeds p{
+  color: grey;
+  text-align: left;
+}
 .feeds upvote{
   display: block;
   width: 60px;
   height: 20px;
   background: #38CC94;
   margin-left:16px;
-  margin-top: 8%;
+  margin-top: 6%;
   box-shadow: 0px 0px 1px 0px #38CC94;
   border-radius: 4px;
   color: white;
   text-align: center;
   padding-top: 1.5%;
   padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  cursor: pointer;
 }
+
 
 
 .right-container{
