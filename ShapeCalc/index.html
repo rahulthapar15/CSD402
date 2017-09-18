@@ -1,16 +1,113 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html>
-	<head>
-		<title>Calculator</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-		<body>
-			<script src="calc.js"></script>
-			<section class="card"></section>
-			<section class="menu">
-				<button type="button" onclick="Hello()">Click Me!</button>
-				<div class="snackbar">
-				<span></span>
-			</section>
-	    </body>
+<head>
+
+<title>Javascript</title>
+<style>
+body{text-align:center;background: white;color:#b78b50;}
+*{margin-top:3%;}
+</style>
+</head>
+<body>
+
+<div id="main">
+<h3>Select a Shape</h3>
+<form id="f">
+<input required type="radio"  name="shape" value ="c" onclick="c()">Circle
+<input required type="radio"  name="shape" value ="t" onclick="t()">Triangle
+<input required type="radio"  name="shape" value ="s" onclick="s()">Square
+<input required type="radio"  name="shape" value ="r" onclick="r()">Rectangle 
+</form>
+<br>	
+<canvas id="i" width="200" height="200"></canvas>
+
+<!--<img id="i" src="" width="10%">-->
+<div id="optc" style="display:none;">
+<input required type="text" id="radius" placeholder="Enter Radius:" > 
+<button  id="submitc">submit</button> 
+
+</div>
+<div id="optt" style="display:none;">
+<input required type="text" id="base" placeholder="Enter Base:" > 
+<input required type="text" id="height" placeholder="Enter Height:" > 
+<button   id="submitt">submit</button> 
+
+</div>
+
+<div id="opts" style="display:none;">
+<input required type="text" id="side" placeholder="Enter Side:" > 
+<button  id="submits">submit</button> 
+</div>
+
+<div id="optr" style="display:none;">
+
+<input required type="text" id="length" placeholder="Enter Length:" > 
+<input required type="text" id="breadth" placeholder="Enter Breadth:">
+<button  id="submitr">submit</button> 
+</div>
+ 
+</div>
+
+
+
+
+<script type="text/javascript">
+function c(){
+var ctx = document.getElementById("i").getContext("2d");
+ctx.clearRect(0, 0, document.getElementById("i").width, document.getElementById("i").height);
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+document.getElementById("optc").style.display="block";
+document.getElementById("optt").style.display="none";
+document.getElementById("opts").style.display="none";	
+document.getElementById("optr").style.display="none";
+}
+function t(){
+var ctx = document.getElementById("i").getContext("2d");
+ctx.clearRect(0, 0, document.getElementById("i").width, document.getElementById("i").height);
+ctx.beginPath();
+  ctx.moveTo(120, 0);
+    ctx.lineTo(100, 80); 
+    ctx.lineTo(70, 80); 
+    ctx.closePath(); 
+    ctx.stroke();
+document.getElementById("optt").style.display="block";
+document.getElementById("opts").style.display="none";	
+document.getElementById("optr").style.display="none";
+document.getElementById("optc").style.display="none";
+}
+function s(){
+var ctx = document.getElementById("i").getContext("2d");
+ctx.clearRect(0, 0, document.getElementById("i").width, document.getElementById("i").height);
+ctx.strokeRect(10, 10, 100, 100);
+document.getElementById("opts").style.display="block";	
+document.getElementById("optr").style.display="none";
+document.getElementById("optt").style.display="none";
+document.getElementById("optc").style.display="none";
+}
+function r(){
+var ctx = document.getElementById("i").getContext("2d");
+ctx.clearRect(0, 0, document.getElementById("i").width, document.getElementById("i").height);
+ctx.strokeRect(10, 10, 50, 100);
+document.getElementById("optr").style.display="block";
+document.getElementById("opts").style.display="none";	
+document.getElementById("optt").style.display="none";
+document.getElementById("optc").style.display="none";
+}
+document.getElementById("submitc").onclick = function(){
+alert("Area is: "+ 3.14*document.getElementById("radius").value*document.getElementById("radius").value   + "Perimiter is: "+ 2*3.14*document.getElementById("radius").value );
+};
+document.getElementById("submitt").onclick = function(){
+alert("Area is: "+ 0.5*document.getElementById("base").value*document.getElementById("height").value );
+};
+document.getElementById("submits").onclick = function(){
+alert("Area is: "+ document.getElementById("side").value*document.getElementById("side").value  + "Perimiter is: "+ 4*document.getElementById("side").value );
+};
+document.getElementById("submitr").onclick = function(){
+var p = 2*(parseInt(document.getElementById("length").value)+parseInt(document.getElementById("breadth").value));
+alert("Area is: "+ document.getElementById("length").value*document.getElementById("breadth").value   + "Perimiter is: "+ p );
+};
+</script>
+</body>
 </html>
