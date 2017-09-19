@@ -38,7 +38,7 @@
 <section>
     <div align="center">
         <div align="center">
-<select name="mydropdown">
+<select id="users">
 <option value="u1">User 1</option>
 <option value="u2">User 2</option>
 <option value="u3">User 3</option>
@@ -47,6 +47,97 @@
 </select>
 </div>
     </div>
+
+    <div  align="center">
+        <button type="button" onclick="getUser()">REFRESH</button>
+    </div>
+
+    <p id="demo"></p>
+    
+    <script type="text/javascript">
+
+        function Test(key, values) {
+  this.Key = key;
+  this.Values = values; //values.map(values);
+}
+function getCombinedTests(testObjectArray) {
+  var all = [
+  ];
+  for (var i = 0; i < testObjectArray.length; i++) {
+    var cur = testObjectArray[i];
+    for (var j = 0; j < cur.Values.length; j++) {
+      all.push({
+        'Key': '' + cur.Key,
+        'Value': cur.Values[j]
+      });
+    }
+  }
+  return all;
+}
+var testObjectArray1 = [
+];
+testObjectArray1.push(new Test(1, [
+  'a1',
+  'b1'
+]), new Test(2, [
+  'sop',
+  'dop'
+]));
+// var combined = getCombinedTests(testObjectArray1);
+
+    var user_det =[];
+    for(var i =0;i<testObjectArray1.length;i++){
+        var val = testObjectArray1[i];
+        user_det.push(
+            {
+                'Index' : i,
+                'Event' : val.Values[i]
+            }
+        );
+            }
+console.log(user_det);
+
+
+
+
+
+
+
+        
+
+       /*  var u1_events = {
+            monday:"Go shopping",
+        } */
+        
+/* 
+        function getUser(){
+            var user = document.getElementById("users").value;
+            getUserEvents(user);
+        }
+
+        function getUserEvents(user){
+            switch (user){
+                case u1:
+                break;
+
+                case u2:
+                break;
+                
+                case u3:
+                break;
+
+                case u4:
+                break;
+
+                case u5:
+                break;
+            }
+        } */
+
+    </script>
+
+
+
 </section>
 
 
