@@ -1,0 +1,2070 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongodb',
+1 verbose cli   '--save' ]
+2 info using npm@1.1.65
+3 info using node@v0.8.14
+4 verbose read json /home/rahthap/package.json
+5 verbose read json /home/rahthap/node_modules/jquery/package.json
+6 verbose read json /home/rahthap/node_modules/material-design-icons/package.json
+7 verbose read json /home/rahthap/node_modules/7zip-bin-linux/package.json
+8 verbose read json /home/rahthap/package.json
+9 verbose cache add [ 'mongodb', null ]
+10 silly cache add name=undefined spec="mongodb" args=["mongodb",null]
+11 verbose parsed url { pathname: 'mongodb', path: 'mongodb', href: 'mongodb' }
+12 silly lockFile 7f1c982e-mongodb mongodb
+13 verbose lock mongodb /home/rahthap/.npm/7f1c982e-mongodb.lock
+14 silly lockFile 7f1c982e-mongodb mongodb
+15 verbose addNamed [ 'mongodb', '' ]
+16 verbose addNamed [ null, '' ]
+17 silly lockFile 886df635-mongodb mongodb@
+18 verbose lock mongodb@ /home/rahthap/.npm/886df635-mongodb.lock
+19 silly addNameRange { name: 'mongodb', range: '', hasData: false }
+20 verbose url raw mongodb
+21 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb' ]
+22 verbose url resolved https://registry.npmjs.org/mongodb
+23 info trying registry request attempt 1 at 09:10:03
+24 verbose etag "59e8677d-9a346"
+25 http GET https://registry.npmjs.org/mongodb
+26 http 304 https://registry.npmjs.org/mongodb
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:03 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"59e8677d-9a346"',
+27 silly registry.get     age: '17',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sin18029-SIN',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1508470804.912582,VS0,VE1',
+27 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+28 verbose etag mongodb from cache
+29 silly addNameRange number 2 { name: 'mongodb', range: '', hasData: true }
+30 silly addNameRange versions [ 'mongodb',
+30 silly addNameRange   [ '0.9.4',
+30 silly addNameRange     '0.9.4-4',
+30 silly addNameRange     '0.9.3',
+30 silly addNameRange     '0.9.1',
+30 silly addNameRange     '0.9.2',
+30 silly addNameRange     '0.9.6-7',
+30 silly addNameRange     '0.9.6-8',
+30 silly addNameRange     '0.9.6-9',
+30 silly addNameRange     '0.9.6-10',
+30 silly addNameRange     '0.9.6-11',
+30 silly addNameRange     '0.9.6-12',
+30 silly addNameRange     '0.9.6-13',
+30 silly addNameRange     '0.9.6-14',
+30 silly addNameRange     '0.9.6-15',
+30 silly addNameRange     '0.9.6-16',
+30 silly addNameRange     '0.9.6-17',
+30 silly addNameRange     '0.9.6-18',
+30 silly addNameRange     '0.9.6-19',
+30 silly addNameRange     '0.9.6-20',
+30 silly addNameRange     '0.9.6-21',
+30 silly addNameRange     '0.9.6-22',
+30 silly addNameRange     '0.9.6-23',
+30 silly addNameRange     '0.9.7',
+30 silly addNameRange     '0.9.7-0',
+30 silly addNameRange     '0.9.7-1',
+30 silly addNameRange     '0.9.7-1.1',
+30 silly addNameRange     '0.9.7-1.2',
+30 silly addNameRange     '0.9.7-1.3',
+30 silly addNameRange     '0.9.7-1.4',
+30 silly addNameRange     '0.9.7-2',
+30 silly addNameRange     '0.9.7-2-1',
+30 silly addNameRange     '0.9.7-2-2',
+30 silly addNameRange     '0.9.7-2-3',
+30 silly addNameRange     '0.9.7-2-4',
+30 silly addNameRange     '0.9.7-2-5',
+30 silly addNameRange     '0.9.7-3',
+30 silly addNameRange     '0.9.7-3-1',
+30 silly addNameRange     '0.9.7-3-2',
+30 silly addNameRange     '0.9.7-3-3',
+30 silly addNameRange     '0.9.7-3-4',
+30 silly addNameRange     '0.9.7-3-5',
+30 silly addNameRange     '0.9.8',
+30 silly addNameRange     '0.9.8-1',
+30 silly addNameRange     '0.9.8-2',
+30 silly addNameRange     '0.9.8-3',
+30 silly addNameRange     '0.9.8-4',
+30 silly addNameRange     '0.9.8-5',
+30 silly addNameRange     '0.9.8-6',
+30 silly addNameRange     '0.9.8-7',
+30 silly addNameRange     '0.9.9',
+30 silly addNameRange     '0.9.9-1',
+30 silly addNameRange     '0.9.9-2',
+30 silly addNameRange     '0.9.9-3',
+30 silly addNameRange     '0.9.9-4',
+30 silly addNameRange     '0.9.9-5',
+30 silly addNameRange     '0.9.9-6',
+30 silly addNameRange     '0.9.9-7',
+30 silly addNameRange     '0.9.9-8',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.1',
+30 silly addNameRange     '1.0.2',
+30 silly addNameRange     '1.1.0-beta',
+30 silly addNameRange     '1.1.0',
+30 silly addNameRange     '1.1.1',
+30 silly addNameRange     '1.1.2',
+30 silly addNameRange     '1.1.3',
+30 silly addNameRange     '1.1.4',
+30 silly addNameRange     '1.1.5',
+30 silly addNameRange     '1.1.6',
+30 silly addNameRange     '1.1.7',
+30 silly addNameRange     '1.1.8',
+30 silly addNameRange     '1.1.9',
+30 silly addNameRange     '1.1.10',
+30 silly addNameRange     '1.1.11',
+30 silly addNameRange     '1.2.0',
+30 silly addNameRange     '1.2.1',
+30 silly addNameRange     '1.2.2',
+30 silly addNameRange     '1.2.3',
+30 silly addNameRange     '1.2.4',
+30 silly addNameRange     '1.2.5',
+30 silly addNameRange     '1.2.6',
+30 silly addNameRange     '1.2.7',
+30 silly addNameRange     '1.2.8',
+30 silly addNameRange     '1.2.9',
+30 silly addNameRange     '1.2.10',
+30 silly addNameRange     '1.2.11',
+30 silly addNameRange     '1.2.12',
+30 silly addNameRange     '1.2.13',
+30 silly addNameRange     '1.2.14',
+30 silly addNameRange     '1.3.0',
+30 silly addNameRange     '1.3.1',
+30 silly addNameRange     '1.3.2',
+30 silly addNameRange     '1.3.3',
+30 silly addNameRange     '1.3.4',
+30 silly addNameRange     '1.3.5',
+30 silly addNameRange     '1.3.6',
+30 silly addNameRange     '1.3.7',
+30 silly addNameRange     '1.3.8',
+30 silly addNameRange     '1.3.9',
+30 silly addNameRange     '1.3.10',
+30 silly addNameRange     '1.3.11',
+30 silly addNameRange     '1.3.12',
+30 silly addNameRange     '1.3.14',
+30 silly addNameRange     '1.3.15',
+30 silly addNameRange     '1.3.17',
+30 silly addNameRange     '1.3.18',
+30 silly addNameRange     '1.3.19',
+30 silly addNameRange     '1.4.0-rc2',
+30 silly addNameRange     '1.3.20',
+30 silly addNameRange     '1.4.0-rc3',
+30 silly addNameRange     '1.3.21',
+30 silly addNameRange     '1.3.22',
+30 silly addNameRange     '1.3.23',
+30 silly addNameRange     '1.4.0-rc4',
+30 silly addNameRange     '1.4.0-rc5',
+30 silly addNameRange     '1.4.0-rc6',
+30 silly addNameRange     '1.4.0-rc7',
+30 silly addNameRange     '1.4.0-rc8',
+30 silly addNameRange     '1.4.0-rc9',
+30 silly addNameRange     '1.4.0-rc10',
+30 silly addNameRange     '1.4.0',
+30 silly addNameRange     '1.4.1',
+30 silly addNameRange     '1.4.2',
+30 silly addNameRange     '1.4.3',
+30 silly addNameRange     '1.4.4',
+30 silly addNameRange     '1.4.5',
+30 silly addNameRange     '1.4.6',
+30 silly addNameRange     '1.4.7',
+30 silly addNameRange     '1.4.8',
+30 silly addNameRange     '1.4.9',
+30 silly addNameRange     '1.4.10',
+30 silly addNameRange     '2.0.0-alpha1',
+30 silly addNameRange     '1.4.11',
+30 silly addNameRange     '1.4.12',
+30 silly addNameRange     '1.4.14',
+30 silly addNameRange     '1.4.15',
+30 silly addNameRange     '1.4.16',
+30 silly addNameRange     '1.4.17',
+30 silly addNameRange     '2.0.0-alpha2',
+30 silly addNameRange     '1.4.18',
+30 silly addNameRange     '2.0.0',
+30 silly addNameRange     '2.0.1',
+30 silly addNameRange     '2.0.2',
+30 silly addNameRange     '1.4.19',
+30 silly addNameRange     '2.0.3',
+30 silly addNameRange     '2.0.4',
+30 silly addNameRange     '2.0.5',
+30 silly addNameRange     '2.0.6',
+30 silly addNameRange     '1.4.20',
+30 silly addNameRange     '1.4.22',
+30 silly addNameRange     '2.0.7',
+30 silly addNameRange     '2.0.8',
+30 silly addNameRange     '2.0.9',
+30 silly addNameRange     '1.4.23',
+30 silly addNameRange     '2.0.10',
+30 silly addNameRange     '1.4.24',
+30 silly addNameRange     '2.0.11',
+30 silly addNameRange     '1.4.25',
+30 silly addNameRange     '2.0.12',
+30 silly addNameRange     '1.4.26',
+30 silly addNameRange     '1.4.27',
+30 silly addNameRange     '1.4.28',
+30 silly addNameRange     '2.0.13',
+30 silly addNameRange     '2.0.14',
+30 silly addNameRange     '1.4.29',
+30 silly addNameRange     '2.0.15',
+30 silly addNameRange     '1.4.30',
+30 silly addNameRange     '2.0.16',
+30 silly addNameRange     '1.4.31',
+30 silly addNameRange     '2.0.17',
+30 silly addNameRange     '1.4.32',
+30 silly addNameRange     '2.0.18',
+30 silly addNameRange     '2.0.19',
+30 silly addNameRange     '1.4.33',
+30 silly addNameRange     '2.0.20',
+30 silly addNameRange     '2.0.21',
+30 silly addNameRange     '1.4.34',
+30 silly addNameRange     '2.0.22',
+30 silly addNameRange     '2.0.23',
+30 silly addNameRange     '1.4.35',
+30 silly addNameRange     '2.0.24',
+30 silly addNameRange     '2.0.25',
+30 silly addNameRange     '2.0.26',
+30 silly addNameRange     '2.0.27',
+30 silly addNameRange     '2.0.28',
+30 silly addNameRange     '2.0.29',
+30 silly addNameRange     '1.4.36',
+30 silly addNameRange     '2.0.30',
+30 silly addNameRange     '1.4.37',
+30 silly addNameRange     '2.0.31',
+30 silly addNameRange     '1.4.38',
+30 silly addNameRange     '2.0.32',
+30 silly addNameRange     '2.0.33',
+30 silly addNameRange     '2.1.0-alpha',
+30 silly addNameRange     '2.0.34',
+30 silly addNameRange     '2.0.35',
+30 silly addNameRange     '2.0.36',
+30 silly addNameRange     '2.0.37',
+30 silly addNameRange     '2.0.38',
+30 silly addNameRange     '2.0.39',
+30 silly addNameRange     '1.4.39',
+30 silly addNameRange     '2.0.40',
+30 silly addNameRange     '2.0.41',
+30 silly addNameRange     '2.0.42',
+30 silly addNameRange     '2.0.43',
+30 silly addNameRange     '2.0.44',
+30 silly addNameRange     '2.0.45',
+30 silly addNameRange     '2.0.46',
+30 silly addNameRange     '2.0.47',
+30 silly addNameRange     '2.0.48',
+30 silly addNameRange     '2.1.0-rc1',
+30 silly addNameRange     '2.0.49',
+30 silly addNameRange     '2.0.50',
+30 silly addNameRange     '2.1.0',
+30 silly addNameRange     '2.0.51',
+30 silly addNameRange     '2.1.1',
+30 silly addNameRange     '2.0.52',
+30 silly addNameRange     '2.0.53',
+30 silly addNameRange     '2.1.2',
+30 silly addNameRange     '2.1.3',
+30 silly addNameRange     '2.0.54',
+30 silly addNameRange     '2.0.55',
+30 silly addNameRange     '1.4.40',
+30 silly addNameRange     '2.1.4',
+30 silly addNameRange     '2.1.5',
+30 silly addNameRange     '2.1.6',
+30 silly addNameRange     '2.1.7',
+30 silly addNameRange     '2.1.8',
+30 silly addNameRange     '2.1.9',
+30 silly addNameRange     '2.1.10',
+30 silly addNameRange     '2.1.11',
+30 silly addNameRange     '2.1.12',
+30 silly addNameRange     '2.1.13',
+30 silly addNameRange     '2.1.14',
+30 silly addNameRange     '2.1.15',
+30 silly addNameRange     '2.1.16',
+30 silly addNameRange     '2.1.17',
+30 silly addNameRange     '2.1.18',
+30 silly addNameRange     '2.1.19',
+30 silly addNameRange     '2.1.20',
+30 silly addNameRange     '2.1.21',
+30 silly addNameRange     '2.1.22-alpha',
+30 silly addNameRange     '2.1.22-alpha2',
+30 silly addNameRange     '2.1.22-alpha3',
+30 silly addNameRange     '2.1.22-alpha4',
+30 silly addNameRange     '2.2.0-alpha1',
+30 silly addNameRange     '2.2.0-alpha2',
+30 silly addNameRange     '2.2.0',
+30 silly addNameRange     '2.2.1',
+30 silly addNameRange     '2.2.2',
+30 silly addNameRange     '2.2.3',
+30 silly addNameRange     '2.2.4',
+30 silly addNameRange     '2.2.5',
+30 silly addNameRange     '2.2.6',
+30 silly addNameRange     '2.2.7',
+30 silly addNameRange     '2.2.8',
+30 silly addNameRange     '2.2.9',
+30 silly addNameRange     '2.2.10',
+30 silly addNameRange     '2.2.11',
+30 silly addNameRange     '2.2.12',
+30 silly addNameRange     '2.2.13',
+30 silly addNameRange     '2.2.14',
+30 silly addNameRange     '2.2.15',
+30 silly addNameRange     '2.2.16',
+30 silly addNameRange     '2.2.17',
+30 silly addNameRange     '2.2.18',
+30 silly addNameRange     '2.2.19',
+30 silly addNameRange     '2.2.20',
+30 silly addNameRange     '2.2.21',
+30 silly addNameRange     '2.2.22',
+30 silly addNameRange     '2.2.23',
+30 silly addNameRange     '2.2.24',
+30 silly addNameRange     '2.2.25',
+30 silly addNameRange     '2.2.26',
+30 silly addNameRange     '2.2.27',
+30 silly addNameRange     '2.2.28',
+30 silly addNameRange     '2.2.29',
+30 silly addNameRange     '2.2.30',
+30 silly addNameRange     '2.2.31',
+30 silly addNameRange     '2.2.32',
+30 silly addNameRange     '2.2.33' ] ]
+31 verbose addNamed [ 'mongodb', '2.2.33' ]
+32 verbose addNamed [ '2.2.33', '2.2.33' ]
+33 silly lockFile 87cdde5e-mongodb-2-2-33 mongodb@2.2.33
+34 verbose lock mongodb@2.2.33 /home/rahthap/.npm/87cdde5e-mongodb-2-2-33.lock
+35 verbose read json /home/rahthap/.npm/mongodb/2.2.33/package/package.json
+36 silly lockFile 87cdde5e-mongodb-2-2-33 mongodb@2.2.33
+37 silly lockFile 886df635-mongodb mongodb@
+38 silly resolved [ { name: 'mongodb',
+38 silly resolved     version: '2.2.33',
+38 silly resolved     description: 'The official MongoDB driver for Node.js',
+38 silly resolved     main: 'index.js',
+38 silly resolved     repository:
+38 silly resolved      { type: 'git',
+38 silly resolved        url: 'git@github.com:mongodb/node-mongodb-native.git' },
+38 silly resolved     keywords: [ 'mongodb', 'driver', 'official' ],
+38 silly resolved     dependencies:
+38 silly resolved      { 'es6-promise': '3.2.1',
+38 silly resolved        'mongodb-core': '2.1.17',
+38 silly resolved        'readable-stream': '2.2.7' },
+38 silly resolved     devDependencies:
+38 silly resolved      { JSONStream: '^1.0.7',
+38 silly resolved        betterbenchmarks: '^0.1.0',
+38 silly resolved        bluebird: '3.4.6',
+38 silly resolved        bson: 'latest',
+38 silly resolved        'cli-table': '^0.3.1',
+38 silly resolved        co: '4.6.0',
+38 silly resolved        colors: '^1.1.2',
+38 silly resolved        coveralls: '^2.11.6',
+38 silly resolved        eslint: '^3.8.1',
+38 silly resolved        'event-stream': '^3.3.2',
+38 silly resolved        gleak: '0.5.0',
+38 silly resolved        integra: '0.1.8',
+38 silly resolved        jsdoc: '3.4.0',
+38 silly resolved        'ldjson-stream': '^1.2.1',
+38 silly resolved        'mongodb-extended-json': '1.7.1',
+38 silly resolved        'mongodb-topology-manager': '1.0.x',
+38 silly resolved        'mongodb-version-manager': 'christkv/mongodb-version-manager#master',
+38 silly resolved        nyc: '^8.1.0',
+38 silly resolved        optimist: '0.6.1',
+38 silly resolved        rimraf: '2.5.4',
+38 silly resolved        semver: '5.3.0',
+38 silly resolved        'worker-farm': '^1.3.1' },
+38 silly resolved     author: { name: 'Christian Kvalheim' },
+38 silly resolved     license: 'Apache-2.0',
+38 silly resolved     engines: { node: '>=0.10.3' },
+38 silly resolved     bugs: { url: 'https://github.com/mongodb/node-mongodb-native/issues' },
+38 silly resolved     scripts:
+38 silly resolved      { test: 'node test/runner.js -t functional',
+38 silly resolved        coverage: 'node_modules/.bin/nyc node test/runner.js -t functional && node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls',
+38 silly resolved        lint: 'eslint lib' },
+38 silly resolved     nyc: { include: [Object] },
+38 silly resolved     homepage: 'https://github.com/mongodb/node-mongodb-native',
+38 silly resolved     readme: '[![NPM](https://nodei.co/npm/mongodb.png?downloads=true&downloadRank=true)](https://nodei.co/npm/mongodb/) [![NPM](https://nodei.co/npm-dl/mongodb.png?months=6&height=3)](https://nodei.co/npm/mongodb/)\n\n[![Build Status](https://secure.travis-ci.org/mongodb/node-mongodb-native.svg?branch=2.1)](http://travis-ci.org/mongodb/node-mongodb-native)\n[![Coverage Status](https://coveralls.io/repos/github/mongodb/node-mongodb-native/badge.svg?branch=2.1)](https://coveralls.io/github/mongodb/node-mongodb-native?branch=2.1)\n[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mongodb/node-mongodb-native?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)\n\n# Description\n\nThe official [MongoDB](https://www.mongodb.com/) driver for Node.js. Provides a high-level API on top of [mongodb-core](https://www.npmjs.com/package/mongodb-core) that is meant for end users.\n\n## MongoDB Node.JS Driver\n\n| what          | where                                          |\n|---------------|------------------------------------------------|\n| documentation | http://mongodb.github.io/node-mongodb-native/  |\n| api-doc        | http://mongodb.github.io/node-mongodb-native/2.2/api/  |\n| source        | https://github.com/mongodb/node-mongodb-native |\n| mongodb       | http://www.mongodb.org/                        |\n\n### Blogs of Engineers involved in the driver\n- Christian Kvalheim [@christkv](https://twitter.com/christkv) <http://christiankvalheim.com>\n\n### Bugs / Feature Requests\n\nThink you’ve found a bug? Want to see a new feature in node-mongodb-native? Please open a\ncase in our issue management tool, JIRA:\n\n- Create an account and login <https://jira.mongodb.org>.\n- Navigate to the NODE project <https://jira.mongodb.org/browse/NODE>.\n- Click **Create Issue** - Please provide as much information as possible about the issue type and how to reproduce it.\n\nBug reports in JIRA for all driver projects (i.e. NODE, PYTHON, CSHARP, JAVA) and the\nCore Server (i.e. SERVER) project are **public**.\n\n### Questions and Bug Reports\n\n * mailing list: https://groups.google.com/forum/#!forum/node-mongodb-native\n * jira: http://jira.mongodb.org/\n\n### Change Log\n\nhttp://jira.mongodb.org/browse/NODE\n\n# Installation\n\nThe recommended way to get started using the Node.js 2.0 driver is by using the `NPM` (Node Package Manager) to install the dependency in your project.\n\n## MongoDB Driver\n\nGiven that you have created your own project using `npm init` we install the mongodb driver and it\'s dependencies by executing the following `NPM` command.\n\n```\nnpm install mongodb --save\n```\n\nThis will download the MongoDB driver and add a dependency entry in your `package.json` file.\n\n## Troubleshooting\n\nThe MongoDB driver depends on several other packages. These are.\n\n* mongodb-core\n* bson\n* kerberos\n* node-gyp\n\nThe `kerberos` package is a C++ extension that requires a build environment to be installed on your system. You must be able to build node.js itself to be able to compile and install the `kerberos` module. Furthermore the `kerberos` module requires the MIT Kerberos package to correctly compile on UNIX operating systems. Consult your UNIX operation system package manager what libraries to install.\n\n{{% note class="important" %}}\nWindows already contains the SSPI API used for Kerberos authentication. However you will need to install a full compiler tool chain using visual studio C++ to correctly install the kerberos extension.\n{{% /note %}}\n\n### Diagnosing on UNIX\n\nIf you don’t have the build essentials it won’t build. In the case of linux you will need gcc and g++, node.js with all the headers and python. The easiest way to figure out what’s missing is by trying to build the kerberos project. You can do this by performing the following steps.\n\n```\ngit clone https://github.com/christkv/kerberos.git\ncd kerberos\nnpm install\n```\n\nIf all the steps complete you have the right toolchain installed. If you get node-gyp not found you need to install it globally by doing.\n\n```\nnpm install -g node-gyp\n```\n\nIf correctly compiles and runs the tests you are golden. We can now try to install the mongod driver by performing the following command.\n\n```\ncd yourproject\nnpm install mongodb --save\n```\n\nIf it still fails the next step is to examine the npm log. Rerun the command but in this case in verbose mode.\n\n```\nnpm --loglevel verbose install mongodb\n```\n\nThis will print out all the steps npm is performing while trying to install the module.\n\n### Diagnosing on Windows\n\nA known compiler tool chain known to work for compiling `kerberos` on windows is the following.\n\n* Visual Studio c++ 2010 (do not use higher versions)\n* Windows 7 64bit SDK\n* Python 2.7 or higher\n\nOpen visual studio command prompt. Ensure node.exe is in your path and install node-gyp.\n\n```\nnpm install -g node-gyp\n```\n\nNext you will have to build the project manually to test it. Use any tool you use with git and grab the repo.\n\n```\ngit clone https://github.com/christkv/kerberos.git\ncd kerberos\nnpm install\nnode-gyp rebuild\n```\n\nThis should rebuild the driver successfully if you have everything set up correctly.\n\n### Other possible issues\n\nYour python installation might be hosed making gyp break. I always recommend that you test your deployment environment first by trying to build node itself on the server in question as this should unearth any issues with broken packages (and there are a lot of broken packages out there).\n\nAnother thing is to ensure your user has write permission to wherever the node modules are being installed.\n\nQuickStart\n==========\nThe quick start guide will show you how to setup a simple application using node.js and MongoDB. Its scope is only how to set up the driver and perform the simple crud operations. For more in depth coverage we encourage reading the tutorials.\n\nCreate the package.json file\n----------------------------\nLet\'s create a directory where our application will live. In our case we will put this under our projects directory.\n\n```\nmkdir myproject\ncd myproject\n```\n\nEnter the following command and answer the questions to create the initial structure for your new project\n\n```\nnpm init\n```\n\nNext we need to edit the generated package.json file to add the dependency for the MongoDB driver. The package.json file below is just an example and your will look different depending on how you answered the questions after entering `npm init`\n\n```\n{\n  "name": "myproject",\n  "version": "1.0.0",\n  "description": "My first project",\n  "main": "index.js",\n  "repository": {\n    "type": "git",\n    "url": "git://github.com/christkv/myfirstproject.git"\n  },\n  "dependencies": {\n    "mongodb": "~2.0"\n  },\n  "author": "Christian Kvalheim",\n  "license": "Apache 2.0",\n  "bugs": {\n    "url": "https://github.com/christkv/myfirstproject/issues"\n  },\n  "homepage": "https://github.com/christkv/myfirstproject"\n}\n```\n\nSave the file and return to the shell or command prompt and use **NPM** to install all the dependencies.\n\n```\nnpm install\n```\n\nYou should see **NPM** download a lot of files. Once it\'s done you\'ll find all the downloaded packages under the **node_modules** directory.\n\nBooting up a MongoDB Server\n---------------------------\nLet\'s boot up a MongoDB server instance. Download the right MongoDB version from [MongoDB](http://www.mongodb.org), open a new shell or command line and ensure the **mongod** command is in the shell or command line path. Now let\'s create a database directory (in our case under **/data**).\n\n```\nmongod --dbpath=/data --port 27017\n```\n\nYou should see the **mongod** process start up and print some status information.\n\nConnecting to MongoDB\n---------------------\nLet\'s create a new **app.js** file that we will use to show the basic CRUD operations using the MongoDB driver.\n\nFirst let\'s add code to connect to the server and the database **myproject**.\n\n```js\nvar MongoClient = require(\'mongodb\').MongoClient\n  , assert = require(\'assert\');\n\n// Connection URL\nvar url = \'mongodb://localhost:27017/myproject\';\n// Use connect method to connect to the Server\nMongoClient.connect(url, function(err, db) {\n  assert.equal(null, err);\n  console.log("Connected correctly to server");\n\n  db.close();\n});\n```\n\nGiven that you booted up the **mongod** process earlier the application should connect successfully and print **Connected correctly to server** to the console.\n\nLet\'s Add some code to show the different CRUD operations available.\n\nInserting a Document\n--------------------\nLet\'s create a function that will insert some documents for us.\n\n```js\nvar insertDocuments = function(db, callback) {\n  // Get the documents collection\n  var collection = db.collection(\'documents\');\n  // Insert some documents\n  collection.insertMany([\n    {a : 1}, {a : 2}, {a : 3}\n  ], function(err, result) {\n    assert.equal(err, null);\n    assert.equal(3, result.result.n);\n    assert.equal(3, result.ops.length);\n    console.log("Inserted 3 documents into the document collection");\n    callback(result);\n  });\n}\n```\n\nThe insert command will return a results object that contains several fields that might be useful.\n\n* **result** Contains the result document from MongoDB\n* **ops** Contains the documents inserted with added **_id** fields\n* **connection** Contains the connection used to perform the insert\n\nLet\'s add call the **insertDocuments** command to the **MongoClient.connect** method callback.\n\n```js\nvar MongoClient = require(\'mongodb\').MongoClient\n  , assert = require(\'assert\');\n\n// Connection URL\nvar url = \'mongodb://localhost:27017/myproject\';\n// Use connect method to connect to the Server\nMongoClient.connect(url, function(err, db) {\n  assert.equal(null, err);\n  console.log("Connected correctly to server");\n\n  insertDocuments(db, function() {\n    db.close();\n  });\n});\n```\n\nWe can now run the update **app.js** file.\n\n```\nnode app.js\n```\n\nYou should see the following output after running the **app.js** file.\n\n```\nConnected correctly to server\nInserted 3 documents into the document collection\n```\n\nUpdating a document\n-------------------\nLet\'s look at how to do a simple document update by adding a new field **b** to the document that has the field **a** set to **2**.\n\n```js\nvar updateDocument = function(db, callback) {\n  // Get the documents collection\n  var collection = db.collection(\'documents\');\n  // Update document where a is 2, set b equal to 1\n  collection.updateOne({ a : 2 }\n    , { $set: { b : 1 } }, function(err, result) {\n    assert.equal(err, null);\n    assert.equal(1, result.result.n);\n    console.log("Updated the document with the field a equal to 2");\n    callback(result);\n  });  \n}\n```\n\nThe method will update the first document where the field **a** is equal to **2** by adding a new field **b** to the document set to **1**. Let\'s update the callback function from **MongoClient.connect** to include the update method.\n\n```js\nvar MongoClient = require(\'mongodb\').MongoClient\n  , assert = require(\'assert\');\n\n// Connection URL\nvar url = \'mongodb://localhost:27017/myproject\';\n// Use connect method to connect to the Server\nMongoClient.connect(url, function(err, db) {\n  assert.equal(null, err);\n  console.log("Connected correctly to server");\n\n  insertDocuments(db, function() {\n    updateDocument(db, function() {\n      db.close();\n    });\n  });\n});\n```\n\nDelete a document\n-----------------\nNext lets delete the document where the field **a** equals to **3**.\n\n```js\nvar deleteDocument = function(db, callback) {\n  // Get the documents collection\n  var collection = db.collection(\'documents\');\n  // Insert some documents\n  collection.deleteOne({ a : 3 }, function(err, result) {\n    assert.equal(err, null);\n    assert.equal(1, result.result.n);\n    console.log("Removed the document with the field a equal to 3");\n    callback(result);\n  });\n}\n```\n\nThis will delete the first document where the field **a** equals to **3**. Let\'s add the method to the **MongoClient\n.connect** callback function.\n\n```js\nvar MongoClient = require(\'mongodb\').MongoClient\n  , assert = require(\'assert\');\n\n// Connection URL\nvar url = \'mongodb://localhost:27017/myproject\';\n// Use connect method to connect to the Server\nMongoClient.connect(url, function(err, db) {\n  assert.equal(null, err);\n  console.log("Connected correctly to server");\n\n  insertDocuments(db, function() {\n    updateDocument(db, function() {\n      deleteDocument(db, function() {\n        db.close();\n      });\n    });\n  });\n});\n```\n\nFinally let\'s retrieve all the documents using a simple find.\n\nFind All Documents\n------------------\nWe will finish up the Quickstart CRUD methods by performing a simple query that returns all the documents matching the query.\n\n```js\nvar findDocuments = function(db, callback) {\n  // Get the documents collection\n  var collection = db.collection(\'documents\');\n  // Find some documents\n  collection.find({}).toArray(function(err, docs) {\n    assert.equal(err, null);\n    assert.equal(2, docs.length);\n    console.log("Found the following records");\n    console.dir(docs);\n    callback(docs);\n  });\n}\n```\n\nThis query will return all the documents in the **documents** collection. Since we deleted a document the total\ndocuments returned is **2**. Finally let\'s add the findDocument method to the **MongoClient.connect** callback.\n\n```js\nvar MongoClient = require(\'mongodb\').MongoClient\n  , assert = require(\'assert\');\n\n// Connection URL\nvar url = \'mongodb://localhost:27017/myproject\';\n// Use connect method to connect to the Server\nMongoClient.connect(url, function(err, db) {\n  assert.equal(null, err);\n  console.log("Connected correctly to server");\n\n  insertDocuments(db, function() {\n    updateDocument(db, function() {\n      deleteDocument(db, function() {\n        findDocuments(db, function() {\n          db.close();\n        });\n      });\n    });\n  });\n});\n```\n\nThis concludes the QuickStart of connecting and performing some Basic operations using the MongoDB Node.js driver. For more detailed information you can look at the tutorials covering more specific topics of interest.\n\n## Next Steps\n\n * [MongoDB Documentation](http://mongodb.org/)\n * [Read about Schemas](http://learnmongodbthehardway.com/)\n * [Star us on GitHub](https://github.com/mongodb/node-mongodb-native)\n',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     _id: 'mongodb@2.2.33',
+38 silly resolved     _from: 'mongodb' } ]
+39 info install mongodb@2.2.33 into /home/rahthap
+40 info installOne mongodb@2.2.33
+41 warn engine mongodb@2.2.33: wanted: {"node":">=0.10.3"} (current: {"node":"v0.8.14","npm":"1.1.65"})
+42 verbose from cache /home/rahthap/.npm/mongodb/2.2.33/package/package.json
+43 info /home/rahthap/node_modules/mongodb unbuild
+44 verbose read json /home/rahthap/node_modules/mongodb/package.json
+45 verbose tar unpack /home/rahthap/.npm/mongodb/2.2.33/package.tgz
+46 silly lockFile 8e8568c8-ome-rahthap-node-modules-mongodb /home/rahthap/node_modules/mongodb
+47 verbose lock /home/rahthap/node_modules/mongodb /home/rahthap/.npm/8e8568c8-ome-rahthap-node-modules-mongodb.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm extractEntry boot_auth.js
+53 silly gunzTarPerm extractEntry insert_bench.js
+54 silly gunzTarPerm extractEntry index.js
+55 silly gunzTarPerm extractEntry .eslintrc
+56 silly gunzTarPerm extractEntry HISTORY.md
+57 silly gunzTarPerm extractEntry yarn.lock
+58 silly gunzTarPerm extractEntry THIRD-PARTY-NOTICES
+59 silly gunzTarPerm extractEntry .coveralls.yml
+60 silly gunzTarPerm extractEntry lib/collection.js
+61 silly gunzTarPerm extractEntry lib/mongos.js
+62 silly gunzTarPerm extractEntry lib/authenticate.js
+63 silly gunzTarPerm extractEntry lib/apm.js
+64 silly gunzTarPerm extractEntry lib/cursor.js
+65 silly gunzTarPerm extractEntry lib/read_preference.js
+66 silly gunzTarPerm extractEntry lib/command_cursor.js
+67 silly gunzTarPerm extractEntry lib/aggregation_cursor.js
+68 silly gunzTarPerm extractEntry lib/server.js
+69 silly gunzTarPerm extractEntry lib/url_parser.js
+70 silly gunzTarPerm extractEntry lib/admin.js
+71 silly gunzTarPerm extractEntry lib/db.js
+72 silly gunzTarPerm extractEntry lib/mongo_client.js
+73 silly gunzTarPerm extractEntry lib/utils.js
+74 silly gunzTarPerm extractEntry lib/metadata.js
+75 silly gunzTarPerm extractEntry lib/replset.js
+76 silly gunzTarPerm extractEntry lib/topology_base.js
+77 silly gunzTarPerm extractEntry lib/gridfs/grid_store.js
+78 silly gunzTarPerm extractEntry lib/gridfs/chunk.js
+79 silly gunzTarPerm extractEntry lib/gridfs-stream/upload.js
+80 silly gunzTarPerm extractEntry lib/gridfs-stream/download.js
+81 silly gunzTarPerm extractEntry lib/gridfs-stream/index.js
+82 silly gunzTarPerm extractEntry lib/bulk/common.js
+83 silly gunzTarPerm extractEntry lib/bulk/unordered.js
+84 silly gunzTarPerm extractEntry lib/bulk/ordered.js
+85 silly gunzTarPerm extractEntry Makefile
+86 silly gunzTarPerm extractEntry conf.json
+87 verbose read json /home/rahthap/node_modules/mongodb/package.json
+88 silly lockFile 8e8568c8-ome-rahthap-node-modules-mongodb /home/rahthap/node_modules/mongodb
+89 info preinstall mongodb@2.2.33
+90 verbose from cache /home/rahthap/node_modules/mongodb/package.json
+91 verbose readDependencies using package.json deps
+92 verbose from cache /home/rahthap/node_modules/mongodb/package.json
+93 verbose readDependencies using package.json deps
+94 verbose cache add [ 'es6-promise@3.2.1', null ]
+95 silly cache add name=undefined spec="es6-promise@3.2.1" args=["es6-promise@3.2.1",null]
+96 verbose parsed url { pathname: 'es6-promise@3.2.1',
+96 verbose parsed url   path: 'es6-promise@3.2.1',
+96 verbose parsed url   href: 'es6-promise@3.2.1' }
+97 silly cache add name="es6-promise" spec="3.2.1" args=["es6-promise","3.2.1"]
+98 verbose parsed url { pathname: '3.2.1', path: '3.2.1', href: '3.2.1' }
+99 verbose addNamed [ 'es6-promise', '3.2.1' ]
+100 verbose addNamed [ '3.2.1', '3.2.1' ]
+101 silly lockFile 469d7a92-es6-promise-3-2-1 es6-promise@3.2.1
+102 verbose lock es6-promise@3.2.1 /home/rahthap/.npm/469d7a92-es6-promise-3-2-1.lock
+103 verbose cache add [ 'mongodb-core@2.1.17', null ]
+104 silly cache add name=undefined spec="mongodb-core@2.1.17" args=["mongodb-core@2.1.17",null]
+105 verbose parsed url { pathname: 'mongodb-core@2.1.17',
+105 verbose parsed url   path: 'mongodb-core@2.1.17',
+105 verbose parsed url   href: 'mongodb-core@2.1.17' }
+106 silly cache add name="mongodb-core" spec="2.1.17" args=["mongodb-core","2.1.17"]
+107 verbose parsed url { pathname: '2.1.17', path: '2.1.17', href: '2.1.17' }
+108 verbose addNamed [ 'mongodb-core', '2.1.17' ]
+109 verbose addNamed [ '2.1.17', '2.1.17' ]
+110 silly lockFile b52d4902-mongodb-core-2-1-17 mongodb-core@2.1.17
+111 verbose lock mongodb-core@2.1.17 /home/rahthap/.npm/b52d4902-mongodb-core-2-1-17.lock
+112 verbose cache add [ 'readable-stream@2.2.7', null ]
+113 silly cache add name=undefined spec="readable-stream@2.2.7" args=["readable-stream@2.2.7",null]
+114 verbose parsed url { pathname: 'readable-stream@2.2.7',
+114 verbose parsed url   path: 'readable-stream@2.2.7',
+114 verbose parsed url   href: 'readable-stream@2.2.7' }
+115 silly cache add name="readable-stream" spec="2.2.7" args=["readable-stream","2.2.7"]
+116 verbose parsed url { pathname: '2.2.7', path: '2.2.7', href: '2.2.7' }
+117 verbose addNamed [ 'readable-stream', '2.2.7' ]
+118 verbose addNamed [ '2.2.7', '2.2.7' ]
+119 silly lockFile b7676b88-readable-stream-2-2-7 readable-stream@2.2.7
+120 verbose lock readable-stream@2.2.7 /home/rahthap/.npm/b7676b88-readable-stream-2-2-7.lock
+121 verbose url raw es6-promise/3.2.1
+122 verbose url resolving [ 'https://registry.npmjs.org/', './es6-promise/3.2.1' ]
+123 verbose url resolved https://registry.npmjs.org/es6-promise/3.2.1
+124 info trying registry request attempt 1 at 09:10:04
+125 verbose etag "B5XFRB5TBCOZ9C3PGGKF7O78"
+126 http GET https://registry.npmjs.org/es6-promise/3.2.1
+127 verbose url raw mongodb-core/2.1.17
+128 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-core/2.1.17' ]
+129 verbose url resolved https://registry.npmjs.org/mongodb-core/2.1.17
+130 info trying registry request attempt 1 at 09:10:04
+131 verbose etag "129UQZMHQXW7JZ9KC7MPKIWZA"
+132 http GET https://registry.npmjs.org/mongodb-core/2.1.17
+133 verbose url raw readable-stream/2.2.7
+134 verbose url resolving [ 'https://registry.npmjs.org/', './readable-stream/2.2.7' ]
+135 verbose url resolved https://registry.npmjs.org/readable-stream/2.2.7
+136 info trying registry request attempt 1 at 09:10:04
+137 verbose etag "8MMQ9VAQA87I47G4O5FOALJ6"
+138 http GET https://registry.npmjs.org/readable-stream/2.2.7
+139 http 304 https://registry.npmjs.org/es6-promise/3.2.1
+140 silly registry.get cb [ 304,
+140 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:04 GMT',
+140 silly registry.get     via: '1.1 varnish',
+140 silly registry.get     'cache-control': 'max-age=300',
+140 silly registry.get     etag: '"B5XFRB5TBCOZ9C3PGGKF7O78"',
+140 silly registry.get     age: '14',
+140 silly registry.get     connection: 'keep-alive',
+140 silly registry.get     'x-served-by': 'cache-sin18026-SIN',
+140 silly registry.get     'x-cache': 'HIT',
+140 silly registry.get     'x-cache-hits': '1',
+140 silly registry.get     'x-timer': 'S1508470804.494900,VS0,VE0',
+140 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+141 verbose etag es6-promise/3.2.1 from cache
+142 http 304 https://registry.npmjs.org/readable-stream/2.2.7
+143 silly registry.get cb [ 304,
+143 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:04 GMT',
+143 silly registry.get     via: '1.1 varnish',
+143 silly registry.get     'cache-control': 'max-age=300',
+143 silly registry.get     etag: '"8MMQ9VAQA87I47G4O5FOALJ6"',
+143 silly registry.get     age: '14',
+143 silly registry.get     connection: 'keep-alive',
+143 silly registry.get     'x-served-by': 'cache-sin18031-SIN',
+143 silly registry.get     'x-cache': 'HIT',
+143 silly registry.get     'x-cache-hits': '1',
+143 silly registry.get     'x-timer': 'S1508470804.498156,VS0,VE0',
+143 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+144 verbose etag readable-stream/2.2.7 from cache
+145 http 304 https://registry.npmjs.org/mongodb-core/2.1.17
+146 silly registry.get cb [ 304,
+146 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:04 GMT',
+146 silly registry.get     via: '1.1 varnish',
+146 silly registry.get     'cache-control': 'max-age=300',
+146 silly registry.get     etag: '"129UQZMHQXW7JZ9KC7MPKIWZA"',
+146 silly registry.get     age: '14',
+146 silly registry.get     connection: 'keep-alive',
+146 silly registry.get     'x-served-by': 'cache-sin18020-SIN',
+146 silly registry.get     'x-cache': 'HIT',
+146 silly registry.get     'x-cache-hits': '1',
+146 silly registry.get     'x-timer': 'S1508470805.502772,VS0,VE0',
+146 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+147 verbose etag mongodb-core/2.1.17 from cache
+148 verbose read json /home/rahthap/.npm/readable-stream/2.2.7/package/package.json
+149 verbose read json /home/rahthap/.npm/es6-promise/3.2.1/package/package.json
+150 verbose read json /home/rahthap/.npm/mongodb-core/2.1.17/package/package.json
+151 silly lockFile b7676b88-readable-stream-2-2-7 readable-stream@2.2.7
+152 silly lockFile 469d7a92-es6-promise-3-2-1 es6-promise@3.2.1
+153 silly lockFile b52d4902-mongodb-core-2-1-17 mongodb-core@2.1.17
+154 silly resolved [ { name: 'readable-stream',
+154 silly resolved     version: '2.2.7',
+154 silly resolved     description: 'Streams3, a user-land copy of the stream library from Node.js',
+154 silly resolved     main: 'readable.js',
+154 silly resolved     dependencies:
+154 silly resolved      { 'buffer-shims': '~1.0.0',
+154 silly resolved        'core-util-is': '~1.0.0',
+154 silly resolved        isarray: '~1.0.0',
+154 silly resolved        inherits: '~2.0.1',
+154 silly resolved        'process-nextick-args': '~1.0.6',
+154 silly resolved        string_decoder: '~1.0.0',
+154 silly resolved        'util-deprecate': '~1.0.1' },
+154 silly resolved     devDependencies:
+154 silly resolved      { assert: '~1.4.0',
+154 silly resolved        'babel-polyfill': '^6.9.1',
+154 silly resolved        buffer: '^4.9.0',
+154 silly resolved        nyc: '^6.4.0',
+154 silly resolved        tap: '~0.7.1',
+154 silly resolved        tape: '~4.5.1',
+154 silly resolved        zuul: '~3.10.0' },
+154 silly resolved     scripts:
+154 silly resolved      { test: 'tap test/parallel/*.js test/ours/*.js',
+154 silly resolved        browser: 'npm run write-zuul && zuul --browser-retries 2 -- test/browser.js',
+154 silly resolved        'write-zuul': 'printf "ui: tape\nbrowsers:\n  - name: $BROWSER_NAME\n    version: $BROWSER_VERSION\n">.zuul.yml',
+154 silly resolved        local: 'zuul --local 3000 --no-coverage -- test/browser.js',
+154 silly resolved        cover: 'nyc npm test',
+154 silly resolved        report: 'nyc report --reporter=lcov' },
+154 silly resolved     repository: { type: 'git', url: 'git://github.com/nodejs/readable-stream' },
+154 silly resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+154 silly resolved     browser:
+154 silly resolved      { util: false,
+154 silly resolved        './readable.js': './readable-browser.js',
+154 silly resolved        './writable.js': './writable-browser.js',
+154 silly resolved        './duplex.js': './duplex-browser.js' },
+154 silly resolved     'react-native': { stream: false },
+154 silly resolved     nyc: { include: [Object] },
+154 silly resolved     license: 'MIT',
+154 silly resolved     readme: '# readable-stream\n\n***Node-core v7.0.0 streams for userland*** [![Build Status](https://travis-ci.org/nodejs/readable-stream.svg?branch=master)](https://travis-ci.org/nodejs/readable-stream)\n\n\n[![NPM](https://nodei.co/npm/readable-stream.png?downloads=true&downloadRank=true)](https://nodei.co/npm/readable-stream/)\n[![NPM](https://nodei.co/npm-dl/readable-stream.png?&months=6&height=3)](https://nodei.co/npm/readable-stream/)\n\n\n[![Sauce Test Status](https://saucelabs.com/browser-matrix/readable-stream.svg)](https://saucelabs.com/u/readable-stream)\n\n```bash\nnpm install --save readable-stream\n```\n\n***Node-core streams for userland***\n\nThis package is a mirror of the Streams2 and Streams3 implementations in\nNode-core.\n\nFull documentation may be found on the [Node.js website](https://nodejs.org/dist/v7.7.3/docs/api/).\n\nIf you want to guarantee a stable streams base, regardless of what version of\nNode you, or the users of your libraries are using, use **readable-stream** *only* and avoid the *"stream"* module in Node-core, for background see [this blogpost](http://r.va.gg/2014/06/why-i-dont-use-nodes-core-stream-module.html).\n\nAs of version 2.0.0 **readable-stream** uses semantic versioning.\n\n# Streams Working Group\n\n`readable-stream` is maintained by the Streams Working Group, which\noversees the development and maintenance of the Streams API within\nNode.js. The responsibilities of the Streams Working Group include:\n\n* Addressing stream issues on the Node.js issue tracker.\n* Authoring and editing stream documentation within the Node.js project.\n* Reviewing changes to stream subclasses within the Node.js project.\n* Redirecting changes to streams from the Node.js project to this\n  project.\n* Assisting in the implementation of stream providers within Node.js.\n* Recommending versions of `readable-stream` to be included in Node.js.\n* Messaging about the future of streams to give the community advance\n  notice of changes.\n\n<a name="members"></a>\n## Team Members\n\n* **Chris Dickinson** ([@chrisdickinson](https://github.com/chrisdickinson)) &lt;christopher.s.dickinson@gmail.com&gt;\n  - Release GPG key: 9554F04D7259F04124DE6B476D5A82AC7E37093B\n* **Calvin Metcalf** ([@calvinmetcalf](https://github.com/calvinmetcalf)) &lt;calvin.metcalf@gmail.com&gt;\n  - Release GPG key: F3EF5F62A87FC27A22E643F714CE4FF5015AA242\n* **Rod Vagg** ([@rvagg](https://github.com/rvagg)) &lt;rod@vagg.org&gt;\n  - Release GPG key: DD8F2338BAE7501E3DD5AC78C273792F7D83545D\n* **Sam Newman** ([@sonewman](https://github.com/sonewman)) &lt;newmansam@outlook.com&gt;\n* **Mathias Buus** ([@mafintosh](https://github.com/mafintosh)) &lt;mathiasbuus@gmail.com&gt;\n* **Domenic Denicola** ([@domenic](https://github.com/domenic)) &lt;d@domenic.me&gt;\n* **Matteo Collina** ([@mcollina](https://github.com/mcollina)) &lt;matteo.collina@gmail.com&gt;\n  - Release GPG key: 3ABC01543F22DD2239285CDD818674489FBC127E\n',
+154 silly resolved     readmeFilename: 'README.md',
+154 silly resolved     _id: 'readable-stream@2.2.7',
+154 silly resolved     _from: 'readable-stream@2.2.7' },
+154 silly resolved   { name: 'es6-promise',
+154 silly resolved     namespace: 'es6-promise',
+154 silly resolved     version: '3.2.1',
+154 silly resolved     description: 'A lightweight library that provides tools for organizing asynchronous code',
+154 silly resolved     main: 'dist/es6-promise.js',
+154 silly resolved     directories: { lib: 'lib' },
+154 silly resolved     files: [ 'dist', 'lib', '!dist/test' ],
+154 silly resolved     devDependencies:
+154 silly resolved      { 'babel-eslint': '^6.0.0',
+154 silly resolved        'broccoli-es6-module-transpiler': '^0.5.0',
+154 silly resolved        'broccoli-jshint': '^2.1.0',
+154 silly resolved        'broccoli-merge-trees': '^1.1.1',
+154 silly resolved        'broccoli-replace': '^0.12.0',
+154 silly resolved        'broccoli-stew': '^1.2.0',
+154 silly resolved        'broccoli-uglify-js': '^0.1.3',
+154 silly resolved        'broccoli-watchify': '^0.2.0',
+154 silly resolved        'ember-cli': '2.5.0',
+154 silly resolved        'ember-publisher': '0.0.7',
+154 silly resolved        'git-repo-version': '0.0.3',
+154 silly resolved        json3: '^3.3.2',
+154 silly resolved        mocha: '^1.20.1',
+154 silly resolved        'promises-aplus-tests-phantom': '^2.1.0-revise',
+154 silly resolved        'release-it': '0.0.10' },
+154 silly resolved     scripts:
+154 silly resolved      { build: 'ember build',
+154 silly resolved        'build:production': 'ember build --environment production',
+154 silly resolved        start: 'ember s',
+154 silly resolved        test: 'ember test',
+154 silly resolved        'test:server': 'ember test --server',
+154 silly resolved        'test:node': 'ember build && mocha ./dist/test/browserify',
+154 silly resolved        lint: 'jshint lib',
+154 silly resolved        prepublish: 'ember build --environment production',
+154 silly resolved        'dry-run-release': 'ember build --environment production && release-it --dry-run --non-interactive' },
+154 silly resolved     repository:
+154 silly resolved      { type: 'git',
+154 silly resolved        url: 'git://github.com/jakearchibald/ES6-Promises.git' },
+154 silly resolved     bugs: { url: 'https://github.com/jakearchibald/ES6-Promises/issues' },
+154 silly resolved     browser: { vertx: false },
+154 silly resolved     keywords: [ 'promises', 'futures' ],
+154 silly resolved     author:
+154 silly resolved      { name: 'Yehuda Katz, Tom Dale, Stefan Penner and contributors',
+154 silly resolved        url: 'Conversion to ES6 API by Jake Archibald' },
+154 silly resolved     license: 'MIT',
+154 silly resolved     spm: { main: 'dist/es6-promise.js' },
+154 silly resolved     readme: '# ES6-Promise (subset of [rsvp.js](https://github.com/tildeio/rsvp.js))\n\nThis is a polyfill of the [ES6 Promise](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-promise-constructor). The implementation is a subset of [rsvp.js](https://github.com/tildeio/rsvp.js) extracted by @jakearchibald, if you\'re wanting extra features and more debugging options, check out the [full library](https://github.com/tildeio/rsvp.js).\n\nFor API details and how to use promises, see the <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">JavaScript Promises HTML5Rocks article</a>.\n\n## Downloads\n\n* [es6-promise](https://raw.githubusercontent.com/stefanpenner/es6-promise/master/dist/es6-promise.js)\n* [es6-promise-min](https://raw.githubusercontent.com/stefanpenner/es6-promise/master/dist/es6-promise.min.js)\n\n## Node.js\n\nTo install:\n\n```sh\nnpm install es6-promise\n```\n\nTo use:\n\n```js\nvar Promise = require(\'es6-promise\').Promise;\n```\n\n## Bower\n\nTo install:\n\n```sh\nbower install es6-promise --save\n```\n\n\n## Usage in IE<9\n\n`catch` is a reserved word in IE<9, meaning `promise.catch(func)` throws a syntax error. To work around this, you can use a string to access the property as shown in the following example.\n\nHowever, please remember that such technique is already provided by most common minifiers, making the resulting code safe for old browsers and production:\n\n```js\npromise[\'catch\'](function(err) {\n  // ...\n});\n```\n\nOr use `.then` instead:\n\n```js\npromise.then(undefined, function(err) {\n  // ...\n});\n```\n\n## Auto-polyfill\n\nTo polyfill the global environment (either in Node or in the browser via CommonJS) use the following code snippet:\n\n```js\nrequire(\'es6-promise\').polyfill();\n```\n\nNotice that we don\'t assign the result of `polyfill()` to any variable. The `polyfill()` method will patch the global environment (in this case to the `Promise` name) when called.\n\n## Building & Testing\n\nYou will need to have PhantomJS installed globally in order to run the tests.\n\n`npm install -g phantomjs`\n\n* `npm run build` to build\n* `npm test` to run tests\n* `npm start` to run a build watcher, and webserver to test\n* `npm run test:server` for a testem test runner and watching builder\n',
+154 silly resolved     readmeFilename: 'README.md',
+154 silly resolved     _id: 'es6-promise@3.2.1',
+154 silly resolved     _from: 'es6-promise@3.2.1' },
+154 silly resolved   { name: 'mongodb-core',
+154 silly resolved     version: '2.1.17',
+154 silly resolved     description: 'Core MongoDB driver functionality, no bells and whistles and meant for integration not end applications',
+154 silly resolved     main: 'index.js',
+154 silly resolved     scripts:
+154 silly resolved      { test: 'node test/runner.js -t functional',
+154 silly resolved        coverage: 'node_modules/.bin/nyc node test/runner.js -t functional -l && node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls',
+154 silly resolved        lint: 'eslint lib' },
+154 silly resolved     repository:
+154 silly resolved      { type: 'git',
+154 silly resolved        url: 'git://github.com/christkv/mongodb-core.git' },
+154 silly resolved     keywords: [ 'mongodb', 'core' ],
+154 silly resolved     dependencies: { bson: '~1.0.4', require_optional: '~1.0.0' },
+154 silly resolved     devDependencies:
+154 silly resolved      { co: '^4.5.4',
+154 silly resolved        coveralls: '^2.11.6',
+154 silly resolved        'es6-promise': '^3.0.2',
+154 silly resolved        gleak: '0.5.0',
+154 silly resolved        integra: '0.1.8',
+154 silly resolved        jsdoc: '3.3.0-alpha8',
+154 silly resolved        mkdirp: '0.5.0',
+154 silly resolved        'mongodb-topology-manager': '1.0.x',
+154 silly resolved        'mongodb-version-manager': 'christkv/mongodb-version-manager#master',
+154 silly resolved        nyc: '^5.5.0',
+154 silly resolved        optimist: 'latest',
+154 silly resolved        rimraf: '2.2.6',
+154 silly resolved        semver: '4.1.0' },
+154 silly resolved     peerOptionalDependencies: { kerberos: '~0.0', 'bson-ext': '1.0.5' },
+154 silly resolved     author: { name: 'Christian Kvalheim' },
+154 silly resolved     license: 'Apache-2.0',
+154 silly resolved     bugs: { url: 'https://github.com/christkv/mongodb-core/issues' },
+154 silly resolved     homepage: 'https://github.com/christkv/mongodb-core',
+154 silly resolved     readme: '[![Build Status](https://secure.travis-ci.org/christkv/mongodb-core.png)](http://travis-ci.org/christkv/mongodb-core)\n[![Coverage Status](https://coveralls.io/repos/github/christkv/mongodb-core/badge.svg?branch=1.3)](https://coveralls.io/github/christkv/mongodb-core?branch=1.3)\n\n# Description\n\nThe MongoDB Core driver is the low level part of the 2.0 or higher MongoDB driver and is meant for library developers not end users. It does not contain any abstractions or helpers outside of the basic management of MongoDB topology connections, CRUD operations and authentication.\n\n## MongoDB Node.JS Core Driver\n\n| what          | where                                          |\n|---------------|------------------------------------------------|\n| documentation | http://mongodb.github.io/node-mongodb-native/  |\n| apidoc        | http://mongodb.github.io/node-mongodb-native/  |\n| source        | https://github.com/christkv/mongodb-core       |\n| mongodb       | http://www.mongodb.org/                        |\n\n### Blogs of Engineers involved in the driver\n- Christian Kvalheim [@christkv](https://twitter.com/christkv) <http://christiankvalheim.com>\n\n### Bugs / Feature Requests\n\nThink you’ve found a bug? Want to see a new feature in node-mongodb-native? Please open a\ncase in our issue management tool, JIRA:\n\n- Create an account and login <https://jira.mongodb.org>.\n- Navigate to the NODE project <https://jira.mongodb.org/browse/NODE>.\n- Click **Create Issue** - Please provide as much information as possible about the issue type and how to reproduce it.\n\nBug reports in JIRA for all driver projects (i.e. NODE, PYTHON, CSHARP, JAVA) and the\nCore Server (i.e. SERVER) project are **public**.\n\n### Questions and Bug Reports\n\n * mailing list: https://groups.google.com/forum/#!forum/node-mongodb-native\n * jira: http://jira.mongodb.org/\n\n### Change Log\n\nhttp://jira.mongodb.org/browse/NODE\n\n# QuickStart\n\nThe quick start guide will show you how to set up a simple application using Core driver and MongoDB. It scope is only how to set up the driver and perform the simple crud operations. For more inn depth coverage we encourage reading the tutorials.\n\n## Create the package.json file\n\nLet\'s create a directory where our application will live. In our case we will put this under our projects directory.\n\n```\nmkdir myproject\ncd myproject\n```\n\nCreate a **package.json** using your favorite text editor and fill it in.\n\n```json\n{\n  "name": "myproject",\n  "version": "1.0.0",\n  "description": "My first project",\n  "main": "index.js",\n  "repository": {\n    "type": "git",\n    "url": "git://github.com/christkv/myfirstproject.git"\n  },\n  "dependencies": {\n    "mongodb-core": "~1.0"\n  },\n  "author": "Christian Kvalheim",\n  "license": "Apache 2.0",\n  "bugs": {\n    "url": "https://github.com/christkv/myfirstproject/issues"\n  },\n  "homepage": "https://github.com/christkv/myfirstproject"\n}\n```\n\nSave the file and return to the shell or command prompt and use **NPM** to install all the dependencies.\n\n```\nnpm install\n```\n\nYou should see **NPM** download a lot of files. Once it\'s done you\'ll find all the downloaded packages under the **node_modules** directory.\n\nBooting up a MongoDB Server\n---------------------------\nLet\'s boot up a MongoDB server instance. Download the right MongoDB version from [MongoDB](http://www.mongodb.org), open a new shell or command line and ensure the **mongod** command is in the shell or command line path. Now let\'s create a database directory (in our case under **/data**).\n\n```\nmongod --dbpath=/data --port 27017\n```\n\nYou should see the **mongod** process start up and print some status information.\n\n## Connecting to MongoDB\n\nLet\'s create a new **app.js** file that we will use to show the basic CRUD operations using the MongoDB driver.\n\nFirst let\'s add code to connect to the server. Notice that there is no concept of a database here and we use the topology directly to perform the connection.\n\n```js\nvar Server = require(\'mongodb-core\').Server\n  , assert = require(\'assert\');\n\n// Set up server connection\nvar server = new Server({\n    host: \'localhost\'\n  , port: 27017\n  , reconnect: true\n  , reconnectInterval: 50\n});\n\n// Add event listeners\nserver.on(\'connect\', function(_server) {\n  console.log(\'connected\');\n  test.done();\n});\n\nserver.on(\'close\', function() {\n  console.log(\'closed\');\n});\n\nserver.on(\'reconnect\', function() {\n  console.log(\'reconnect\');\n});\n\n// Start connection\nserver.connect();\n```\n\nTo connect to a replicaset we would use the `ReplSet` class and for a set of Mongos proxies we use the `Mongos` class. Each topology class offer the same CRUD operations and you operate on the topology directly. Let\'s look at an example exercising all the different available CRUD operations.\n\n```js\nvar Server = require(\'mongodb-core\').Server\n  , assert = require(\'assert\');\n\n// Set up server connection\nvar server = new Server({\n    host: \'localhost\'\n  , port: 27017\n  , reconnect: true\n  , reconnectInterval: 50\n});\n\n// Add event listeners\nserver.on(\'connect\', function(_server) {\n  console.log(\'connected\');\n\n  // Execute the ismaster command\n  _server.command(\'system.$cmd\', {ismaster: true}, function(err, result) {\n\n    // Perform a document insert\n    _server.insert(\'myproject.inserts1\', [{a:1}, {a:2}], {\n      writeConcern: {w:1}, ordered:true\n    }, function(err, results) {\n      assert.equal(null, err);\n      assert.equal(2, results.result.n);      \n\n      // Perform a document update\n      _server.update(\'myproject.inserts1\', [{\n        q: {a: 1}, u: {\'$set\': {b:1}}\n      }], {\n        writeConcern: {w:1}, ordered:true\n      }, function(err, results) {\n        assert.equal(null, err);\n        assert.equal(1, results.result.n);\n\n        // Remove a document\n        _server.remove(\'myproject.inserts1\', [{\n          q: {a: 1}, limit: 1\n        }], {\n          writeConcern: {w:1}, ordered:true\n        }, function(err, results) {\n          assert.equal(null, err);\n          assert.equal(1, results.result.n);\n\n          // Get a document\n          var cursor = _server.cursor(\'integration_tests.inserts_example4\', {\n              find: \'integration_tests.example4\'\n            , query: {a:1}\n          });\n\n          // Get the first document\n          cursor.next(function(err, doc) {\n            assert.equal(null, err);\n            assert.equal(2, doc.a);\n\n            // Execute the ismaster command\n            _server.command("system.$cmd"\n              , {ismaster: true}, function(err, result) {\n                assert.equal(null, err)\n                _server.destroy();              \n            });\n          });\n      });\n    });\n\n    test.done();\n  });\n});\n\nserver.on(\'close\', function() {\n  console.log(\'closed\');\n});\n\nserver.on(\'reconnect\', function() {\n  console.log(\'reconnect\');\n});\n\n// Start connection\nserver.connect();\n```\n\nThe core driver does not contain any helpers or abstractions only the core crud operations. These consist of the following commands.\n\n* `insert`, Insert takes an array of 1 or more documents to be inserted against the topology and allows you to specify a write concern and if you wish to execute the inserts in order or out of order.\n* `update`, Update takes an array of 1 or more update commands to be executed against the server topology and also allows you to specify a write concern and if you wish to execute the updates in order or out of order.\n* `remove`, Remove takes an array of 1 or more remove commands to be executed against the server topology and also allows you to specify a write concern and if you wish to execute the removes in order or out of order.\n* `cursor`, Returns you a cursor for either the \'virtual\' `find` command, a command that returns a cursor id or a plain cursor id. Read the cursor tutorial for more inn depth coverage.\n* `command`, Executes a command against MongoDB and returns the result.\n* `auth`, Authenticates the current topology using a supported authentication scheme.\n\nThe Core Driver is a building block for library builders and is not meant for usage by end users as it lacks a lot of features the end user might need such as automatic buffering of operations when a primary is changing in a replicaset or the db and collections abstraction.\n\n## Next steps\n\nThe next step is to get more in depth information about how the different aspects of the core driver works and how to leverage them to extend the functionality of the cursors. Please view the tutorials for more detailed information.\n',
+154 silly resolved     readmeFilename: 'README.md',
+154 silly resolved     _id: 'mongodb-core@2.1.17',
+154 silly resolved     _from: 'mongodb-core@2.1.17' } ]
+155 info install readable-stream@2.2.7 into /home/rahthap/node_modules/mongodb
+156 info install es6-promise@3.2.1 into /home/rahthap/node_modules/mongodb
+157 info install mongodb-core@2.1.17 into /home/rahthap/node_modules/mongodb
+158 info installOne readable-stream@2.2.7
+159 info installOne es6-promise@3.2.1
+160 info installOne mongodb-core@2.1.17
+161 verbose from cache /home/rahthap/.npm/readable-stream/2.2.7/package/package.json
+162 verbose from cache /home/rahthap/.npm/es6-promise/3.2.1/package/package.json
+163 verbose from cache /home/rahthap/.npm/mongodb-core/2.1.17/package/package.json
+164 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream unbuild
+165 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/package.json
+166 info /home/rahthap/node_modules/mongodb/node_modules/es6-promise unbuild
+167 verbose read json /home/rahthap/node_modules/mongodb/node_modules/es6-promise/package.json
+168 info /home/rahthap/node_modules/mongodb/node_modules/mongodb-core unbuild
+169 verbose read json /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/package.json
+170 verbose tar unpack /home/rahthap/.npm/readable-stream/2.2.7/package.tgz
+171 verbose tar unpack /home/rahthap/.npm/es6-promise/3.2.1/package.tgz
+172 verbose tar unpack /home/rahthap/.npm/mongodb-core/2.1.17/package.tgz
+173 silly lockFile 73a178aa-odb-node-modules-readable-stream /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+174 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream /home/rahthap/.npm/73a178aa-odb-node-modules-readable-stream.lock
+175 silly lockFile 6900e3fc-mongodb-node-modules-es6-promise /home/rahthap/node_modules/mongodb/node_modules/es6-promise
+176 verbose lock /home/rahthap/node_modules/mongodb/node_modules/es6-promise /home/rahthap/.npm/6900e3fc-mongodb-node-modules-es6-promise.lock
+177 silly lockFile ee5d5938-ongodb-node-modules-mongodb-core /home/rahthap/node_modules/mongodb/node_modules/mongodb-core
+178 verbose lock /home/rahthap/node_modules/mongodb/node_modules/mongodb-core /home/rahthap/.npm/ee5d5938-ongodb-node-modules-mongodb-core.lock
+179 silly gunzTarPerm modes [ '755', '644' ]
+180 silly gunzTarPerm modes [ '755', '644' ]
+181 silly gunzTarPerm modes [ '755', '644' ]
+182 silly gunzTarPerm extractEntry package.json
+183 silly gunzTarPerm extractEntry package.json
+184 silly gunzTarPerm extractEntry package.json
+185 silly gunzTarPerm extractEntry README.md
+186 silly gunzTarPerm extractEntry dist/es6-promise.js
+187 silly gunzTarPerm extractEntry .npmignore
+188 silly gunzTarPerm extractEntry README.md
+189 silly gunzTarPerm extractEntry README.md
+190 silly gunzTarPerm extractEntry LICENSE
+191 silly gunzTarPerm extractEntry dist/es6-promise.min.js
+192 silly gunzTarPerm extractEntry LICENSE
+193 silly gunzTarPerm extractEntry lib/es6-promise.umd.js
+194 silly gunzTarPerm extractEntry index.js
+195 silly gunzTarPerm extractEntry transform.js
+196 silly gunzTarPerm extractEntry writable.js
+197 silly gunzTarPerm extractEntry lib/es6-promise/polyfill.js
+198 silly gunzTarPerm extractEntry lib/es6-promise/enumerator.js
+199 silly gunzTarPerm extractEntry test1.js
+200 silly gunzTarPerm extractEntry test.js
+201 silly gunzTarPerm extractEntry lib/es6-promise/-internal.js
+202 silly gunzTarPerm extractEntry yarn.lock
+203 silly gunzTarPerm extractEntry lib/es6-promise/promise.js
+204 silly gunzTarPerm extractEntry HISTORY.md
+205 silly gunzTarPerm extractEntry lib/es6-promise/then.js
+206 silly gunzTarPerm extractEntry readable.js
+207 silly gunzTarPerm extractEntry readable-browser.js
+208 silly gunzTarPerm extractEntry .eslintrc
+209 silly gunzTarPerm extractEntry Makefile
+210 silly gunzTarPerm extractEntry THIRD-PARTY-NOTICES
+211 silly gunzTarPerm extractEntry writable-browser.js
+212 silly gunzTarPerm extractEntry .coveralls.yml
+213 silly gunzTarPerm extractEntry passthrough.js
+214 silly gunzTarPerm extractEntry lib/es6-promise/asap.js
+215 silly gunzTarPerm extractEntry lib/es6-promise/utils.js
+216 silly gunzTarPerm extractEntry lib/cursor.js
+217 silly gunzTarPerm extractEntry duplex.js
+218 silly gunzTarPerm extractEntry lib/utils.js
+219 silly gunzTarPerm extractEntry duplex-browser.js
+220 silly gunzTarPerm extractEntry lib/es6-promise/promise/reject.js
+221 silly gunzTarPerm extractEntry lib/error.js
+222 silly gunzTarPerm extractEntry lib/es6-promise/promise/resolve.js
+223 silly gunzTarPerm extractEntry lib/tools/smoke_plugin.js
+224 silly gunzTarPerm extractEntry lib/es6-promise/promise/race.js
+225 silly gunzTarPerm extractEntry lib/auth/x509.js
+226 silly gunzTarPerm extractEntry lib/es6-promise/promise/all.js
+227 silly gunzTarPerm extractEntry lib/auth/plain.js
+228 silly gunzTarPerm extractEntry lib/auth/scram.js
+229 silly gunzTarPerm extractEntry CONTRIBUTING.md
+230 silly gunzTarPerm extractEntry lib/_stream_writable.js
+231 silly gunzTarPerm extractEntry lib/_stream_readable.js
+232 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+233 silly gunzTarPerm extractEntry lib/_stream_transform.js
+234 silly gunzTarPerm extractEntry lib/auth/mongocr.js
+235 silly gunzTarPerm extractEntry lib/auth/gssapi.js
+236 silly gunzTarPerm extractEntry lib/auth/sspi.js
+237 silly gunzTarPerm extractEntry lib/connection/connection.js
+238 silly gunzTarPerm extractEntry lib/connection/logger.js
+239 silly gunzTarPerm extractEntry lib/connection/command_result.js
+240 silly gunzTarPerm extractEntry lib/connection/utils.js
+241 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+242 silly gunzTarPerm extractEntry lib/internal/streams/BufferList.js
+243 silly gunzTarPerm extractEntry lib/connection/pool.js
+244 silly gunzTarPerm extractEntry lib/connection/commands.js
+245 silly gunzTarPerm extractEntry lib/topologies/replset_state.js
+246 silly gunzTarPerm extractEntry lib/topologies/mongos.js
+247 silly gunzTarPerm extractEntry doc/wg-meetings/2015-01-30.md
+248 silly gunzTarPerm extractEntry GOVERNANCE.md
+249 silly gunzTarPerm extractEntry lib/topologies/shared.js
+250 silly gunzTarPerm extractEntry lib/topologies/read_preference.js
+251 silly gunzTarPerm extractEntry lib/topologies/server.js
+252 silly gunzTarPerm extractEntry lib/topologies/replset.js
+253 silly gunzTarPerm extractEntry .travis.yml
+254 silly gunzTarPerm extractEntry lib/wireprotocol/3_2_support.js
+255 silly gunzTarPerm extractEntry lib/wireprotocol/2_4_support.js
+256 silly gunzTarPerm extractEntry lib/wireprotocol/shared.js
+257 silly gunzTarPerm extractEntry lib/wireprotocol/2_6_support.js
+258 silly gunzTarPerm extractEntry lib/wireprotocol/commands.js
+259 silly gunzTarPerm extractEntry TESTING.md
+260 silly gunzTarPerm extractEntry conf.json
+261 verbose read json /home/rahthap/node_modules/mongodb/node_modules/es6-promise/package.json
+262 silly lockFile 6900e3fc-mongodb-node-modules-es6-promise /home/rahthap/node_modules/mongodb/node_modules/es6-promise
+263 info preinstall es6-promise@3.2.1
+264 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/es6-promise/package.json
+265 verbose readDependencies using package.json deps
+266 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/es6-promise/package.json
+267 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/package.json
+268 silly lockFile 73a178aa-odb-node-modules-readable-stream /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+269 verbose readDependencies using package.json deps
+270 silly resolved []
+271 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/es6-promise
+272 info build /home/rahthap/node_modules/mongodb/node_modules/es6-promise
+273 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/es6-promise/package.json
+274 info preinstall readable-stream@2.2.7
+275 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/package.json
+276 verbose linkStuff [ false,
+276 verbose linkStuff   false,
+276 verbose linkStuff   false,
+276 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules' ]
+277 info linkStuff es6-promise@3.2.1
+278 verbose linkBins es6-promise@3.2.1
+279 verbose linkMans es6-promise@3.2.1
+280 verbose rebuildBundles es6-promise@3.2.1
+281 info install es6-promise@3.2.1
+282 verbose readDependencies using package.json deps
+283 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/package.json
+284 info postinstall es6-promise@3.2.1
+285 verbose readDependencies using package.json deps
+286 verbose cache add [ 'buffer-shims@~1.0.0', null ]
+287 silly cache add name=undefined spec="buffer-shims@~1.0.0" args=["buffer-shims@~1.0.0",null]
+288 verbose parsed url { pathname: 'buffer-shims@~1.0.0',
+288 verbose parsed url   path: 'buffer-shims@~1.0.0',
+288 verbose parsed url   href: 'buffer-shims@~1.0.0' }
+289 silly cache add name="buffer-shims" spec="~1.0.0" args=["buffer-shims","~1.0.0"]
+290 verbose parsed url { pathname: '~1.0.0', path: '~1.0.0', href: '~1.0.0' }
+291 verbose addNamed [ 'buffer-shims', '~1.0.0' ]
+292 verbose addNamed [ null, '>=1.0.0- <1.1.0-' ]
+293 silly lockFile d2c93da9-buffer-shims-1-0-0 buffer-shims@~1.0.0
+294 verbose lock buffer-shims@~1.0.0 /home/rahthap/.npm/d2c93da9-buffer-shims-1-0-0.lock
+295 verbose cache add [ 'core-util-is@~1.0.0', null ]
+296 silly cache add name=undefined spec="core-util-is@~1.0.0" args=["core-util-is@~1.0.0",null]
+297 verbose parsed url { pathname: 'core-util-is@~1.0.0',
+297 verbose parsed url   path: 'core-util-is@~1.0.0',
+297 verbose parsed url   href: 'core-util-is@~1.0.0' }
+298 silly cache add name="core-util-is" spec="~1.0.0" args=["core-util-is","~1.0.0"]
+299 verbose parsed url { pathname: '~1.0.0', path: '~1.0.0', href: '~1.0.0' }
+300 verbose addNamed [ 'core-util-is', '~1.0.0' ]
+301 verbose addNamed [ null, '>=1.0.0- <1.1.0-' ]
+302 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+303 verbose lock core-util-is@~1.0.0 /home/rahthap/.npm/577b60c4-core-util-is-1-0-0.lock
+304 silly addNameRange { name: 'buffer-shims',
+304 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+304 silly addNameRange   hasData: false }
+305 silly addNameRange { name: 'core-util-is',
+305 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+305 silly addNameRange   hasData: false }
+306 verbose url raw buffer-shims
+307 verbose url resolving [ 'https://registry.npmjs.org/', './buffer-shims' ]
+308 verbose url resolved https://registry.npmjs.org/buffer-shims
+309 info trying registry request attempt 1 at 09:10:04
+310 verbose etag "572ce87b-833"
+311 http GET https://registry.npmjs.org/buffer-shims
+312 verbose url raw core-util-is
+313 verbose url resolving [ 'https://registry.npmjs.org/', './core-util-is' ]
+314 verbose url resolved https://registry.npmjs.org/core-util-is
+315 info trying registry request attempt 1 at 09:10:04
+316 verbose etag "59116c0a-ec5"
+317 http GET https://registry.npmjs.org/core-util-is
+318 verbose cache add [ 'isarray@~1.0.0', null ]
+319 silly cache add name=undefined spec="isarray@~1.0.0" args=["isarray@~1.0.0",null]
+320 verbose parsed url { pathname: 'isarray@~1.0.0',
+320 verbose parsed url   path: 'isarray@~1.0.0',
+320 verbose parsed url   href: 'isarray@~1.0.0' }
+321 silly cache add name="isarray" spec="~1.0.0" args=["isarray","~1.0.0"]
+322 verbose parsed url { pathname: '~1.0.0', path: '~1.0.0', href: '~1.0.0' }
+323 verbose addNamed [ 'isarray', '~1.0.0' ]
+324 verbose addNamed [ null, '>=1.0.0- <1.1.0-' ]
+325 silly lockFile c9f174a0-isarray-1-0-0 isarray@~1.0.0
+326 verbose lock isarray@~1.0.0 /home/rahthap/.npm/c9f174a0-isarray-1-0-0.lock
+327 verbose cache add [ 'inherits@~2.0.1', null ]
+328 silly cache add name=undefined spec="inherits@~2.0.1" args=["inherits@~2.0.1",null]
+329 verbose parsed url { pathname: 'inherits@~2.0.1',
+329 verbose parsed url   path: 'inherits@~2.0.1',
+329 verbose parsed url   href: 'inherits@~2.0.1' }
+330 silly cache add name="inherits" spec="~2.0.1" args=["inherits","~2.0.1"]
+331 verbose parsed url { pathname: '~2.0.1', path: '~2.0.1', href: '~2.0.1' }
+332 verbose addNamed [ 'inherits', '~2.0.1' ]
+333 verbose addNamed [ null, '>=2.0.1- <2.1.0-' ]
+334 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+335 verbose lock inherits@~2.0.1 /home/rahthap/.npm/098ef39f-inherits-2-0-1.lock
+336 verbose cache add [ 'process-nextick-args@~1.0.6', null ]
+337 silly cache add name=undefined spec="process-nextick-args@~1.0.6" args=["process-nextick-args@~1.0.6",null]
+338 verbose parsed url { pathname: 'process-nextick-args@~1.0.6',
+338 verbose parsed url   path: 'process-nextick-args@~1.0.6',
+338 verbose parsed url   href: 'process-nextick-args@~1.0.6' }
+339 silly cache add name="process-nextick-args" spec="~1.0.6" args=["process-nextick-args","~1.0.6"]
+340 verbose parsed url { pathname: '~1.0.6', path: '~1.0.6', href: '~1.0.6' }
+341 verbose addNamed [ 'process-nextick-args', '~1.0.6' ]
+342 verbose addNamed [ null, '>=1.0.6- <1.1.0-' ]
+343 silly lockFile 34df6d61-process-nextick-args-1-0-6 process-nextick-args@~1.0.6
+344 verbose lock process-nextick-args@~1.0.6 /home/rahthap/.npm/34df6d61-process-nextick-args-1-0-6.lock
+345 verbose cache add [ 'string_decoder@~1.0.0', null ]
+346 silly cache add name=undefined spec="string_decoder@~1.0.0" args=["string_decoder@~1.0.0",null]
+347 verbose parsed url { pathname: 'string_decoder@~1.0.0',
+347 verbose parsed url   path: 'string_decoder@~1.0.0',
+347 verbose parsed url   href: 'string_decoder@~1.0.0' }
+348 silly cache add name="string_decoder" spec="~1.0.0" args=["string_decoder","~1.0.0"]
+349 verbose parsed url { pathname: '~1.0.0', path: '~1.0.0', href: '~1.0.0' }
+350 verbose addNamed [ 'string_decoder', '~1.0.0' ]
+351 verbose addNamed [ null, '>=1.0.0- <1.1.0-' ]
+352 silly lockFile 0d5ba189-string-decoder-1-0-0 string_decoder@~1.0.0
+353 verbose lock string_decoder@~1.0.0 /home/rahthap/.npm/0d5ba189-string-decoder-1-0-0.lock
+354 verbose cache add [ 'util-deprecate@~1.0.1', null ]
+355 silly cache add name=undefined spec="util-deprecate@~1.0.1" args=["util-deprecate@~1.0.1",null]
+356 verbose parsed url { pathname: 'util-deprecate@~1.0.1',
+356 verbose parsed url   path: 'util-deprecate@~1.0.1',
+356 verbose parsed url   href: 'util-deprecate@~1.0.1' }
+357 silly cache add name="util-deprecate" spec="~1.0.1" args=["util-deprecate","~1.0.1"]
+358 verbose parsed url { pathname: '~1.0.1', path: '~1.0.1', href: '~1.0.1' }
+359 verbose addNamed [ 'util-deprecate', '~1.0.1' ]
+360 verbose addNamed [ null, '>=1.0.1- <1.1.0-' ]
+361 silly lockFile d0045abb-util-deprecate-1-0-1 util-deprecate@~1.0.1
+362 verbose lock util-deprecate@~1.0.1 /home/rahthap/.npm/d0045abb-util-deprecate-1-0-1.lock
+363 silly addNameRange { name: 'isarray', range: '>=1.0.0- <1.1.0-', hasData: false }
+364 silly addNameRange { name: 'inherits', range: '>=2.0.1- <2.1.0-', hasData: false }
+365 silly addNameRange { name: 'process-nextick-args',
+365 silly addNameRange   range: '>=1.0.6- <1.1.0-',
+365 silly addNameRange   hasData: false }
+366 silly addNameRange { name: 'string_decoder',
+366 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+366 silly addNameRange   hasData: false }
+367 silly addNameRange { name: 'util-deprecate',
+367 silly addNameRange   range: '>=1.0.1- <1.1.0-',
+367 silly addNameRange   hasData: false }
+368 verbose url raw isarray
+369 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+370 verbose url resolved https://registry.npmjs.org/isarray
+371 info trying registry request attempt 1 at 09:10:04
+372 verbose etag "5965e354-286a"
+373 http GET https://registry.npmjs.org/isarray
+374 verbose url raw inherits
+375 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+376 verbose url resolved https://registry.npmjs.org/inherits
+377 info trying registry request attempt 1 at 09:10:04
+378 verbose etag "5945d779-2230"
+379 http GET https://registry.npmjs.org/inherits
+380 verbose url raw process-nextick-args
+381 verbose url resolving [ 'https://registry.npmjs.org/', './process-nextick-args' ]
+382 verbose url resolved https://registry.npmjs.org/process-nextick-args
+383 info trying registry request attempt 1 at 09:10:04
+384 verbose etag "5818d8b9-247f"
+385 http GET https://registry.npmjs.org/process-nextick-args
+386 verbose url raw string_decoder
+387 verbose url resolving [ 'https://registry.npmjs.org/', './string_decoder' ]
+388 verbose url resolved https://registry.npmjs.org/string_decoder
+389 info trying registry request attempt 1 at 09:10:04
+390 verbose etag "594c0e1f-3a37"
+391 http GET https://registry.npmjs.org/string_decoder
+392 verbose url raw util-deprecate
+393 verbose url resolving [ 'https://registry.npmjs.org/', './util-deprecate' ]
+394 verbose url resolved https://registry.npmjs.org/util-deprecate
+395 info trying registry request attempt 1 at 09:10:04
+396 verbose etag "59414806-16e7"
+397 http GET https://registry.npmjs.org/util-deprecate
+398 verbose read json /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/package.json
+399 silly lockFile ee5d5938-ongodb-node-modules-mongodb-core /home/rahthap/node_modules/mongodb/node_modules/mongodb-core
+400 info preinstall mongodb-core@2.1.17
+401 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/package.json
+402 verbose readDependencies using package.json deps
+403 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/package.json
+404 verbose readDependencies using package.json deps
+405 verbose cache add [ 'bson@~1.0.4', null ]
+406 silly cache add name=undefined spec="bson@~1.0.4" args=["bson@~1.0.4",null]
+407 verbose parsed url { pathname: 'bson@~1.0.4',
+407 verbose parsed url   path: 'bson@~1.0.4',
+407 verbose parsed url   href: 'bson@~1.0.4' }
+408 silly cache add name="bson" spec="~1.0.4" args=["bson","~1.0.4"]
+409 verbose parsed url { pathname: '~1.0.4', path: '~1.0.4', href: '~1.0.4' }
+410 verbose addNamed [ 'bson', '~1.0.4' ]
+411 verbose addNamed [ null, '>=1.0.4- <1.1.0-' ]
+412 silly lockFile 7af3984f-bson-1-0-4 bson@~1.0.4
+413 verbose lock bson@~1.0.4 /home/rahthap/.npm/7af3984f-bson-1-0-4.lock
+414 verbose cache add [ 'require_optional@~1.0.0', null ]
+415 silly cache add name=undefined spec="require_optional@~1.0.0" args=["require_optional@~1.0.0",null]
+416 verbose parsed url { pathname: 'require_optional@~1.0.0',
+416 verbose parsed url   path: 'require_optional@~1.0.0',
+416 verbose parsed url   href: 'require_optional@~1.0.0' }
+417 silly cache add name="require_optional" spec="~1.0.0" args=["require_optional","~1.0.0"]
+418 verbose parsed url { pathname: '~1.0.0', path: '~1.0.0', href: '~1.0.0' }
+419 verbose addNamed [ 'require_optional', '~1.0.0' ]
+420 verbose addNamed [ null, '>=1.0.0- <1.1.0-' ]
+421 silly lockFile 82ae0771-require-optional-1-0-0 require_optional@~1.0.0
+422 verbose lock require_optional@~1.0.0 /home/rahthap/.npm/82ae0771-require-optional-1-0-0.lock
+423 silly addNameRange { name: 'bson', range: '>=1.0.4- <1.1.0-', hasData: false }
+424 silly addNameRange { name: 'require_optional',
+424 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+424 silly addNameRange   hasData: false }
+425 verbose url raw require_optional
+426 verbose url resolving [ 'https://registry.npmjs.org/', './require_optional' ]
+427 verbose url resolved https://registry.npmjs.org/require_optional
+428 info trying registry request attempt 1 at 09:10:04
+429 verbose etag "5940e121-fb1"
+430 http GET https://registry.npmjs.org/require_optional
+431 verbose url raw bson
+432 verbose url resolving [ 'https://registry.npmjs.org/', './bson' ]
+433 verbose url resolved https://registry.npmjs.org/bson
+434 info trying registry request attempt 1 at 09:10:04
+435 verbose etag "59daa582-1af50"
+436 http GET https://registry.npmjs.org/bson
+437 http 304 https://registry.npmjs.org/core-util-is
+438 silly registry.get cb [ 304,
+438 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:04 GMT',
+438 silly registry.get     via: '1.1 varnish',
+438 silly registry.get     'cache-control': 'max-age=300',
+438 silly registry.get     etag: '"59116c0a-ec5"',
+438 silly registry.get     age: '37',
+438 silly registry.get     connection: 'keep-alive',
+438 silly registry.get     'x-served-by': 'cache-sin18033-SIN',
+438 silly registry.get     'x-cache': 'HIT',
+438 silly registry.get     'x-cache-hits': '2',
+438 silly registry.get     'x-timer': 'S1508470805.981686,VS0,VE0',
+438 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+439 verbose etag core-util-is from cache
+440 http 304 https://registry.npmjs.org/buffer-shims
+441 silly registry.get cb [ 304,
+441 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:04 GMT',
+441 silly registry.get     via: '1.1 varnish',
+441 silly registry.get     'cache-control': 'max-age=300',
+441 silly registry.get     etag: '"572ce87b-833"',
+441 silly registry.get     age: '13',
+441 silly registry.get     connection: 'keep-alive',
+441 silly registry.get     'x-served-by': 'cache-sin18022-SIN',
+441 silly registry.get     'x-cache': 'HIT',
+441 silly registry.get     'x-cache-hits': '1',
+441 silly registry.get     'x-timer': 'S1508470805.984268,VS0,VE0',
+441 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+442 verbose etag buffer-shims from cache
+443 silly addNameRange number 2 { name: 'core-util-is',
+443 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+443 silly addNameRange   hasData: true }
+444 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+445 verbose addNamed [ 'core-util-is', '1.0.2' ]
+446 verbose addNamed [ '1.0.2', '1.0.2' ]
+447 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+448 verbose lock core-util-is@1.0.2 /home/rahthap/.npm/250fbf62-core-util-is-1-0-2.lock
+449 verbose read json /home/rahthap/.npm/core-util-is/1.0.2/package/package.json
+450 silly addNameRange number 2 { name: 'buffer-shims',
+450 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+450 silly addNameRange   hasData: true }
+451 silly addNameRange versions [ 'buffer-shims', [ '1.0.0' ] ]
+452 verbose addNamed [ 'buffer-shims', '1.0.0' ]
+453 verbose addNamed [ '1.0.0', '1.0.0' ]
+454 silly lockFile d868bfeb-buffer-shims-1-0-0 buffer-shims@1.0.0
+455 verbose lock buffer-shims@1.0.0 /home/rahthap/.npm/d868bfeb-buffer-shims-1-0-0.lock
+456 verbose read json /home/rahthap/.npm/buffer-shims/1.0.0/package/package.json
+457 silly lockFile 250fbf62-core-util-is-1-0-2 core-util-is@1.0.2
+458 silly lockFile 577b60c4-core-util-is-1-0-0 core-util-is@~1.0.0
+459 silly lockFile d868bfeb-buffer-shims-1-0-0 buffer-shims@1.0.0
+460 silly lockFile d2c93da9-buffer-shims-1-0-0 buffer-shims@~1.0.0
+461 http 304 https://registry.npmjs.org/isarray
+462 silly registry.get cb [ 304,
+462 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+462 silly registry.get     via: '1.1 varnish',
+462 silly registry.get     'cache-control': 'max-age=300',
+462 silly registry.get     etag: '"5965e354-286a"',
+462 silly registry.get     age: '33',
+462 silly registry.get     connection: 'keep-alive',
+462 silly registry.get     'x-served-by': 'cache-sin18021-SIN',
+462 silly registry.get     'x-cache': 'HIT',
+462 silly registry.get     'x-cache-hits': '1',
+462 silly registry.get     'x-timer': 'S1508470805.030043,VS0,VE0',
+462 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+463 verbose etag isarray from cache
+464 http 304 https://registry.npmjs.org/process-nextick-args
+465 silly registry.get cb [ 304,
+465 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+465 silly registry.get     via: '1.1 varnish',
+465 silly registry.get     'cache-control': 'max-age=300',
+465 silly registry.get     etag: '"5818d8b9-247f"',
+465 silly registry.get     age: '33',
+465 silly registry.get     connection: 'keep-alive',
+465 silly registry.get     'x-served-by': 'cache-sin18031-SIN',
+465 silly registry.get     'x-cache': 'HIT',
+465 silly registry.get     'x-cache-hits': '17',
+465 silly registry.get     'x-timer': 'S1508470805.008276,VS0,VE0',
+465 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+466 verbose etag process-nextick-args from cache
+467 http 304 https://registry.npmjs.org/inherits
+468 silly registry.get cb [ 304,
+468 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+468 silly registry.get     via: '1.1 varnish',
+468 silly registry.get     'cache-control': 'max-age=300',
+468 silly registry.get     etag: '"5945d779-2230"',
+468 silly registry.get     age: '37',
+468 silly registry.get     connection: 'keep-alive',
+468 silly registry.get     'x-served-by': 'cache-sin18020-SIN',
+468 silly registry.get     'x-cache': 'HIT',
+468 silly registry.get     'x-cache-hits': '1',
+468 silly registry.get     'x-timer': 'S1508470805.016691,VS0,VE0',
+468 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+469 verbose etag inherits from cache
+470 silly addNameRange number 2 { name: 'isarray', range: '>=1.0.0- <1.1.0-', hasData: true }
+471 silly addNameRange versions [ 'isarray',
+471 silly addNameRange   [ '0.0.0', '0.0.1', '1.0.0', '2.0.0', '2.0.1', '2.0.2' ] ]
+472 verbose addNamed [ 'isarray', '1.0.0' ]
+473 verbose addNamed [ '1.0.0', '1.0.0' ]
+474 silly lockFile 61d13322-isarray-1-0-0 isarray@1.0.0
+475 verbose lock isarray@1.0.0 /home/rahthap/.npm/61d13322-isarray-1-0-0.lock
+476 silly addNameRange number 2 { name: 'process-nextick-args',
+476 silly addNameRange   range: '>=1.0.6- <1.1.0-',
+476 silly addNameRange   hasData: true }
+477 silly addNameRange versions [ 'process-nextick-args',
+477 silly addNameRange   [ '1.0.0',
+477 silly addNameRange     '1.0.1',
+477 silly addNameRange     '1.0.2',
+477 silly addNameRange     '1.0.3',
+477 silly addNameRange     '1.0.4',
+477 silly addNameRange     '1.0.5',
+477 silly addNameRange     '1.0.6',
+477 silly addNameRange     '1.0.7' ] ]
+478 verbose addNamed [ 'process-nextick-args', '1.0.7' ]
+479 verbose addNamed [ '1.0.7', '1.0.7' ]
+480 silly lockFile ebee2f38-process-nextick-args-1-0-7 process-nextick-args@1.0.7
+481 verbose lock process-nextick-args@1.0.7 /home/rahthap/.npm/ebee2f38-process-nextick-args-1-0-7.lock
+482 verbose read json /home/rahthap/.npm/isarray/1.0.0/package/package.json
+483 verbose read json /home/rahthap/.npm/process-nextick-args/1.0.7/package/package.json
+484 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.1- <2.1.0-', hasData: true }
+485 silly addNameRange versions [ 'inherits',
+485 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3' ] ]
+486 verbose addNamed [ 'inherits', '2.0.3' ]
+487 verbose addNamed [ '2.0.3', '2.0.3' ]
+488 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+489 verbose lock inherits@2.0.3 /home/rahthap/.npm/92ff4e28-inherits-2-0-3.lock
+490 verbose read json /home/rahthap/.npm/inherits/2.0.3/package/package.json
+491 silly lockFile 61d13322-isarray-1-0-0 isarray@1.0.0
+492 silly lockFile ebee2f38-process-nextick-args-1-0-7 process-nextick-args@1.0.7
+493 silly lockFile c9f174a0-isarray-1-0-0 isarray@~1.0.0
+494 silly lockFile 34df6d61-process-nextick-args-1-0-6 process-nextick-args@~1.0.6
+495 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+496 silly lockFile 098ef39f-inherits-2-0-1 inherits@~2.0.1
+497 http 304 https://registry.npmjs.org/string_decoder
+498 silly registry.get cb [ 304,
+498 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+498 silly registry.get     via: '1.1 varnish',
+498 silly registry.get     'cache-control': 'max-age=300',
+498 silly registry.get     etag: '"594c0e1f-3a37"',
+498 silly registry.get     age: '37',
+498 silly registry.get     connection: 'keep-alive',
+498 silly registry.get     'x-served-by': 'cache-sin18033-SIN',
+498 silly registry.get     'x-cache': 'HIT',
+498 silly registry.get     'x-cache-hits': '1',
+498 silly registry.get     'x-timer': 'S1508470805.057852,VS0,VE0',
+498 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+499 verbose etag string_decoder from cache
+500 http 304 https://registry.npmjs.org/util-deprecate
+501 silly registry.get cb [ 304,
+501 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+501 silly registry.get     via: '1.1 varnish',
+501 silly registry.get     'cache-control': 'max-age=300',
+501 silly registry.get     etag: '"59414806-16e7"',
+501 silly registry.get     age: '33',
+501 silly registry.get     connection: 'keep-alive',
+501 silly registry.get     'x-served-by': 'cache-sin18022-SIN',
+501 silly registry.get     'x-cache': 'HIT',
+501 silly registry.get     'x-cache-hits': '1',
+501 silly registry.get     'x-timer': 'S1508470805.059951,VS0,VE1',
+501 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+502 verbose etag util-deprecate from cache
+503 silly addNameRange number 2 { name: 'string_decoder',
+503 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+503 silly addNameRange   hasData: true }
+504 silly addNameRange versions [ 'string_decoder',
+504 silly addNameRange   [ '0.0.0',
+504 silly addNameRange     '0.0.1',
+504 silly addNameRange     '0.10.24',
+504 silly addNameRange     '0.11.10',
+504 silly addNameRange     '0.10.25',
+504 silly addNameRange     '0.11.10-1',
+504 silly addNameRange     '0.10.25-1',
+504 silly addNameRange     '0.10.31',
+504 silly addNameRange     '1.0.0',
+504 silly addNameRange     '1.0.1',
+504 silly addNameRange     '1.0.2',
+504 silly addNameRange     '1.0.3' ] ]
+505 verbose addNamed [ 'string_decoder', '1.0.3' ]
+506 verbose addNamed [ '1.0.3', '1.0.3' ]
+507 silly lockFile d22b488a-string-decoder-1-0-3 string_decoder@1.0.3
+508 verbose lock string_decoder@1.0.3 /home/rahthap/.npm/d22b488a-string-decoder-1-0-3.lock
+509 verbose read json /home/rahthap/.npm/string_decoder/1.0.3/package/package.json
+510 silly addNameRange number 2 { name: 'util-deprecate',
+510 silly addNameRange   range: '>=1.0.1- <1.1.0-',
+510 silly addNameRange   hasData: true }
+511 silly addNameRange versions [ 'util-deprecate', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+512 verbose addNamed [ 'util-deprecate', '1.0.2' ]
+513 verbose addNamed [ '1.0.2', '1.0.2' ]
+514 silly lockFile 30fc1e6b-util-deprecate-1-0-2 util-deprecate@1.0.2
+515 verbose lock util-deprecate@1.0.2 /home/rahthap/.npm/30fc1e6b-util-deprecate-1-0-2.lock
+516 verbose read json /home/rahthap/.npm/util-deprecate/1.0.2/package/package.json
+517 silly lockFile d22b488a-string-decoder-1-0-3 string_decoder@1.0.3
+518 silly lockFile 0d5ba189-string-decoder-1-0-0 string_decoder@~1.0.0
+519 silly lockFile 30fc1e6b-util-deprecate-1-0-2 util-deprecate@1.0.2
+520 silly lockFile d0045abb-util-deprecate-1-0-1 util-deprecate@~1.0.1
+521 silly resolved [ { name: 'core-util-is',
+521 silly resolved     version: '1.0.2',
+521 silly resolved     description: 'The `util.is*` functions introduced in Node v0.12.',
+521 silly resolved     main: 'lib/util.js',
+521 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/core-util-is' },
+521 silly resolved     keywords:
+521 silly resolved      [ 'util',
+521 silly resolved        'isBuffer',
+521 silly resolved        'isArray',
+521 silly resolved        'isNumber',
+521 silly resolved        'isString',
+521 silly resolved        'isRegExp',
+521 silly resolved        'isThis',
+521 silly resolved        'isThat',
+521 silly resolved        'polyfill' ],
+521 silly resolved     author:
+521 silly resolved      { name: 'Isaac Z. Schlueter',
+521 silly resolved        email: 'i@izs.me',
+521 silly resolved        url: 'http://blog.izs.me/' },
+521 silly resolved     license: 'MIT',
+521 silly resolved     bugs: { url: 'https://github.com/isaacs/core-util-is/issues' },
+521 silly resolved     scripts: { test: 'tap test.js' },
+521 silly resolved     devDependencies: { tap: '^2.3.0' },
+521 silly resolved     readme: '# core-util-is\n\nThe `util.is*` functions introduced in Node v0.12.\n',
+521 silly resolved     readmeFilename: 'README.md',
+521 silly resolved     _id: 'core-util-is@1.0.2',
+521 silly resolved     _from: 'core-util-is@~1.0.0' },
+521 silly resolved   { name: 'buffer-shims',
+521 silly resolved     version: '1.0.0',
+521 silly resolved     description: 'some shims for node buffers',
+521 silly resolved     main: 'index.js',
+521 silly resolved     scripts: { test: 'tape test/*.js' },
+521 silly resolved     files: [ 'index.js' ],
+521 silly resolved     license: 'MIT',
+521 silly resolved     devDependencies: { tape: '^4.5.1' },
+521 silly resolved     repository:
+521 silly resolved      { type: 'git',
+521 silly resolved        url: 'git@github.com:calvinmetcalf/buffer-shims.git' },
+521 silly resolved     readme: 'buffer-shims\n===\n\nfunctions to make sure the new buffer methods work in older browsers.\n\n```js\nvar bufferShim = require(\'buffer-shims\');\nbufferShim.from(\'foo\');\nbufferShim.alloc(9, \'cafeface\', \'hex\');\nbufferShim.allocUnsafe(15);\nbufferShim.allocUnsafeSlow(21);\n```\n\nshould just use the original  in newer nodes and on older nodes uses fallbacks.\n\nKnown Issues\n===\n- this does not patch the buffer object, only the constructor stuff\n- it\'s actually a polyfill\n\n![](https://i.imgur.com/zxII3jJ.gif)\n',
+521 silly resolved     readmeFilename: 'readme.md',
+521 silly resolved     _id: 'buffer-shims@1.0.0',
+521 silly resolved     _from: 'buffer-shims@~1.0.0' },
+521 silly resolved   { name: 'isarray',
+521 silly resolved     description: 'Array#isArray for older browsers',
+521 silly resolved     version: '1.0.0',
+521 silly resolved     repository:
+521 silly resolved      { type: 'git',
+521 silly resolved        url: 'git://github.com/juliangruber/isarray.git' },
+521 silly resolved     homepage: 'https://github.com/juliangruber/isarray',
+521 silly resolved     main: 'index.js',
+521 silly resolved     dependencies: {},
+521 silly resolved     devDependencies: { tape: '~2.13.4' },
+521 silly resolved     keywords: [ 'browser', 'isarray', 'array' ],
+521 silly resolved     author:
+521 silly resolved      { name: 'Julian Gruber',
+521 silly resolved        email: 'mail@juliangruber.com',
+521 silly resolved        url: 'http://juliangruber.com' },
+521 silly resolved     license: 'MIT',
+521 silly resolved     testling: { files: 'test.js', browsers: [Object] },
+521 silly resolved     scripts: { test: 'tape test.js' },
+521 silly resolved     readme: '\n# isarray\n\n`Array#isArray` for older browsers.\n\n[![build status](https://secure.travis-ci.org/juliangruber/isarray.svg)](http://travis-ci.org/juliangruber/isarray)\n[![downloads](https://img.shields.io/npm/dm/isarray.svg)](https://www.npmjs.org/package/isarray)\n\n[![browser support](https://ci.testling.com/juliangruber/isarray.png)\n](https://ci.testling.com/juliangruber/isarray)\n\n## Usage\n\n```js\nvar isArray = require(\'isarray\');\n\nconsole.log(isArray([])); // => true\nconsole.log(isArray({})); // => false\n```\n\n## Installation\n\nWith [npm](http://npmjs.org) do\n\n```bash\n$ npm install isarray\n```\n\nThen bundle for the browser with\n[browserify](https://github.com/substack/browserify).\n\nWith [component](http://component.io) do\n\n```bash\n$ component install juliangruber/isarray\n```\n\n## License\n\n(MIT)\n\nCopyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the "Software"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n',
+521 silly resolved     readmeFilename: 'README.md',
+521 silly resolved     _id: 'isarray@1.0.0',
+521 silly resolved     _from: 'isarray@~1.0.0' },
+521 silly resolved   { name: 'process-nextick-args',
+521 silly resolved     version: '1.0.7',
+521 silly resolved     description: 'process.nextTick but always with args',
+521 silly resolved     main: 'index.js',
+521 silly resolved     scripts: { test: 'node test.js' },
+521 silly resolved     repository:
+521 silly resolved      { type: 'git',
+521 silly resolved        url: 'https://github.com/calvinmetcalf/process-nextick-args.git' },
+521 silly resolved     author: '',
+521 silly resolved     license: 'MIT',
+521 silly resolved     bugs: { url: 'https://github.com/calvinmetcalf/process-nextick-args/issues' },
+521 silly resolved     homepage: 'https://github.com/calvinmetcalf/process-nextick-args',
+521 silly resolved     devDependencies: { tap: '~0.2.6' },
+521 silly resolved     readme: 'process-nextick-args\n=====\n\n[![Build Status](https://travis-ci.org/calvinmetcalf/process-nextick-args.svg?branch=master)](https://travis-ci.org/calvinmetcalf/process-nextick-args)\n\n```bash\nnpm install --save process-nextick-args\n```\n\nAlways be able to pass arguments to process.nextTick, no matter the platform\n\n```js\nvar nextTick = require(\'process-nextick-args\');\n\nnextTick(function (a, b, c) {\n  console.log(a, b, c);\n}, \'step\', 3,  \'profit\');\n```\n',
+521 silly resolved     readmeFilename: 'readme.md',
+521 silly resolved     _id: 'process-nextick-args@1.0.7',
+521 silly resolved     _from: 'process-nextick-args@~1.0.6' },
+521 silly resolved   { name: 'inherits',
+521 silly resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+521 silly resolved     version: '2.0.3',
+521 silly resolved     keywords:
+521 silly resolved      [ 'inheritance',
+521 silly resolved        'class',
+521 silly resolved        'klass',
+521 silly resolved        'oop',
+521 silly resolved        'object-oriented',
+521 silly resolved        'inherits',
+521 silly resolved        'browser',
+521 silly resolved        'browserify' ],
+521 silly resolved     main: './inherits.js',
+521 silly resolved     browser: './inherits_browser.js',
+521 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits' },
+521 silly resolved     license: 'ISC',
+521 silly resolved     scripts: { test: 'node test' },
+521 silly resolved     devDependencies: { tap: '^7.1.0' },
+521 silly resolved     files: [ 'inherits.js', 'inherits_browser.js' ],
+521 silly resolved     readme: 'Browser-friendly inheritance fully compatible with standard node.js\n[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).\n\nThis package exports standard `inherits` from node.js `util` module in\nnode environment, but also provides alternative browser-friendly\nimplementation through [browser\nfield](https://gist.github.com/shtylman/4339901). Alternative\nimplementation is a literal copy of standard one located in standalone\nmodule to avoid requiring of `util`. It also has a shim for old\nbrowsers with no `Object.create` support.\n\nWhile keeping you sure you are using standard `inherits`\nimplementation in node.js environment, it allows bundlers such as\n[browserify](https://github.com/substack/node-browserify) to not\ninclude full `util` package to your client code if all you need is\njust `inherits` function. It worth, because browser shim for `util`\npackage is large and `inherits` is often the single function you need\nfrom it.\n\nIt\'s recommended to use this package instead of\n`require(\'util\').inherits` for any code that has chances to be used\nnot only in node.js but in browser too.\n\n## usage\n\n```js\nvar inherits = require(\'inherits\');\n// then use exactly as the standard one\n```\n\n## note on version ~1.0\n\nVersion ~1.0 had completely different motivation and is not compatible\nneither with 2.0 nor with standard node.js `inherits`.\n\nIf you are using version ~1.0 and planning to switch to ~2.0, be\ncareful:\n\n* new version uses `super_` instead of `super` for referencing\n  superclass\n* new version overwrites current prototype while old one preserves any\n  existing fields on it\n',
+521 silly resolved     readmeFilename: 'README.md',
+521 silly resolved     _id: 'inherits@2.0.3',
+521 silly resolved     _from: 'inherits@~2.0.1' },
+521 silly resolved   { name: 'string_decoder',
+521 silly resolved     version: '1.0.3',
+521 silly resolved     description: 'The string_decoder module from Node core',
+521 silly resolved     main: 'lib/string_decoder.js',
+521 silly resolved     dependencies: { 'safe-buffer': '~5.1.0' },
+521 silly resolved     devDependencies: { 'babel-polyfill': '^6.23.0', tap: '~0.4.8' },
+521 silly resolved     scripts: { test: 'tap test/parallel/*.js && node test/verify-dependencies' },
+521 silly resolved     repository:
+521 silly resolved      { type: 'git',
+521 silly resolved        url: 'git://github.com/rvagg/string_decoder.git' },
+521 silly resolved     homepage: 'https://github.com/rvagg/string_decoder',
+521 silly resolved     keywords: [ 'string', 'decoder', 'browser', 'browserify' ],
+521 silly resolved     license: 'MIT',
+521 silly resolved     readme: '# string_decoder\n\n***Node-core v7.0.0 string_decoder for userland***\n\n\n[![NPM](https://nodei.co/npm/string_decoder.png?downloads=true&downloadRank=true)](https://nodei.co/npm/string_decoder/)\n[![NPM](https://nodei.co/npm-dl/string_decoder.png?&months=6&height=3)](https://nodei.co/npm/string_decoder/)\n\n\n```bash\nnpm install --save string_decoder\n```\n\n***Node-core string_decoderstring_decoder for userland***\n\nThis package is a mirror of the string_decoder implementation in Node-core.\n\nFull documentation may be found on the [Node.js website](https://nodejs.org/dist/v7.8.0/docs/api/).\n\nAs of version 1.0.0 **string_decoder** uses semantic versioning.\n\n## Previous versions\n\nPrevious version numbers match the versions found in Node core, e.g. 0.10.24 matches Node 0.10.24, likewise 0.11.10 matches Node 0.11.10.\n\n## Update\n\nThe *build/* directory contains a build script that will scrape the source from the [nodejs/node](https://github.com/nodejs/node) repo given a specific Node version.\n',
+521 silly resolved     readmeFilename: 'README.md',
+521 silly resolved     _id: 'string_decoder@1.0.3',
+521 silly resolved     _from: 'string_decoder@~1.0.0' },
+521 silly resolved   { name: 'util-deprecate',
+521 silly resolved     version: '1.0.2',
+521 silly resolved     description: 'The Node.js `util.deprecate()` function with browser support',
+521 silly resolved     main: 'node.js',
+521 silly resolved     browser: 'browser.js',
+521 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+521 silly resolved     repository:
+521 silly resolved      { type: 'git',
+521 silly resolved        url: 'git://github.com/TooTallNate/util-deprecate.git' },
+521 silly resolved     keywords: [ 'util', 'deprecate', 'browserify', 'browser', 'node' ],
+521 silly resolved     author:
+521 silly resolved      { name: 'Nathan Rajlich',
+521 silly resolved        email: 'nathan@tootallnate.net',
+521 silly resolved        url: 'http://n8.io/' },
+521 silly resolved     license: 'MIT',
+521 silly resolved     bugs: { url: 'https://github.com/TooTallNate/util-deprecate/issues' },
+521 silly resolved     homepage: 'https://github.com/TooTallNate/util-deprecate',
+521 silly resolved     readme: 'util-deprecate\n==============\n### The Node.js `util.deprecate()` function with browser support\n\nIn Node.js, this module simply re-exports the `util.deprecate()` function.\n\nIn the web browser (i.e. via browserify), a browser-specific implementation\nof the `util.deprecate()` function is used.\n\n\n## API\n\nA `deprecate()` function is the only thing exposed by this module.\n\n``` javascript\n// setup:\nexports.foo = deprecate(foo, \'foo() is deprecated, use bar() instead\');\n\n\n// users see:\nfoo();\n// foo() is deprecated, use bar() instead\nfoo();\nfoo();\n```\n\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2014 Nathan Rajlich <nathan@tootallnate.net>\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the "Software"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n',
+521 silly resolved     readmeFilename: 'README.md',
+521 silly resolved     _id: 'util-deprecate@1.0.2',
+521 silly resolved     _from: 'util-deprecate@~1.0.1' } ]
+522 info install core-util-is@1.0.2 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+523 info install buffer-shims@1.0.0 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+524 info install isarray@1.0.0 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+525 info install process-nextick-args@1.0.7 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+526 info install inherits@2.0.3 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+527 info install string_decoder@1.0.3 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+528 info install util-deprecate@1.0.2 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+529 info installOne core-util-is@1.0.2
+530 info installOne buffer-shims@1.0.0
+531 info installOne isarray@1.0.0
+532 info installOne process-nextick-args@1.0.7
+533 info installOne inherits@2.0.3
+534 info installOne string_decoder@1.0.3
+535 info installOne util-deprecate@1.0.2
+536 verbose from cache /home/rahthap/.npm/core-util-is/1.0.2/package/package.json
+537 verbose from cache /home/rahthap/.npm/buffer-shims/1.0.0/package/package.json
+538 verbose from cache /home/rahthap/.npm/isarray/1.0.0/package/package.json
+539 verbose from cache /home/rahthap/.npm/process-nextick-args/1.0.7/package/package.json
+540 verbose from cache /home/rahthap/.npm/inherits/2.0.3/package/package.json
+541 verbose from cache /home/rahthap/.npm/string_decoder/1.0.3/package/package.json
+542 verbose from cache /home/rahthap/.npm/util-deprecate/1.0.2/package/package.json
+543 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is unbuild
+544 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json
+545 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims unbuild
+546 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims/package.json
+547 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray unbuild
+548 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray/package.json
+549 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args unbuild
+550 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args/package.json
+551 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits unbuild
+552 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json
+553 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder unbuild
+554 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json
+555 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate unbuild
+556 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate/package.json
+557 http 304 https://registry.npmjs.org/require_optional
+558 silly registry.get cb [ 304,
+558 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+558 silly registry.get     via: '1.1 varnish',
+558 silly registry.get     'cache-control': 'max-age=300',
+558 silly registry.get     etag: '"5940e121-fb1"',
+558 silly registry.get     age: '13',
+558 silly registry.get     connection: 'keep-alive',
+558 silly registry.get     'x-served-by': 'cache-sin18021-SIN',
+558 silly registry.get     'x-cache': 'HIT',
+558 silly registry.get     'x-cache-hits': '1',
+558 silly registry.get     'x-timer': 'S1508470805.102354,VS0,VE0',
+558 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+559 verbose etag require_optional from cache
+560 verbose tar unpack /home/rahthap/.npm/core-util-is/1.0.2/package.tgz
+561 verbose tar unpack /home/rahthap/.npm/buffer-shims/1.0.0/package.tgz
+562 verbose tar unpack /home/rahthap/.npm/isarray/1.0.0/package.tgz
+563 verbose tar unpack /home/rahthap/.npm/process-nextick-args/1.0.7/package.tgz
+564 verbose tar unpack /home/rahthap/.npm/inherits/2.0.3/package.tgz
+565 verbose tar unpack /home/rahthap/.npm/string_decoder/1.0.3/package.tgz
+566 verbose tar unpack /home/rahthap/.npm/util-deprecate/1.0.2/package.tgz
+567 silly lockFile 3bbcec66-stream-node-modules-core-util-is /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+568 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is /home/rahthap/.npm/3bbcec66-stream-node-modules-core-util-is.lock
+569 silly lockFile 3bb34012-stream-node-modules-buffer-shims /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims
+570 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims /home/rahthap/.npm/3bb34012-stream-node-modules-buffer-shims.lock
+571 silly lockFile 9b481eee-able-stream-node-modules-isarray /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+572 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray /home/rahthap/.npm/9b481eee-able-stream-node-modules-isarray.lock
+573 silly lockFile 0e9cdef9-ode-modules-process-nextick-args /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args
+574 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args /home/rahthap/.npm/0e9cdef9-ode-modules-process-nextick-args.lock
+575 silly lockFile 1a3a907f-ble-stream-node-modules-inherits /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+576 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits /home/rahthap/.npm/1a3a907f-ble-stream-node-modules-inherits.lock
+577 silly lockFile 87d95f16-ream-node-modules-string-decoder /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+578 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder /home/rahthap/.npm/87d95f16-ream-node-modules-string-decoder.lock
+579 silly lockFile b0c10ab7-ream-node-modules-util-deprecate /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate
+580 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate /home/rahthap/.npm/b0c10ab7-ream-node-modules-util-deprecate.lock
+581 silly gunzTarPerm modes [ '755', '644' ]
+582 silly gunzTarPerm modes [ '755', '644' ]
+583 silly gunzTarPerm modes [ '755', '644' ]
+584 silly gunzTarPerm modes [ '755', '644' ]
+585 silly gunzTarPerm modes [ '755', '644' ]
+586 silly gunzTarPerm modes [ '755', '644' ]
+587 silly gunzTarPerm modes [ '755', '644' ]
+588 silly addNameRange number 2 { name: 'require_optional',
+588 silly addNameRange   range: '>=1.0.0- <1.1.0-',
+588 silly addNameRange   hasData: true }
+589 silly addNameRange versions [ 'require_optional', [ '1.0.0', '1.0.1' ] ]
+590 verbose addNamed [ 'require_optional', '1.0.1' ]
+591 verbose addNamed [ '1.0.1', '1.0.1' ]
+592 silly lockFile f85dca30-require-optional-1-0-1 require_optional@1.0.1
+593 verbose lock require_optional@1.0.1 /home/rahthap/.npm/f85dca30-require-optional-1-0-1.lock
+594 verbose read json /home/rahthap/.npm/require_optional/1.0.1/package/package.json
+595 silly gunzTarPerm extractEntry package.json
+596 silly gunzTarPerm extractEntry package.json
+597 silly gunzTarPerm extractEntry package.json
+598 silly gunzTarPerm extractEntry package.json
+599 silly gunzTarPerm extractEntry package.json
+600 silly gunzTarPerm extractEntry package.json
+601 silly gunzTarPerm extractEntry package.json
+602 silly gunzTarPerm extractEntry README.md
+603 silly gunzTarPerm extractEntry LICENSE
+604 silly gunzTarPerm extractEntry index.js
+605 silly gunzTarPerm extractEntry readme.md
+606 silly gunzTarPerm extractEntry .npmignore
+607 silly gunzTarPerm extractEntry README.md
+608 silly gunzTarPerm extractEntry test.js
+609 silly gunzTarPerm extractEntry index.js
+610 silly gunzTarPerm extractEntry README.md
+611 silly gunzTarPerm extractEntry inherits.js
+612 silly gunzTarPerm extractEntry .npmignore
+613 silly gunzTarPerm extractEntry README.md
+614 silly gunzTarPerm extractEntry README.md
+615 silly gunzTarPerm extractEntry LICENSE
+616 silly lockFile f85dca30-require-optional-1-0-1 require_optional@1.0.1
+617 silly lockFile 82ae0771-require-optional-1-0-0 require_optional@~1.0.0
+618 silly gunzTarPerm extractEntry test.js
+619 silly gunzTarPerm extractEntry float.patch
+620 silly gunzTarPerm extractEntry test.js
+621 silly gunzTarPerm extractEntry index.js
+622 silly gunzTarPerm extractEntry .travis.yml
+623 silly gunzTarPerm extractEntry license.md
+624 silly gunzTarPerm extractEntry inherits_browser.js
+625 silly gunzTarPerm extractEntry LICENSE
+626 silly gunzTarPerm extractEntry lib/string_decoder.js
+627 silly gunzTarPerm extractEntry browser.js
+628 silly gunzTarPerm extractEntry node.js
+629 silly gunzTarPerm extractEntry History.md
+630 silly gunzTarPerm extractEntry lib/util.js
+631 silly gunzTarPerm extractEntry .travis.yml
+632 silly gunzTarPerm extractEntry Makefile
+633 silly gunzTarPerm extractEntry readme.md
+634 silly gunzTarPerm extractEntry component.json
+635 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims/package.json
+636 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json
+637 silly lockFile 3bb34012-stream-node-modules-buffer-shims /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims
+638 info preinstall buffer-shims@1.0.0
+639 silly lockFile 1a3a907f-ble-stream-node-modules-inherits /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+640 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims/package.json
+641 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args/package.json
+642 info preinstall inherits@2.0.3
+643 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json
+644 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate/package.json
+645 silly lockFile 0e9cdef9-ode-modules-process-nextick-args /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args
+646 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json
+647 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray/package.json
+648 silly lockFile b0c10ab7-ream-node-modules-util-deprecate /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate
+649 info preinstall process-nextick-args@1.0.7
+650 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args/package.json
+651 info preinstall util-deprecate@1.0.2
+652 silly lockFile 87d95f16-ream-node-modules-string-decoder /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+653 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate/package.json
+654 silly lockFile 9b481eee-able-stream-node-modules-isarray /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+655 info preinstall string_decoder@1.0.3
+656 info preinstall isarray@1.0.0
+657 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json
+658 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray/package.json
+659 http 304 https://registry.npmjs.org/bson
+660 silly registry.get cb [ 304,
+660 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+660 silly registry.get     via: '1.1 varnish',
+660 silly registry.get     'cache-control': 'max-age=300',
+660 silly registry.get     etag: '"59daa582-1af50"',
+660 silly registry.get     age: '13',
+660 silly registry.get     connection: 'keep-alive',
+660 silly registry.get     'x-served-by': 'cache-sin18031-SIN',
+660 silly registry.get     'x-cache': 'HIT',
+660 silly registry.get     'x-cache-hits': '1',
+660 silly registry.get     'x-timer': 'S1508470805.093047,VS0,VE1',
+660 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+661 verbose etag bson from cache
+662 verbose readDependencies using package.json deps
+663 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims/package.json
+664 verbose readDependencies using package.json deps
+665 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json
+666 verbose readDependencies using package.json deps
+667 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args/package.json
+668 verbose readDependencies using package.json deps
+669 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate/package.json
+670 verbose readDependencies using package.json deps
+671 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json
+672 verbose readDependencies using package.json deps
+673 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray/package.json
+674 verbose readDependencies using package.json deps
+675 silly resolved []
+676 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims
+677 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims
+678 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/buffer-shims/package.json
+679 verbose readDependencies using package.json deps
+680 silly resolved []
+681 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+682 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits
+683 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/inherits/package.json
+684 verbose readDependencies using package.json deps
+685 silly resolved []
+686 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args
+687 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args
+688 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/process-nextick-args/package.json
+689 verbose readDependencies using package.json deps
+690 silly resolved []
+691 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate
+692 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate
+693 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/util-deprecate/package.json
+694 verbose readDependencies using package.json deps
+695 verbose readDependencies using package.json deps
+696 silly resolved []
+697 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+698 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray
+699 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/isarray/package.json
+700 silly addNameRange number 2 { name: 'bson', range: '>=1.0.4- <1.1.0-', hasData: true }
+701 silly addNameRange versions [ 'bson',
+701 silly addNameRange   [ '0.0.1',
+701 silly addNameRange     '0.0.2',
+701 silly addNameRange     '0.0.3',
+701 silly addNameRange     '0.0.4',
+701 silly addNameRange     '0.0.5',
+701 silly addNameRange     '0.0.6',
+701 silly addNameRange     '0.0.7',
+701 silly addNameRange     '0.0.8',
+701 silly addNameRange     '0.0.9',
+701 silly addNameRange     '0.1.0',
+701 silly addNameRange     '0.1.1',
+701 silly addNameRange     '0.1.3',
+701 silly addNameRange     '0.1.4',
+701 silly addNameRange     '0.1.5',
+701 silly addNameRange     '0.1.6',
+701 silly addNameRange     '0.1.7',
+701 silly addNameRange     '0.1.8',
+701 silly addNameRange     '0.1.9',
+701 silly addNameRange     '0.2.0',
+701 silly addNameRange     '0.2.1',
+701 silly addNameRange     '0.2.2',
+701 silly addNameRange     '0.2.3',
+701 silly addNameRange     '0.2.4',
+701 silly addNameRange     '0.2.5',
+701 silly addNameRange     '0.2.6',
+701 silly addNameRange     '0.2.7',
+701 silly addNameRange     '0.2.8',
+701 silly addNameRange     '0.2.9',
+701 silly addNameRange     '0.2.10',
+701 silly addNameRange     '0.2.11',
+701 silly addNameRange     '0.2.12',
+701 silly addNameRange     '0.2.13',
+701 silly addNameRange     '0.2.14',
+701 silly addNameRange     '0.2.15',
+701 silly addNameRange     '0.2.16',
+701 silly addNameRange     '0.2.17',
+701 silly addNameRange     '0.2.18',
+701 silly addNameRange     '0.2.19',
+701 silly addNameRange     '0.2.20',
+701 silly addNameRange     '0.2.21',
+701 silly addNameRange     '0.3.0',
+701 silly addNameRange     '0.3.1',
+701 silly addNameRange     '0.3.2',
+701 silly addNameRange     '0.4.0',
+701 silly addNameRange     '0.4.1',
+701 silly addNameRange     '0.4.2',
+701 silly addNameRange     '0.4.3',
+701 silly addNameRange     '0.4.4',
+701 silly addNameRange     '0.4.5',
+701 silly addNameRange     '0.4.6',
+701 silly addNameRange     '0.4.7',
+701 silly addNameRange     '0.4.8',
+701 silly addNameRange     '0.2.22',
+701 silly addNameRange     '0.4.10',
+701 silly addNameRange     '0.4.12',
+701 silly addNameRange     '0.4.13',
+701 silly addNameRange     '0.4.14',
+701 silly addNameRange     '0.4.15',
+701 silly addNameRange     '0.4.16',
+701 silly addNameRange     '0.4.17',
+701 silly addNameRange     '0.4.18',
+701 silly addNameRange     '0.4.19',
+701 silly addNameRange     '0.4.20',
+701 silly addNameRange     '0.4.21',
+701 silly addNameRange     '0.4.22',
+701 silly addNameRange     '0.4.23',
+701 silly addNameRange     '0.5.0',
+701 silly addNameRange     '0.5.1',
+701 silly addNameRange     '0.5.2',
+701 silly addNameRange     '0.5.3',
+701 silly addNameRange     '0.5.4',
+701 silly addNameRange     '0.5.5',
+701 silly addNameRange     '0.5.6',
+701 silly addNameRange     '0.5.7',
+701 silly addNameRange     '1.0.0',
+701 silly addNameRange     '1.0.1',
+701 silly addNameRange     '1.0.2',
+701 silly addNameRange     '1.0.3',
+701 silly addNameRange     '1.0.4' ] ]
+702 verbose addNamed [ 'bson', '1.0.4' ]
+703 verbose addNamed [ '1.0.4', '1.0.4' ]
+704 silly lockFile a8e35bec-bson-1-0-4 bson@1.0.4
+705 verbose lock bson@1.0.4 /home/rahthap/.npm/a8e35bec-bson-1-0-4.lock
+706 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json
+707 verbose read json /home/rahthap/.npm/bson/1.0.4/package/package.json
+708 verbose linkStuff [ false,
+708 verbose linkStuff   false,
+708 verbose linkStuff   false,
+708 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+709 info linkStuff buffer-shims@1.0.0
+710 verbose linkBins buffer-shims@1.0.0
+711 verbose linkMans buffer-shims@1.0.0
+712 verbose rebuildBundles buffer-shims@1.0.0
+713 verbose linkStuff [ false,
+713 verbose linkStuff   false,
+713 verbose linkStuff   false,
+713 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+714 info linkStuff inherits@2.0.3
+715 verbose linkBins inherits@2.0.3
+716 verbose linkMans inherits@2.0.3
+717 verbose rebuildBundles inherits@2.0.3
+718 verbose linkStuff [ false,
+718 verbose linkStuff   false,
+718 verbose linkStuff   false,
+718 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+719 info linkStuff process-nextick-args@1.0.7
+720 verbose linkBins process-nextick-args@1.0.7
+721 verbose linkMans process-nextick-args@1.0.7
+722 verbose rebuildBundles process-nextick-args@1.0.7
+723 verbose linkStuff [ false,
+723 verbose linkStuff   false,
+723 verbose linkStuff   false,
+723 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+724 info linkStuff util-deprecate@1.0.2
+725 verbose linkBins util-deprecate@1.0.2
+726 verbose linkMans util-deprecate@1.0.2
+727 verbose rebuildBundles util-deprecate@1.0.2
+728 verbose linkStuff [ false,
+728 verbose linkStuff   false,
+728 verbose linkStuff   false,
+728 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+729 info linkStuff isarray@1.0.0
+730 verbose linkBins isarray@1.0.0
+731 verbose linkMans isarray@1.0.0
+732 verbose rebuildBundles isarray@1.0.0
+733 verbose cache add [ 'safe-buffer@~5.1.0', null ]
+734 silly cache add name=undefined spec="safe-buffer@~5.1.0" args=["safe-buffer@~5.1.0",null]
+735 verbose parsed url { pathname: 'safe-buffer@~5.1.0',
+735 verbose parsed url   path: 'safe-buffer@~5.1.0',
+735 verbose parsed url   href: 'safe-buffer@~5.1.0' }
+736 silly cache add name="safe-buffer" spec="~5.1.0" args=["safe-buffer","~5.1.0"]
+737 verbose parsed url { pathname: '~5.1.0', path: '~5.1.0', href: '~5.1.0' }
+738 verbose addNamed [ 'safe-buffer', '~5.1.0' ]
+739 verbose addNamed [ null, '>=5.1.0- <5.2.0-' ]
+740 silly lockFile 0d0c8724-safe-buffer-5-1-0 safe-buffer@~5.1.0
+741 verbose lock safe-buffer@~5.1.0 /home/rahthap/.npm/0d0c8724-safe-buffer-5-1-0.lock
+742 info install buffer-shims@1.0.0
+743 info install inherits@2.0.3
+744 info install process-nextick-args@1.0.7
+745 info install util-deprecate@1.0.2
+746 info install isarray@1.0.0
+747 silly addNameRange { name: 'safe-buffer',
+747 silly addNameRange   range: '>=5.1.0- <5.2.0-',
+747 silly addNameRange   hasData: false }
+748 info postinstall buffer-shims@1.0.0
+749 info postinstall inherits@2.0.3
+750 info postinstall process-nextick-args@1.0.7
+751 info postinstall util-deprecate@1.0.2
+752 info postinstall isarray@1.0.0
+753 verbose url raw safe-buffer
+754 verbose url resolving [ 'https://registry.npmjs.org/', './safe-buffer' ]
+755 verbose url resolved https://registry.npmjs.org/safe-buffer
+756 info trying registry request attempt 1 at 09:10:05
+757 verbose etag "59dc7a52-7a4a"
+758 http GET https://registry.npmjs.org/safe-buffer
+759 silly lockFile 3bbcec66-stream-node-modules-core-util-is /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+760 silly lockFile a8e35bec-bson-1-0-4 bson@1.0.4
+761 silly lockFile 7af3984f-bson-1-0-4 bson@~1.0.4
+762 silly resolved [ { name: 'require_optional',
+762 silly resolved     version: '1.0.1',
+762 silly resolved     description: 'Allows you declare optionalPeerDependencies that can be satisfied by the top level module but ignored if they are not.',
+762 silly resolved     main: 'index.js',
+762 silly resolved     scripts: { test: 'mocha' },
+762 silly resolved     repository:
+762 silly resolved      { type: 'git',
+762 silly resolved        url: 'https://github.com/christkv/require_optional.git' },
+762 silly resolved     keywords: [ 'optional', 'require', 'optionalPeerDependencies' ],
+762 silly resolved     author: { name: 'Christian Kvalheim Amor' },
+762 silly resolved     license: 'Apache-2.0',
+762 silly resolved     bugs: { url: 'https://github.com/christkv/require_optional/issues' },
+762 silly resolved     homepage: 'https://github.com/christkv/require_optional',
+762 silly resolved     dependencies: { semver: '^5.1.0', 'resolve-from': '^2.0.0' },
+762 silly resolved     devDependencies:
+762 silly resolved      { bson: '0.4.21',
+762 silly resolved        co: '4.6.0',
+762 silly resolved        'es6-promise': '^3.0.2',
+762 silly resolved        mocha: '^2.4.5' },
+762 silly resolved     peerOptionalDependencies:
+762 silly resolved      { co: '>=5.6.0',
+762 silly resolved        'es6-promise': '^3.0.2',
+762 silly resolved        'es6-promise2': '^4.0.2',
+762 silly resolved        bson: '0.4.21' },
+762 silly resolved     readme: '# require_optional\nWork around the problem that we do not have a optionalPeerDependencies concept in node.js making it a hassle to optionally include native modules\n',
+762 silly resolved     readmeFilename: 'README.md',
+762 silly resolved     _id: 'require_optional@1.0.1',
+762 silly resolved     _from: 'require_optional@~1.0.0' },
+762 silly resolved   { name: 'bson',
+762 silly resolved     description: 'A bson parser for node.js and the browser',
+762 silly resolved     keywords: [ 'mongodb', 'bson', 'parser' ],
+762 silly resolved     files: [ 'lib', 'index.js', 'browser_build', 'bower.json' ],
+762 silly resolved     version: '1.0.4',
+762 silly resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+762 silly resolved     contributors: [],
+762 silly resolved     repository: { type: 'git', url: 'mongodb/js-bson' },
+762 silly resolved     bugs:
+762 silly resolved      { mail: 'node-mongodb-native@googlegroups.com',
+762 silly resolved        url: 'https://github.com/mongodb/js-bson/issues' },
+762 silly resolved     devDependencies:
+762 silly resolved      { benchmark: '1.0.0',
+762 silly resolved        colors: '1.1.0',
+762 silly resolved        nodeunit: '0.9.0',
+762 silly resolved        'babel-core': '^6.14.0',
+762 silly resolved        'babel-loader': '^6.2.5',
+762 silly resolved        'babel-polyfill': '^6.13.0',
+762 silly resolved        'babel-preset-es2015': '^6.14.0',
+762 silly resolved        'babel-preset-stage-0': '^6.5.0',
+762 silly resolved        'babel-register': '^6.14.0',
+762 silly resolved        webpack: '^1.13.2',
+762 silly resolved        'webpack-polyfills-plugin': '0.0.9' },
+762 silly resolved     config: { native: false },
+762 silly resolved     main: './index',
+762 silly resolved     directories: { lib: './lib/bson' },
+762 silly resolved     engines: { node: '>=0.6.19' },
+762 silly resolved     scripts:
+762 silly resolved      { test: 'nodeunit ./test/node',
+762 silly resolved        build: 'webpack --config ./webpack.dist.config.js' },
+762 silly resolved     browser: 'lib/bson/bson.js',
+762 silly resolved     license: 'Apache-2.0',
+762 silly resolved     readme: '# BSON parser\n\nIf you don\'t yet know what BSON actually is, read [the spec](http://bsonspec.org).\n\nThe browser version of the BSON parser is compiled using webpack and the current\nversion is pre-compiled in the browser_build directory. To build a new version perform the following operation.\n\n```\nnpm install\nnpm run build\n```\n\nA simple example of how to use BSON in the browser:\n\n```html\n<script src="./browser_build/bson.js"></script>\n\n<script>\n  function start() {\n    // Get the Long type\n    var Long = BSON.Long;\n    // Create a bson parser instance\n    var bson = new BSON();\n\n    // Serialize document\n    var doc = { long: Long.fromNumber(100) }\n\n    // Serialize a document\n    var data = bson.serialize(doc)\n    // De serialize it again\n    var doc_2 = bson.deserialize(data)\n  }\n</script>\n```\n\nA simple example of how to use BSON in `node.js`:\n\n```js\n// Get BSON parser class\nvar BSON = require(\'bson\')\n// Get the Long type\nvar Long = BSON.Long;\n// Create a bson parser instance\nvar bson = new BSON();\n\n// Serialize document\nvar doc = { long: Long.fromNumber(100) }\n\n// Serialize a document\nvar data = bson.serialize(doc)\nconsole.log(\'data:\', data)\n\n// Deserialize the resulting Buffer\nvar doc_2 = bson.deserialize(data)\nconsole.log(\'doc_2:\', doc_2)\n```\n\n## Installation\n\n`npm install bson`\n\n## API\n\n### BSON types\n\nFor all BSON types documentation, please refer to the documentation for the mongodb driver.\n\nhttps://github.com/mongodb/node-mongodb-native\n\n### BSON serialization and deserialiation\n\n**`new BSON()`** - Creates a new BSON seralizer/deserializer you can use to serialize and deserialize BSON.\n\n#### BSON.serialize\n\nThe BSON serialize method takes a javascript object and an optional options object and returns a Node.js Buffer.\n\n  * BSON.serialize(object, options)\n    * @param {Object} object the Javascript object to serialize.\n    * @param {Boolean} [options.checkKeys=false] the serializer will check if keys are valid.\n    * @param {Boolean} [options.serializeFunctions=false] serialize the javascript. functions.\n    * @param {Boolean} [options.ignoreUndefined=true]\n    * @return {Buffer} returns a Buffer instance.\n\n#### BSON.serializeWithBufferAndIndex\n\nThe BSON serializeWithBufferAndIndex method takes an object, a target buffer instance and an optional options object and returns the end serialization index in the final buffer.\n\n  * BSON.serializeWithBufferAndIndex(object, buffer, options)\n    * @param {Object} object the Javascript object to serialize.\n    * @param {Buffer} buffer the Buffer you pre-allocated to store the serialized BSON object.\n    * @param {Boolean} [options.checkKeys=false] the serializer will check if keys are valid.\n    * @param {Boolean} [options.serializeFunctions=false] serialize the javascript functions.\n    * @param {Boolean} [options.ignoreUndefined=true] ignore undefined fields.\n    * @param {Number} [options.index=0] the index in the buffer where we wish to start serializing into.\n    * @return {Number} returns the index pointing to the last written byte in the buffer.\n\n#### BSON.calculateObjectSize\n\nThe BSON calculateObjectSize method takes a javascript object and an optional options object and returns the size of the BSON object.\n\n  * BSON.calculateObjectSize(object, options)\n    * @param {Object} object the Javascript object to serialize.\n    * @param {Boolean} [options.serializeFunctions=false] serialize the javascript. functions.\n    * @param {Boolean} [options.ignoreUndefined=true]\n    * @return {Buffer} returns a Buffer instance.\n\n#### BSON.deserialize\n\nThe BSON deserialize method takes a node.js Buffer and an optional options object and returns a deserialized Javascript object.\n\n  * BSON.deserialize(buffer, options)\n    * @param {Object} [options.evalFunctions=false] evaluate functions in the BSON document scoped to the object deserialized.\n    * @param {Object} [options.cacheFunctions=false] cache evaluated functions for reuse.\n    * @param {Object} [options.cacheFunctionsCrc32=false] use a crc32 code for caching, otherwise use the string of the function.\n    * @param {Object} [options.promoteLongs=true] when deserializing a Long will fit it into a Number if it\'s smaller than 53 bits\n    * @param {Object} [options.promoteBuffers=false] when deserializing a Binary will return it as a node.js Buffer instance.\n    * @param {Object} [options.promoteValues=false] when deserializing will promote BSON values to their Node.js closest equivalent types.\n    * @param {Object} [options.fieldsAsRaw=null] allow to specify if there what fields we wish to return as unserialized raw buffer.\n    * @param {Object} [options.bsonRegExp=false] return BSON regular expressions as BSONRegExp instances.\n    * @return {Number} returns the next index in the buffer after deserialization **x** numbers of documents.\n\n#### BSON.deserializeStream\n\nThe BSON deserializeStream method takes a node.js Buffer, startIndex and allow more control over deserialization of a Buffer containing concatenated BSON documents.\n\n  * BSON.deserializeStream(buffer, startIndex, numberOfDocuments, documents, docStartIndex, options)\n    * @param {Buffer} buffer the buffer containing the serialized set of BSON documents.\n    * @param {Number} startIndex the start index in the data Buffer where the deserialization is to start.\n    * @param {Number} numberOfDocuments number of documents to deserialize.\n    * @param {Array} documents an array where to store the deserialized documents.\n    * @param {Number} docStartIndex the index in the documents array from where to start inserting documents.\n    * @param {Object} [options.evalFunctions=false] evaluate functions in the BSON document scoped to the object deserialized.\n    * @param {Object} [options.cacheFunctions=false] cache evaluated functions for reuse.\n    * @param {Object} [options.cacheFunctionsCrc32=false] use a crc32 code for caching, otherwise use the string of the function.\n    * @param {Object} [options.promoteLongs=true] when deserializing a Long will fit it into a Number if it\'s smaller than 53 bits\n    * @param {Object} [options.promoteBuffers=false] when deserializing a Binary will return it as a node.js Buffer instance.\n    * @param {Object} [options.promoteValues=false] when deserializing will promote BSON values to their Node.js closest equivalent types.\n    * @param {Object} [options.fieldsAsRaw=null] allow to specify if there what fields we wish to return as unserialized raw buffer.\n    * @param {Object} [options.bsonRegExp=false] return BSON regular expressions as BSONRegExp instances.\n    * @return {Object} returns the deserialized Javascript Object.\n',
+762 silly resolved     readmeFilename: 'README.md',
+762 silly resolved     _id: 'bson@1.0.4',
+762 silly resolved     _from: 'bson@~1.0.4' } ]
+763 info install require_optional@1.0.1 into /home/rahthap/node_modules/mongodb/node_modules/mongodb-core
+764 info install bson@1.0.4 into /home/rahthap/node_modules/mongodb/node_modules/mongodb-core
+765 info installOne require_optional@1.0.1
+766 info installOne bson@1.0.4
+767 info preinstall core-util-is@1.0.2
+768 verbose from cache /home/rahthap/.npm/require_optional/1.0.1/package/package.json
+769 verbose from cache /home/rahthap/.npm/bson/1.0.4/package/package.json
+770 info /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional unbuild
+771 verbose read json /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/package.json
+772 info /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson unbuild
+773 verbose read json /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson/package.json
+774 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json
+775 verbose tar unpack /home/rahthap/.npm/require_optional/1.0.1/package.tgz
+776 verbose tar unpack /home/rahthap/.npm/bson/1.0.4/package.tgz
+777 silly lockFile ea11a94b-re-node-modules-require-optional /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+778 verbose lock /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional /home/rahthap/.npm/ea11a94b-re-node-modules-require-optional.lock
+779 silly lockFile 53b5123a-s-mongodb-core-node-modules-bson /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+780 verbose lock /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson /home/rahthap/.npm/53b5123a-s-mongodb-core-node-modules-bson.lock
+781 verbose readDependencies using package.json deps
+782 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json
+783 silly gunzTarPerm modes [ '755', '644' ]
+784 silly gunzTarPerm modes [ '755', '644' ]
+785 silly gunzTarPerm extractEntry package.json
+786 silly gunzTarPerm extractEntry package.json
+787 verbose readDependencies using package.json deps
+788 silly resolved []
+789 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+790 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is
+791 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/core-util-is/package.json
+792 silly gunzTarPerm extractEntry .npmignore
+793 silly gunzTarPerm extractEntry README.md
+794 silly gunzTarPerm extractEntry README.md
+795 silly gunzTarPerm extractEntry index.js
+796 verbose linkStuff [ false,
+796 verbose linkStuff   false,
+796 verbose linkStuff   false,
+796 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+797 info linkStuff core-util-is@1.0.2
+798 verbose linkBins core-util-is@1.0.2
+799 verbose linkMans core-util-is@1.0.2
+800 verbose rebuildBundles core-util-is@1.0.2
+801 silly gunzTarPerm extractEntry bower.json
+802 info install core-util-is@1.0.2
+803 info postinstall core-util-is@1.0.2
+804 silly gunzTarPerm extractEntry LICENSE
+805 silly gunzTarPerm extractEntry index.js
+806 silly gunzTarPerm extractEntry browser_build/package.json
+807 silly gunzTarPerm extractEntry browser_build/bson.js
+808 silly gunzTarPerm extractEntry .travis.yml
+809 silly gunzTarPerm extractEntry HISTORY.md
+810 silly gunzTarPerm extractEntry test/require_optional_tests.js
+811 silly gunzTarPerm extractEntry test/nestedTest/package.json
+812 silly gunzTarPerm extractEntry test/nestedTest/index.js
+813 silly gunzTarPerm extractEntry lib/bson/code.js
+814 silly gunzTarPerm extractEntry lib/bson/decimal128.js
+815 silly gunzTarPerm extractEntry lib/bson/db_ref.js
+816 silly gunzTarPerm extractEntry lib/bson/regexp.js
+817 silly gunzTarPerm extractEntry lib/bson/timestamp.js
+818 silly gunzTarPerm extractEntry lib/bson/objectid.js
+819 silly gunzTarPerm extractEntry lib/bson/float_parser.js
+820 silly gunzTarPerm extractEntry lib/bson/symbol.js
+821 silly gunzTarPerm extractEntry lib/bson/binary.js
+822 silly gunzTarPerm extractEntry lib/bson/double.js
+823 silly gunzTarPerm extractEntry lib/bson/bson.js
+824 silly gunzTarPerm extractEntry lib/bson/max_key.js
+825 silly gunzTarPerm extractEntry lib/bson/long.js
+826 silly gunzTarPerm extractEntry lib/bson/min_key.js
+827 silly gunzTarPerm extractEntry lib/bson/int_32.js
+828 silly gunzTarPerm extractEntry lib/bson/map.js
+829 silly gunzTarPerm extractEntry lib/bson/parser/calculate_size.js
+830 silly gunzTarPerm extractEntry lib/bson/parser/deserializer.js
+831 silly gunzTarPerm extractEntry lib/bson/parser/serializer.js
+832 verbose read json /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/package.json
+833 silly lockFile ea11a94b-re-node-modules-require-optional /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+834 info preinstall require_optional@1.0.1
+835 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/package.json
+836 verbose readDependencies using package.json deps
+837 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/package.json
+838 verbose readDependencies using package.json deps
+839 verbose cache add [ 'semver@^5.1.0', null ]
+840 silly cache add name=undefined spec="semver@^5.1.0" args=["semver@^5.1.0",null]
+841 verbose parsed url { pathname: 'semver@^5.1.0',
+841 verbose parsed url   path: 'semver@^5.1.0',
+841 verbose parsed url   href: 'semver@^5.1.0' }
+842 silly cache add name="semver" spec="^5.1.0" args=["semver","^5.1.0"]
+843 verbose parsed url { pathname: '^5.1.0', path: '^5.1.0', href: '^5.1.0' }
+844 verbose addNamed [ 'semver', '^5.1.0' ]
+845 verbose addNamed [ null, null ]
+846 silly lockFile 2d444a4b-semver-5-1-0 semver@^5.1.0
+847 verbose lock semver@^5.1.0 /home/rahthap/.npm/2d444a4b-semver-5-1-0.lock
+848 verbose cache add [ 'resolve-from@^2.0.0', null ]
+849 silly cache add name=undefined spec="resolve-from@^2.0.0" args=["resolve-from@^2.0.0",null]
+850 verbose parsed url { pathname: 'resolve-from@^2.0.0',
+850 verbose parsed url   path: 'resolve-from@^2.0.0',
+850 verbose parsed url   href: 'resolve-from@^2.0.0' }
+851 silly cache add name="resolve-from" spec="^2.0.0" args=["resolve-from","^2.0.0"]
+852 verbose parsed url { pathname: '^2.0.0', path: '^2.0.0', href: '^2.0.0' }
+853 verbose addNamed [ 'resolve-from', '^2.0.0' ]
+854 verbose addNamed [ null, null ]
+855 silly lockFile f135d8bc-resolve-from-2-0-0 resolve-from@^2.0.0
+856 verbose lock resolve-from@^2.0.0 /home/rahthap/.npm/f135d8bc-resolve-from-2-0-0.lock
+857 info addNameTag [ 'semver', '^5.1.0' ]
+858 info addNameTag [ 'resolve-from', '^2.0.0' ]
+859 verbose url raw semver
+860 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+861 verbose url resolved https://registry.npmjs.org/semver
+862 info trying registry request attempt 1 at 09:10:05
+863 verbose etag "59e6bb30-12773"
+864 http GET https://registry.npmjs.org/semver
+865 verbose url raw resolve-from
+866 verbose url resolving [ 'https://registry.npmjs.org/', './resolve-from' ]
+867 verbose url resolved https://registry.npmjs.org/resolve-from
+868 info trying registry request attempt 1 at 09:10:05
+869 verbose etag "59c62de0-2303"
+870 http GET https://registry.npmjs.org/resolve-from
+871 verbose read json /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson/package.json
+872 silly lockFile 53b5123a-s-mongodb-core-node-modules-bson /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+873 info preinstall bson@1.0.4
+874 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson/package.json
+875 verbose readDependencies using package.json deps
+876 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson/package.json
+877 verbose readDependencies using package.json deps
+878 silly resolved []
+879 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+880 info build /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson
+881 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson/package.json
+882 verbose linkStuff [ false,
+882 verbose linkStuff   false,
+882 verbose linkStuff   false,
+882 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules' ]
+883 info linkStuff bson@1.0.4
+884 verbose linkBins bson@1.0.4
+885 verbose linkMans bson@1.0.4
+886 verbose rebuildBundles bson@1.0.4
+887 info install bson@1.0.4
+888 info postinstall bson@1.0.4
+889 http 304 https://registry.npmjs.org/safe-buffer
+890 silly registry.get cb [ 304,
+890 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+890 silly registry.get     via: '1.1 varnish',
+890 silly registry.get     'cache-control': 'max-age=300',
+890 silly registry.get     etag: '"59dc7a52-7a4a"',
+890 silly registry.get     age: '34',
+890 silly registry.get     connection: 'keep-alive',
+890 silly registry.get     'x-served-by': 'cache-sin18033-SIN',
+890 silly registry.get     'x-cache': 'HIT',
+890 silly registry.get     'x-cache-hits': '1',
+890 silly registry.get     'x-timer': 'S1508470806.525054,VS0,VE1',
+890 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+891 verbose etag safe-buffer from cache
+892 silly addNameRange number 2 { name: 'safe-buffer', range: '>=5.1.0- <5.2.0-', hasData: true }
+893 silly addNameRange versions [ 'safe-buffer',
+893 silly addNameRange   [ '1.0.0',
+893 silly addNameRange     '2.0.0',
+893 silly addNameRange     '3.0.0',
+893 silly addNameRange     '4.0.0',
+893 silly addNameRange     '5.0.0',
+893 silly addNameRange     '5.0.1',
+893 silly addNameRange     '5.1.0',
+893 silly addNameRange     '5.1.1' ] ]
+894 verbose addNamed [ 'safe-buffer', '5.1.1' ]
+895 verbose addNamed [ '5.1.1', '5.1.1' ]
+896 silly lockFile 56731451-safe-buffer-5-1-1 safe-buffer@5.1.1
+897 verbose lock safe-buffer@5.1.1 /home/rahthap/.npm/56731451-safe-buffer-5-1-1.lock
+898 verbose read json /home/rahthap/.npm/safe-buffer/5.1.1/package/package.json
+899 silly lockFile 56731451-safe-buffer-5-1-1 safe-buffer@5.1.1
+900 silly lockFile 0d0c8724-safe-buffer-5-1-0 safe-buffer@~5.1.0
+901 silly resolved [ { name: 'safe-buffer',
+901 silly resolved     description: 'Safer Node.js Buffer API',
+901 silly resolved     version: '5.1.1',
+901 silly resolved     author:
+901 silly resolved      { name: 'Feross Aboukhadijeh',
+901 silly resolved        email: 'feross@feross.org',
+901 silly resolved        url: 'http://feross.org' },
+901 silly resolved     bugs: { url: 'https://github.com/feross/safe-buffer/issues' },
+901 silly resolved     devDependencies: { standard: '*', tape: '^4.0.0', zuul: '^3.0.0' },
+901 silly resolved     homepage: 'https://github.com/feross/safe-buffer',
+901 silly resolved     keywords:
+901 silly resolved      [ 'buffer',
+901 silly resolved        'buffer allocate',
+901 silly resolved        'node security',
+901 silly resolved        'safe',
+901 silly resolved        'safe-buffer',
+901 silly resolved        'security',
+901 silly resolved        'uninitialized' ],
+901 silly resolved     license: 'MIT',
+901 silly resolved     main: 'index.js',
+901 silly resolved     repository: { type: 'git', url: 'git://github.com/feross/safe-buffer.git' },
+901 silly resolved     scripts: { test: 'standard && tape test.js' },
+901 silly resolved     readme: '# safe-buffer [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]\n\n[travis-image]: https://img.shields.io/travis/feross/safe-buffer/master.svg\n[travis-url]: https://travis-ci.org/feross/safe-buffer\n[npm-image]: https://img.shields.io/npm/v/safe-buffer.svg\n[npm-url]: https://npmjs.org/package/safe-buffer\n[downloads-image]: https://img.shields.io/npm/dm/safe-buffer.svg\n[downloads-url]: https://npmjs.org/package/safe-buffer\n[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg\n[standard-url]: https://standardjs.com\n\n#### Safer Node.js Buffer API\n\n**Use the new Node.js Buffer APIs (`Buffer.from`, `Buffer.alloc`,\n`Buffer.allocUnsafe`, `Buffer.allocUnsafeSlow`) in all versions of Node.js.**\n\n**Uses the built-in implementation when available.**\n\n## install\n\n```\nnpm install safe-buffer\n```\n\n## usage\n\nThe goal of this package is to provide a safe replacement for the node.js `Buffer`.\n\nIt\'s a drop-in replacement for `Buffer`. You can use it by adding one `require` line to\nthe top of your node.js modules:\n\n```js\nvar Buffer = require(\'safe-buffer\').Buffer\n\n// Existing buffer code will continue to work without issues:\n\nnew Buffer(\'hey\', \'utf8\')\nnew Buffer([1, 2, 3], \'utf8\')\nnew Buffer(obj)\nnew Buffer(16) // create an uninitialized buffer (potentially unsafe)\n\n// But you can use these new explicit APIs to make clear what you want:\n\nBuffer.from(\'hey\', \'utf8\') // convert from many types to a Buffer\nBuffer.alloc(16) // create a zero-filled buffer (safe)\nBuffer.allocUnsafe(16) // create an uninitialized buffer (potentially unsafe)\n```\n\n## api\n\n### Class Method: Buffer.from(array)\n<!-- YAML\nadded: v3.0.0\n-->\n\n* `array` {Array}\n\nAllocates a new `Buffer` using an `array` of octets.\n\n```js\nconst buf = Buffer.from([0x62,0x75,0x66,0x66,0x65,0x72]);\n  // creates a new Buffer containing ASCII bytes\n  // [\'b\',\'u\',\'f\',\'f\',\'e\',\'r\']\n```\n\nA `TypeError` will be thrown if `array` is not an `Array`.\n\n### Class Method: Buffer.from(arrayBuffer[, byteOffset[, length]])\n<!-- YAML\nadded: v5.10.0\n-->\n\n* `arrayBuffer` {ArrayBuffer} The `.buffer` property of a `TypedArray` or\n  a `new ArrayBuffer()`\n* `byteOffset` {Number} Default: `0`\n* `length` {Number} Default: `arrayBuffer.length - byteOffset`\n\nWhen passed a reference to the `.buffer` property of a `TypedArray` instance,\nthe newly created `Buffer` will share the same allocated memory as the\nTypedArray.\n\n```js\nconst arr = new Uint16Array(2);\narr[0] = 5000;\narr[1] = 4000;\n\nconst buf = Buffer.from(arr.buffer); // shares the memory with arr;\n\nconsole.log(buf);\n  // Prints: <Buffer 88 13 a0 0f>\n\n// changing the TypedArray changes the Buffer also\narr[1] = 6000;\n\nconsole.log(buf);\n  // Prints: <Buffer 88 13 70 17>\n```\n\nThe optional `byteOffset` and `length` arguments specify a memory range within\nthe `arrayBuffer` that will be shared by the `Buffer`.\n\n```js\nconst ab = new ArrayBuffer(10);\nconst buf = Buffer.from(ab, 0, 2);\nconsole.log(buf.length);\n  // Prints: 2\n```\n\nA `TypeError` will be thrown if `arrayBuffer` is not an `ArrayBuffer`.\n\n### Class Method: Buffer.from(buffer)\n<!-- YAML\nadded: v3.0.0\n-->\n\n* `buffer` {Buffer}\n\nCopies the passed `buffer` data onto a new `Buffer` instance.\n\n```js\nconst buf1 = Buffer.from(\'buffer\');\nconst buf2 = Buffer.from(buf1);\n\nbuf1[0] = 0x61;\nconsole.log(buf1.toString());\n  // \'auffer\'\nconsole.log(buf2.toString());\n  // \'buffer\' (copy is not changed)\n```\n\nA `TypeError` will be thrown if `buffer` is not a `Buffer`.\n\n### Class Method: Buffer.from(str[, encoding])\n<!-- YAML\nadded: v5.10.0\n-->\n\n* `str` {String} String to encode.\n* `encoding` {String} Encoding to use, Default: `\'utf8\'`\n\nCreates a new `Buffer` containing the given JavaScript string `str`. If\nprovided, the `encoding` parameter identifies the character encoding.\nIf not provided, `encoding` defaults to `\'utf8\'`.\n\n```js\nconst buf1 = Buffer.from(\'this is a tést\');\nconsole.log(buf1.toString());\n  // prints: this is a tést\nconsole.log(buf1.toString(\'ascii\'));\n  // prints: this is a tC)st\n\nconst buf2 = Buffer.from(\'7468697320697320612074c3a97374\', \'hex\');\nconsole.log(buf2.toString());\n  // prints: this is a tést\n```\n\nA `TypeError` will be thrown if `str` is not a string.\n\n### Class Method: Buffer.alloc(size[, fill[, encoding]])\n<!-- YAML\nadded: v5.10.0\n-->\n\n* `size` {Number}\n* `fill` {Value} Default: `undefined`\n* `encoding` {String} Default: `utf8`\n\nAllocates a new `Buffer` of `size` bytes. If `fill` is `undefined`, the\n`Buffer` will be *zero-filled*.\n\n```js\nconst buf = Buffer.alloc(5);\nconsole.log(buf);\n  // <Buffer 00 00 00 00 00>\n```\n\nThe `size` must be less than or equal to the value of\n`require(\'buffer\').kMaxLength` (on 64-bit architectures, `kMaxLength` is\n`(2^31)-1`). Otherwise, a [`RangeError`][] is thrown. A zero-length Buffer will\nbe created if a `size` less than or equal to 0 is specified.\n\nIf `fill` is specified, the allocated `Buffer` will be initialized by calling\n`buf.fill(fill)`. See [`buf.fill()`][] for more information.\n\n```js\nconst buf = Buffer.alloc(5, \'a\');\nconsole.log(buf);\n  // <Buffer 61 61 61 61 61>\n```\n\nIf both `fill` and `encoding` are specified, the allocated `Buffer` will be\ninitialized by calling `buf.fill(fill, encoding)`. For example:\n\n```js\nconst buf = Buffer.alloc(11, \'aGVsbG8gd29ybGQ=\', \'base64\');\nconsole.log(buf);\n  // <Buffer 68 65 6c 6c 6f 20 77 6f 72 6c 64>\n```\n\nCalling `Buffer.alloc(size)` can be significantly slower than the alternative\n`Buffer.allocUnsafe(size)` but ensures that the newly created `Buffer` instance\ncontents will *never contain sensitive data*.\n\nA `TypeError` will be thrown if `size` is not a number.\n\n### Class Method: Buffer.allocUnsafe(size)\n<!-- YAML\nadded: v5.10.0\n-->\n\n* `size` {Number}\n\nAllocates a new *non-zero-filled* `Buffer` of `size` bytes.  The `size` must\nbe less than or equal to the value of `require(\'buffer\').kMaxLength` (on 64-bit\narchitectures, `kMaxLength` is `(2^31)-1`). Otherwise, a [`RangeError`][] is\nthrown. A zero-length Buffer will be created if a `size` less than or equal to\n0 is specified.\n\nThe underlying memory for `Buffer` instances created in this way is *not\ninitialized*. The contents of the newly created `Buffer` are unknown and\n*may contain sensitive data*. Use [`buf.fill(0)`][] to initialize such\n`Buffer` instances to zeroes.\n\n```js\nconst buf = Buffer.allocUnsafe(5);\nconsole.log(buf);\n  // <Buffer 78 e0 82 02 01>\n  // (octets will be different, every time)\nbuf.fill(0);\nconsole.log(buf);\n  // <Buffer 00 00 00 00 00>\n```\n\nA `TypeError` will be thrown if `size` is not a number.\n\nNote that the `Buffer` module pre-allocates an internal `Buffer` instance of\nsize `Buffer.poolSize` that is used as a pool for the fast allocation of new\n`Buffer` instances created using `Buffer.allocUnsafe(size)` (and the deprecated\n`new Buffer(size)` constructor) only when `size` is less than or equal to\n`Buffer.poolSize >> 1` (floor of `Buffer.poolSize` divided by two). The default\nvalue of `Buffer.poolSize` is `8192` but can be modified.\n\nUse of this pre-allocated internal memory pool is a key difference between\ncalling `Buffer.alloc(size, fill)` vs. `Buffer.allocUnsafe(size).fill(fill)`.\nSpecifically, `Buffer.alloc(size, fill)` will *never* use the internal Buffer\npool, while `Buffer.allocUnsafe(size).fill(fill)` *will* use the internal\nBuffer pool if `size` is less than or equal to half `Buffer.poolSize`. The\ndifference is subtle but can be important when an application requires the\nadditional performance that `Buffer.allocUnsafe(size)` provides.\n\n### Class Method: Buffer.allocUnsafeSlow(size)\n<!-- YAML\nadded: v5.10.0\n-->\n\n* `size` {Number}\n\nAllocates a new *non-zero-filled* and non-pooled `Buffer` of `size` bytes.  The\n`size` must be less than or equal to the value of\n`require(\'buffer\').kMaxLength` (on 64-bit architectures, `kMaxLength` is\n`(2^31)-1`). Otherwise, a [`RangeError`][] is thrown. A zero-length Buffer will\nbe created if a `size` less than or equal to 0 is specified.\n\nThe underlying memory for `Buffer` instances created in this way is *not\ninitialized*. The contents of the newly created `Buffer` are unknown and\n*may contain sensitive data*. Use [`buf.fill(0)`][] to initialize such\n`Buffer` instances to zeroes.\n\nWhen using `Buffer.allocUnsafe()` to allocate new `Buffer` instances,\nallocations under 4KB are, by default, sliced from a single pre-allocated\n`Buffer`. This allows applications to avoid the garbage collection overhead of\ncreating many individually allocated Buffers. This approach improves both\nperformance and memory usage by eliminating the need to track and cleanup as\nmany `Persistent` objects.\n\nHowever, in the case where a developer may need to retain a small chunk of\nmemory from a pool for an indeterminate amount of time, it may be appropriate\nto create an un-pooled Buffer instance using `Buffer.allocUnsafeSlow()` then\ncopy out the relevant bits.\n\n```js\n// need to keep around a few small chunks of memory\nconst store = [];\n\nsocket.on(\'readable\', () => {\n  const data = socket.read();\n  // allocate for retained data\n  const sb = Buffer.allocUnsafeSlow(10);\n  // copy the data into the new allocation\n  data.copy(sb, 0, 0, 10);\n  store.push(sb);\n});\n```\n\nUse of `Buffer.allocUnsafeSlow()` should be used only as a last resort *after*\na developer has observed undue memory retention in their applications.\n\nA `TypeError` will be thrown if `size` is not a number.\n\n### All the Rest\n\nThe rest of the `Buffer` API is exactly the same as in node.js.\n[See the docs](https://nodejs.org/api/buffer.html).\n\n\n## Related links\n\n- [Node.js issue: Buffer(number) is unsafe](https://github.com/nodejs/node/issues/4660)\n- [Node.js Enhancement Proposal: Buffer.from/Buffer.alloc/Buffer.zalloc/Buffer() soft-deprecate](https://github.com/nodejs/node-eps/pull/4)\n\n## Why is `Buffer` unsafe?\n\nToday, the node.js `Buffer` constructor is overloaded to handle many different argument\ntypes like `String`, `Array`, `Object`, `TypedArrayView` (`Uint8Array`, etc.),\n`ArrayBuffer`, and also `Number`.\n\nThe API is optimized for convenience: you can throw any type at it, and it will try to do\nwhat you want.\n\nBecause the Buffer constructor is so powerful, you often see code like this:\n\n```js\n// Convert UTF-8 strings to hex\nfunction toHex (str) {\n  return new Buffer(str).toString(\'hex\')\n}\n```\n\n***But what happens if `toHex` is called with a `Number` argument?***\n\n### Remote Memory Disclosure\n\nIf an attacker can make your program call the `Buffer` constructor with a `Number`\nargument, then they can make it allocate uninitialized memory from the node.js process.\nThis could potentially disclose TLS private keys, user data, or database passwords.\n\nWhen the `Buffer` constructor is passed a `Number` argument, it returns an\n**UNINITIALIZED** block of memory of the specified `size`. When you create a `Buffer` like\nthis, you **MUST** overwrite the contents before returning it to the user.\n\nFrom the [node.js docs](https://nodejs.org/api/buffer.html#buffer_new_buffer_size):\n\n> `new Buffer(size)`\n>\n> - `size` Number\n>\n> The underlying memory for `Buffer` instances created in this way is not initialized.\n> **The contents of a newly created `Buffer` are unknown and could contain sensitive\n> data.** Use `buf.fill(0)` to initialize a Buffer to zeroes.\n\n(Emphasis our own.)\n\nWhenever the programmer intended to create an uninitialized `Buffer` you often see code\nlike this:\n\n```js\nvar buf = new Buffer(16)\n\n// Immediately overwrite the uninitialized buffer with data from another buffer\nfor (var i = 0; i < buf.length; i++) {\n  buf[i] = otherBuf[i]\n}\n```\n\n\n### Would this ever be a problem in real code?\n\nYes. It\'s surprisingly common to forget to check the type of your variables in a\ndynamically-typed language like JavaScript.\n\nUsually the consequences of assuming the wrong type is that your program crashes with an\nuncaught exception. But the failure mode for forgetting to check the type of arguments to\nthe `Buffer` constructor is more catastrophic.\n\nHere\'s an example of a vulnerable service that takes a JSON payload and converts it to\nhex:\n\n```js\n// Take a JSON payload {str: "some string"} and convert it to hex\nvar server = http.createServer(function (req, res) {\n  var data = \'\'\n  req.setEncoding(\'utf8\')\n  req.on(\'data\', function (chunk) {\n    data += chunk\n  })\n  req.on(\'end\', function () {\n    var body = JSON.parse(data)\n    res.end(new Buffer(body.str).toString(\'hex\'))\n  })\n})\n\nserver.listen(8080)\n```\n\nIn this example, an http client just has to send:\n\n```json\n{\n  "str": 1000\n}\n```\n\nand it will get back 1,000 bytes of uninitialized memory from the server.\n\nThis is a very serious bug. It\'s similar in severity to the\n[the Heartbleed bug](http://heartbleed.com/) that allowed disclosure of OpenSSL process\nmemory by remote attackers.\n\n\n### Which real-world packages were vulnerable?\n\n#### [`bittorrent-dht`](https://www.npmjs.com/package/bittorrent-dht)\n\n[Mathias Buus](https://github.com/mafintosh) and I\n([Feross Aboukhadijeh](http://feross.org/)) found this issue in one of our own packages,\n[`bittorrent-dht`](https://www.npmjs.com/package/bittorrent-dht). The bug would allow\nanyone on the internet to send a series of messages to a user of `bittorrent-dht` and get\nthem to reveal 20 bytes at a time of uninitialized memory from the node.js process.\n\nHere\'s\n[the commit](https://github.com/feross/bittorrent-dht/commit/6c7da04025d5633699800a99ec3fbadf70ad35b8)\nthat fixed it. We released a new fixed version, created a\n[Node Security Project disclosure](https://nodesecurity.io/advisories/68), and deprecated all\nvulnerable versions on npm so users will get a warning to upgrade to a newer version.\n\n#### [`ws`](https://www.npmjs.com/package/ws)\n\nThat got us wondering if there were other vulnerable packages. Sure enough, within a short\nperiod of time, we found the same issue in [`ws`](https://www.npmjs.com/package/ws), the\nmost popular WebSocket implementation in node.js.\n\nIf certain APIs were called with `Number` parameters instead of `String` or `Buffer` as\nexpected, then uninitialized server memory would be disclosed to the remote peer.\n\nThese were the vulnerable methods:\n\n```js\nsocket.send(number)\nsocket.ping(number)\nsocket.pong(number)\n```\n\nHere\'s a vulnerable socket server with some echo functionality:\n\n```js\nserver.on(\'connection\', function (socket) {\n  socket.on(\'message\', function (message) {\n    message = JSON.parse(message)\n    if (message.type === \'echo\') {\n      socket.send(message.data) // send back the user\'s message\n    }\n  })\n})\n```\n\n`socket.send(number)` called on the server, will disclose server memory.\n\nHere\'s [the release](https://github.com/websockets/ws/releases/tag/1.0.1) where the issue\nwas fixed, with a more detailed explanation. Props to\n[Arnout Kazemier](https://github.com/3rd-Eden) for the quick fix. Here\'s the\n[Node Security Project disclosure](https://nodesecurity.io/advisories/67).\n\n\n### What\'s the solution?\n\nIt\'s important that node.js offers a fast way to get memory otherwise performance-critical\napplications would needlessly get a lot slower.\n\nBut we need a better way to *signal our intent* as programmers. **When we want\nuninitialized memory, we should request it explicitly.**\n\nSensitive functionality should not be packed into a developer-friendly API that loosely\naccepts many different types. This type of API encourages the lazy practice of passing\nvariables in without checking the type very carefully.\n\n#### A new API: `Buffer.allocUnsafe(number)`\n\nThe functionality of creating buffers with uninitialized memory should be part of another\nAPI. We propose `Buffer.allocUnsafe(number)`. This way, it\'s not part of an API that\nfrequently gets user input of all sorts of different types passed into it.\n\n```js\nvar buf = Buffer.allocUnsafe(16) // careful, uninitialized memory!\n\n// Immediately overwrite the uninitialized buffer with data from another buffer\nfor (var i = 0; i < buf.length; i++) {\n  buf[i] = otherBuf[i]\n}\n```\n\n\n### How do we fix node.js core?\n\nWe sent [a PR to node.js core](https://github.com/nodejs/node/pull/4514) (merged as\n`semver-major`) which defends against one case:\n\n```js\nvar str = 16\nnew Buffer(str, \'utf8\')\n```\n\nIn this situation, it\'s implied that the programmer intended the first argument to be a\nstring, since they passed an encoding as a second argument. Today, node.js will allocate\nuninitialized memory in the case of `new Buffer(number, encoding)`, which is probably not\nwhat the programmer intended.\n\nBut this is only a partial solution, since if the programmer does `new Buffer(variable)`\n(without an `encoding` parameter) there\'s no way to know what they intended. If `variable`\nis sometimes a number, then uninitialized memory will sometimes be returned.\n\n### What\'s the real long-term fix?\n\nWe could deprecate and remove `new Buffer(number)` and use `Buffer.allocUnsafe(number)` when\nwe need uninitialized memory. But that would break 1000s of packages.\n\n~~We believe the best solution is to:~~\n\n~~1. Change `new Buffer(number)` to return safe, zeroed-out memory~~\n\n~~2. Create a new API for creating uninitialized Buffers. We propose: `Buffer.allocUnsafe(number)`~~\n\n#### Update\n\nWe now support adding three new APIs:\n\n- `Buffer.from(value)` - convert from any type to a buffer\n- `Buffer.alloc(size)` - create a zero-filled buffer\n- `Buffer.allocUnsafe(size)` - create an uninitialized buffer with given size\n\nThis solves the core problem that affected `ws` and `bittorrent-dht` which is\n`Buffer(variable)` getting tricked into taking a number argument.\n\nThis way, existing code continues working and the impact on the npm ecosystem will be\nminimal. Over time, npm maintainers can migrate performance-critical code to use\n`Buffer.allocUnsafe(number)` instead of `new Buffer(number)`.\n\n\n### Conclusion\n\nWe think there\'s a serious design issue with the `Buffer` API as it exists today. It\npromotes insecure software by putting high-risk functionality into a convenient API\nwith friendly "developer ergonomics".\n\nThis wasn\'t merely a theoretical exercise because we found the issue in some of the\nmost popular npm packages.\n\nFortunately, there\'s an easy fix that can be applied today. Use `safe-buffer` in place of\n`buffer`.\n\n```js\nvar Buffer = require(\'safe-buffer\').Buffer\n```\n\nEventually, we hope that node.js core can switch to this new, safer behavior. We believe\nthe impact on the ecosystem would be minimal since it\'s not a breaking change.\nWell-maintained, popular packages would be updated to use `Buffer.alloc` quickly, while\nolder, insecure packages would magically become safe from this attack vector.\n\n\n## links\n\n- [Node.js PR: buffer: throw if both length and enc are passed](https://github.com/nodejs/node/pull/4514)\n- [Node Security Project disclosure for `ws`](https://nodesecurity.io/advisories/67)\n- [Node Security Project disclosure for`bittorrent-dht`](https://nodesecurity.io/advisories/68)\n\n\n## credit\n\nThe original issues in `bittorrent-dht`\n([disclosure](https://nodesecurity.io/advisories/68)) and\n`ws` ([disclosure](https://nodesecurity.io/advisories/67)) were discovered by\n[Mathias Buus](https://github.com/mafintosh) and\n[Feross Aboukhadijeh](http://feross.org/).\n\nThanks to [Adam Baldwin](https://github.com/evilpacket) for helping disclose these issues\nand for his work running the [Node Security Project](https://nodesecurity.io/).\n\nThanks to [John Hiesey](https://github.com/jhiesey) for proofreading this README and\nauditing the code.\n\n\n## license\n\nMIT. Copyright (C) [Feross Aboukhadijeh](http://feross.org)\n',
+901 silly resolved     readmeFilename: 'README.md',
+901 silly resolved     _id: 'safe-buffer@5.1.1',
+901 silly resolved     _from: 'safe-buffer@~5.1.0' } ]
+902 info install safe-buffer@5.1.1 into /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+903 info installOne safe-buffer@5.1.1
+904 verbose from cache /home/rahthap/.npm/safe-buffer/5.1.1/package/package.json
+905 info /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer unbuild
+906 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer/package.json
+907 verbose tar unpack /home/rahthap/.npm/safe-buffer/5.1.1/package.tgz
+908 silly lockFile 36a59bdb-decoder-node-modules-safe-buffer /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer
+909 verbose lock /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer /home/rahthap/.npm/36a59bdb-decoder-node-modules-safe-buffer.lock
+910 silly gunzTarPerm modes [ '755', '644' ]
+911 silly gunzTarPerm extractEntry package.json
+912 silly gunzTarPerm extractEntry README.md
+913 silly gunzTarPerm extractEntry LICENSE
+914 silly gunzTarPerm extractEntry test.js
+915 silly gunzTarPerm extractEntry index.js
+916 silly gunzTarPerm extractEntry .travis.yml
+917 verbose read json /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer/package.json
+918 silly lockFile 36a59bdb-decoder-node-modules-safe-buffer /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer
+919 info preinstall safe-buffer@5.1.1
+920 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer/package.json
+921 verbose readDependencies using package.json deps
+922 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer/package.json
+923 verbose readDependencies using package.json deps
+924 silly resolved []
+925 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer
+926 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer
+927 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules/safe-buffer/package.json
+928 verbose linkStuff [ false,
+928 verbose linkStuff   false,
+928 verbose linkStuff   false,
+928 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/node_modules' ]
+929 info linkStuff safe-buffer@5.1.1
+930 verbose linkBins safe-buffer@5.1.1
+931 verbose linkMans safe-buffer@5.1.1
+932 verbose rebuildBundles safe-buffer@5.1.1
+933 info install safe-buffer@5.1.1
+934 info postinstall safe-buffer@5.1.1
+935 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+936 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder
+937 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules/string_decoder/package.json
+938 verbose linkStuff [ false,
+938 verbose linkStuff   false,
+938 verbose linkStuff   false,
+938 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules/readable-stream/node_modules' ]
+939 info linkStuff string_decoder@1.0.3
+940 verbose linkBins string_decoder@1.0.3
+941 verbose linkMans string_decoder@1.0.3
+942 verbose rebuildBundles string_decoder@1.0.3
+943 verbose rebuildBundles [ 'safe-buffer' ]
+944 info install string_decoder@1.0.3
+945 info postinstall string_decoder@1.0.3
+946 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+947 info build /home/rahthap/node_modules/mongodb/node_modules/readable-stream
+948 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/readable-stream/package.json
+949 verbose linkStuff [ false,
+949 verbose linkStuff   false,
+949 verbose linkStuff   false,
+949 verbose linkStuff   '/home/rahthap/node_modules/mongodb/node_modules' ]
+950 info linkStuff readable-stream@2.2.7
+951 verbose linkBins readable-stream@2.2.7
+952 verbose linkMans readable-stream@2.2.7
+953 verbose rebuildBundles readable-stream@2.2.7
+954 verbose rebuildBundles [ 'core-util-is',
+954 verbose rebuildBundles   'isarray',
+954 verbose rebuildBundles   'process-nextick-args',
+954 verbose rebuildBundles   'inherits',
+954 verbose rebuildBundles   'string_decoder',
+954 verbose rebuildBundles   'util-deprecate',
+954 verbose rebuildBundles   'buffer-shims' ]
+955 info install readable-stream@2.2.7
+956 info postinstall readable-stream@2.2.7
+957 http 304 https://registry.npmjs.org/semver
+958 silly registry.get cb [ 304,
+958 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+958 silly registry.get     via: '1.1 varnish',
+958 silly registry.get     'cache-control': 'max-age=300',
+958 silly registry.get     etag: '"59e6bb30-12773"',
+958 silly registry.get     age: '11',
+958 silly registry.get     connection: 'keep-alive',
+958 silly registry.get     'x-served-by': 'cache-sin18028-SIN',
+958 silly registry.get     'x-cache': 'HIT',
+958 silly registry.get     'x-cache-hits': '1',
+958 silly registry.get     'x-timer': 'S1508470806.590919,VS0,VE0',
+958 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+959 verbose etag semver from cache
+960 http 304 https://registry.npmjs.org/resolve-from
+961 silly registry.get cb [ 304,
+961 silly registry.get   { date: 'Fri, 20 Oct 2017 03:40:05 GMT',
+961 silly registry.get     via: '1.1 varnish',
+961 silly registry.get     'cache-control': 'max-age=300',
+961 silly registry.get     etag: '"59c62de0-2303"',
+961 silly registry.get     age: '11',
+961 silly registry.get     connection: 'keep-alive',
+961 silly registry.get     'x-served-by': 'cache-sin18031-SIN',
+961 silly registry.get     'x-cache': 'HIT',
+961 silly registry.get     'x-cache-hits': '1',
+961 silly registry.get     'x-timer': 'S1508470806.590677,VS0,VE1',
+961 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+962 verbose etag resolve-from from cache
+963 silly lockFile 2d444a4b-semver-5-1-0 semver@^5.1.0
+964 silly lockFile f135d8bc-resolve-from-2-0-0 resolve-from@^2.0.0
+965 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional
+966 info /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional unbuild
+967 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules/require_optional/package.json
+968 info preuninstall require_optional@1.0.1
+969 info uninstall require_optional@1.0.1
+970 verbose false,/home/rahthap/node_modules,/home/rahthap/node_modules/mongodb/node_modules/mongodb-core/node_modules unbuild require_optional@1.0.1
+971 info postuninstall require_optional@1.0.1
+972 verbose about to build /home/rahthap/node_modules/mongodb/node_modules/mongodb-core
+973 info /home/rahthap/node_modules/mongodb/node_modules/mongodb-core unbuild
+974 verbose from cache /home/rahthap/node_modules/mongodb/node_modules/mongodb-core/package.json
+975 info preuninstall mongodb-core@2.1.17
+976 info uninstall mongodb-core@2.1.17
+977 verbose false,/home/rahthap/node_modules,/home/rahthap/node_modules/mongodb/node_modules unbuild mongodb-core@2.1.17
+978 info postuninstall mongodb-core@2.1.17
+979 verbose about to build /home/rahthap/node_modules/mongodb
+980 info /home/rahthap/node_modules/mongodb unbuild
+981 verbose from cache /home/rahthap/node_modules/mongodb/package.json
+982 info preuninstall mongodb@2.2.33
+983 info uninstall mongodb@2.2.33
+984 verbose true,/home/rahthap/node_modules,/home/rahthap/node_modules unbuild mongodb@2.2.33
+985 info postuninstall mongodb@2.2.33
+986 error Error: No compatible version found: semver@'^5.1.0'
+986 error Valid install targets:
+986 error ["1.0.0","1.0.1","1.0.2","1.0.3","1.0.4","1.0.5","1.0.6","1.0.7","1.0.8","1.0.9","1.0.10","1.0.11","1.0.12","1.0.13","1.0.14","1.1.0","1.1.1","1.1.2","1.1.3","1.1.4","2.0.0-alpha","2.0.0-beta","2.0.1","2.0.2","2.0.3","2.0.4","2.0.5","2.0.6","2.0.7","2.0.8","2.0.9","2.0.10","2.0.11","2.1.0","2.2.0","2.2.1","2.3.0","2.3.1","2.3.2","3.0.0","3.0.1","4.0.0","4.0.2","4.0.3","4.1.0","4.1.1","4.2.0","4.2.1","4.2.2","4.3.0","4.3.1","4.3.2","4.3.3","4.3.4","4.3.5","4.3.6","5.0.0","5.0.1","5.0.2","5.0.3","5.1.0","5.1.1","5.2.0","5.3.0","5.4.0","5.4.1"]
+986 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:563:10)
+986 error     at /usr/local/lib/node_modules/npm/lib/cache.js:478:10
+986 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+986 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:218:7
+986 error     at Object.oncomplete (fs.js:297:15)
+987 error If you need help, you may report this log at:
+987 error     <http://github.com/isaacs/npm/issues>
+987 error or email it to:
+987 error     <npm-@googlegroups.com>
+988 error System Linux 3.13.0-24-generic
+989 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mongodb" "--save"
+990 error cwd /home/rahthap/Documents/Sem7/CSD402:Internet_WebSystems/Labs/Bootstrap/js
+991 error node -v v0.8.14
+992 error npm -v 1.1.65
+993 verbose exit [ 1, true ]
