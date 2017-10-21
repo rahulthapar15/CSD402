@@ -51,29 +51,35 @@ a{
   display: block;
 }
 .p0 {
-  /* background: #9575CD; */
-  background: linear-gradient(135deg, #EC407A, #AB47BC,#EF5350);
+   background: #EC407A; 
+  /* background: linear-gradient(135deg, #EC407A, #FFCDD2); */
 }
 .p1 {
-  /* background: #616161; */
-  background: linear-gradient(135deg, #424242, #757575,#BDBDBD);
+   background: #518BC0; 
+  /* background: linear-gradient(135deg, #518BC0, #8BC5B8); */
 }
 .p2 {
-  /* background: #43A047; */
-  background: linear-gradient(135deg, #424242, #757575,#BDBDBD);
+   background: #424242; 
+  /* background: linear-gradient(135deg, #424242, #757575,#BDBDBD); */
 }
 
 kbd{
     background: #00E676;
-    border-radius: 20px;
+    border-radius: 3px;
     padding: 0.5%;
     padding-left: 1%;
     padding-right: 1%;
-    box-shadow: 0px 0px 5px #00E676;
     font-size: 14px;
     letter-spacing: 2px;
     margin-left: 30px;
     
+}
+.h-divider{
+ margin-top:5px;
+ margin-bottom:5px;
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
 }
 
 @media (min-device-width: 768px) {
