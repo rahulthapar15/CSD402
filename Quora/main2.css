@@ -4,12 +4,69 @@ body{
 .navbar-light{
   background: linear-gradient(to right, #EF5350, #EF9A9A,#FFCDD2);
 }
-
-
+.navbar-brand{
+    font-size: 20px;
+    color: #fff;
+}
 a{
     color: black;
     font-size: 17px;
 }
 .btn{
     margin-left: 320px;
-}  
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.wrapper {
+  margin: 3em auto;
+  max-width: 960px;
+  padding: 0 1em;
+}
+.post {
+  height: 160px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 300px;
+  padding: 2em;
+  margin: 1.2em;
+  border-radius: .5em;
+  transition: transform .5s;
+}
+.post p {
+  font-size: 1em;
+  font-weight: 500;
+  backface-visibility: hidden;
+}
+
+.post a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.p0 {
+  background: #181717;
+}
+
+@media (min-device-width: 768px) {
+  .post {
+    flex: 1 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-intro h2 {
+    font-size: 2em;
+  }
+  .post {
+    flex: 1 150px;
+  }
+  .post:hover {
+    transform: scale(1.1);
+  }
+}
