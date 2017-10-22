@@ -24,16 +24,18 @@
       <li><a href="#">Answer</a></li>
       <li><a href="#">Notifications</a></li>
     </ul>
+
     <form class="navbar-form navbar-left">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Quora">
+        <input type="text" class="form-control" id="category" placeholder="Add Category">
         <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
+          <button class="btn btn-default" id="submitBtn" onclick="submitClick()" type="submit">
             <i class="glyphicon glyphicon-search"></i>
           </button>
         </div>
       </div>
     </form>
+
     <div class="input-group-btn">
           <button class="btn btn-danger navbar-btn">Ask Question</button>
           </button>
@@ -42,7 +44,6 @@
   </div>
 </nav>
         <!-- Navigation END -->
-        <div class="feed-container"></div>
 
 <div class="wrapper">
     <p><kbd>TRENDING</kbd></p>
@@ -63,9 +64,33 @@
 </div>
 
   <div class="h-divider"></div>
+<div class="wrapper">
+<div class="post p0">
+          <a href="#" target="_blank">
+          <p>What is Google Percolator?</p></a>
+        </div>
+        <div class="post p0">
+          <a href="#" target="_blank">
+          <p>What is Google Percolator?</p></a>
+        </div>
+</div>
 
 
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC3Uh27wpFlXuAWIFyjhKWGRZCDe3eXIrg",
+    authDomain: "quora-1504509256380.firebaseapp.com",
+    databaseURL: "https://quora-1504509256380.firebaseio.com",
+    projectId: "quora-1504509256380",
+    storageBucket: "",
+    messagingSenderId: "684485686711"
+  };
+  firebase.initializeApp(config);
+</script>
 
+<script src="connect.js"></script>
 
 </body>
 </html>

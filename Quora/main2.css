@@ -82,30 +82,7 @@ kbd{
  margin-left: 10%;
  border-top:1px solid gray;
 }
-.feed-container
-{
-    position: fixed;
-    z-index: 10;
-    top:3;
-    left: 10;
-    margin-left: 10px;
-    background: black;
-    width: 30%;
-    height: 100%;
-}
-@media (max-width:1200px)
-{
-    .feed-container
-    {
-        position: relative;
-        z-index: 10;
-        top: 3;
-        left: 10;
 
-        width: 30%;
-        height: 100vh;
-    }
-}
 @media (min-device-width: 768px) {
   .post {
     flex: 1 200px;
