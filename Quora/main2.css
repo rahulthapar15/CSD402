@@ -26,6 +26,13 @@ a{
   max-width: 960px;
   padding: 0 1em;
 }
+.wrapper_1 {
+  margin: 3em auto 2px auto;
+  max-width: 960px;
+  max-height: 350px;
+  padding: 1em;
+}
+
 
 .post {
   height: 160px; 

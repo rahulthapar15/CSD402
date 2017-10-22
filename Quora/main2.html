@@ -30,7 +30,7 @@
         <input type="text" class="form-control" id="category" placeholder="Add Category">
         <div class="input-group-btn">
           <button class="btn btn-default" id="submitBtn" onclick="submitClick()" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
+            <i class="glyphicon glyphicon-plus"></i>
           </button>
         </div>
       </div>
@@ -44,11 +44,36 @@
     </div>
 </nav>
         <!-- Navigation END -->
-
+<div class="wrapper_1">
 <div class="panel panel-primary">
   <div class="panel-heading">Categories</div>
     <div id="panel_body" class="panel-body"></div>
   </div>
+
+  <div id="map" style="width:900px;height:200px;background:yellow"></div>
+  <script>
+    function initMap() {
+        var myLatLng = {lat: 28.5258, lng: 77.5745};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_GrrRmRI01MM&callback=initMap">
+</script>
+</div>
+
+  
 
 <div class="wrapper">
     <p><kbd>TRENDING</kbd></p>
