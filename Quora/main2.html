@@ -63,8 +63,11 @@
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
-          title: 'Hello World!'
+          label :{text: 'You are here!', color: "black"},
+          title: 'Your Location'
         });
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+
       }
 
 </script>
