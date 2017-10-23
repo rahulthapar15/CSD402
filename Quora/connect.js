@@ -7,16 +7,17 @@ var firebase_ref = firebase.database().ref();
 
 
         var cat_name = snap.val();
-        $("#panel_body").append(cat_name+", ");
+        var btn = document.createElement("BUTTON");
+    var t = document.createTextNode(cat_name);
+    btn.appendChild(t);
+    // document.body.appendChild(btn);
+        $("#panel_body").append(btn);
 
 
     });
 
 var category = document.getElementById("category");
 var submit = document.getElementById("submitBtn");
-
-var dropdown = document.getElementById("menu1");
-// var opt = document.createElement("option");
 
 
 
