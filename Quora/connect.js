@@ -21,6 +21,19 @@ var firebase_ref = firebase.database().ref();
 
     });
 
+    var myques_ref = firebase.database().ref().child("Questions").child("My Questions");
+    myques_ref.on("child_added",snap =>{
+
+        var qu = snap.val();
+        // var an = document.createElement("BUTTON");
+        // var te = document.createTextNode("View Answers");
+        // an.appendChild(te);
+
+        $("#table_body").append("<tr><td>"+ qu + "</td><td><button>View Answers</button></td></tr>");
+
+
+    });
+
 var category = document.getElementById("category");
 var submit = document.getElementById("submitBtn");
 var question = document.getElementById("question");
@@ -39,6 +52,6 @@ function submitClick(){
 function submitQuestion(){
 
     var mQuestion = question.value;
-    firebase_ref.child("Questions").push().set(mQuestion);
+    firebase_ref.child("Questions").child("My Questions").push().set(mQuestion);
     $('#askQuestion').modal('hide');
 }
