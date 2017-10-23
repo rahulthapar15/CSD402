@@ -22,6 +22,50 @@ a{
   flex-wrap: wrap;
   margin: auto;
 }
+.feeds {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 99%;
+}
+.feed {
+  height: 160px; 
+  display: flex;
+  max-width: 99%;
+  flex-direction: column;
+  flex: 1 300px;
+  padding: 0.1em;
+  margin: 1.2em;
+  margin-top: 2px;
+  border-radius: .5em;
+  transition: transform .5s;
+}
+.feed h1{
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  backface-visibility: hidden;
+  text-align: center;
+}
+.feed button{
+  display: flex;
+  height: 40px;
+  width: 90px;
+  padding: 1%;
+  border-radius: 8px;
+  margin: 1.2em;
+}
+.feed p {
+  font-size: 1em;
+  font-weight: 500;
+  backface-visibility: hidden;
+}
+
+.feed a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
 .wrapper {
   margin: 3em auto;
   max-width: 960px;
@@ -33,7 +77,6 @@ a{
   max-height: 350px;
   padding: 1em;
 }
-
 
 .post {
   height: 160px; 
@@ -59,6 +102,13 @@ a{
   color: white;
   display: block;
 }
+.post svg {
+  width: 4em;
+  fill: black;
+  margin-bottom: 2em;
+  margin-left: 2px;
+}
+
 .p0 {
    background: #EC407A; 
   /* background: linear-gradient(135deg, #EC407A, #FFCDD2); */
@@ -70,6 +120,13 @@ a{
 .p2 {
    background: #424242; 
   /* background: linear-gradient(135deg, #424242, #757575,#BDBDBD); */
+}
+.default{
+  background: #fff;
+}
+.default p{
+  color: black;
+  text-align: left;
 }
 
 kbd{
@@ -103,14 +160,17 @@ kbd{
   }
 }
 
+.default{
+  color: black;
+}
 @media (min-width: 960px) {
   .main-intro h2 {
     font-size: 2em;
   }
-  .post {
+  .post,.feed {
     flex: 1 150px;
   }
-  .post:hover {
+  .post:hover, .feed button:hover {
     transform: scale(1.1);
   }
 }
