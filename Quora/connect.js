@@ -23,6 +23,8 @@ var firebase_ref = firebase.database().ref();
 
 var category = document.getElementById("category");
 var submit = document.getElementById("submitBtn");
+var question = document.getElementById("question");
+var quesSub_btn = document.getElementById("submitQues");
 
 
 
@@ -32,4 +34,11 @@ function submitClick(){
     firebase_ref.child("Category").push().set(mCategory);
 
     // window.alert("DONE");
+}
+
+function submitQuestion(){
+
+    var mQuestion = question.value;
+    firebase_ref.child("Questions").push().set(mQuestion);
+    $('#askQuestion').modal('hide');
 }

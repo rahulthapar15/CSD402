@@ -39,25 +39,48 @@
     <div class="input-group-btn">
           <button class="btn btn-danger navbar-btn btn-info" data-toggle="modal" data-target="#askQuestion">Ask Question</button>
           </button>
-        </div>
+    </div>
+
+    <div class="input-group-btn">
+          <button style="background:#00E676" class="btn btn-success navbar-btn btn-info" data-toggle="modal" data-target="#myQuestion">My Questions</button>
+          </button>
+    </div>
         
     </div>
 </nav>
         <!-- Navigation END -->
 
-        <!-- Modal -->
+        <!-- Modal :  ASK QUESTION-->
 <div id="askQuestion" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="mainDiv" align="right">
-		<h1 align="left">What's your Question ?</h1>
-		<textarea placeholder="Enter question here..."></textarea>
-		<button><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
+		<h1 align="left">Ask Your Question .</h1>
+		<textarea id="question" placeholder="Enter question here..."></textarea>
+		<button id="submitQues" onclick="submitQuestion()" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
 	</div>
 
   </div>
 </div>
+
+
+        <!-- Modal :  MY QUESTIONS-->
+<div id="myQuestion" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+     <!-- Modal content
+    <div class="mainDiv" align="right">
+		<h1 align="left">Ask Your Question .</h1>
+		<textarea id="question" placeholder="Enter question here..."></textarea>
+		<button id="submitQues" onclick="submitQuestion()" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
+	</div> -->
+
+  </div>
+</div>
+
+
+
 
 
 
@@ -164,6 +187,10 @@ src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_Gr
         </div>
     </div>
 </div>
+
+<div class="h-divider"></div>
+
+
 
 
 <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>

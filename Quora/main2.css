@@ -176,10 +176,10 @@ kbd{
     box-shadow: 0 0 20px #333;
 }
 
-.mainDiv input{
+/* .mainDiv input{
     border: 0;
     padding: 10px;
-}
+} */
  
 .mainDiv h1 {
     font-weight: 300;
@@ -188,16 +188,17 @@ kbd{
  
 .mainDiv textarea {
     border: 0px;
-    background: #fff;
+    background: white;
     padding: 20px 0px;
     outline: none;
     width: 100%;
     resize: none;
+    color: black;
 }
  
 .mainDiv button {
     background: #528bff;
-    color: #fff;
+    color: black;
     position: relative;
     top: 50px;
     width: 64px;
