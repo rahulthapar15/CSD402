@@ -12,6 +12,11 @@ var firebase_ref = firebase.database().ref();
     btn.appendChild(t);
     // document.body.appendChild(btn);
         $("#panel_body").append(btn);
+        btn.style.backgroundColor = '#337AB7';
+        btn.style.borderRadius = '7px';
+        btn.style.color = 'white';
+        btn.style.paddingLeft = '2%';
+        btn.style.paddingRight = '2%';
 
 
     });
@@ -26,5 +31,5 @@ function submitClick(){
     var mCategory = category.value;
     firebase_ref.child("Category").push().set(mCategory);
 
-    window.alert("DONE");
+    // window.alert("DONE");
 }
