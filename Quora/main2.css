@@ -212,14 +212,15 @@ table{
   table-layout: fixed;
 }
 .tbl-header{
-   background-color: rgba(255,255,255,0.3); 
-  /* background-color: #E78F98; */
+   /* background-color: rgba(255,255,255,0.3);  */
+   background-color: #fff; 
  }
 .tbl-content{
   height:300px;
   overflow-x:auto;
   margin-top: 0px;
   border: 1px solid rgba(255,255,255,0.3);
+  background: black;
 }
 th{
   padding: 20px 15px;
