@@ -39,6 +39,8 @@ var submit = document.getElementById("submitBtn");
 var question = document.getElementById("question");
 var quesSub_btn = document.getElementById("submitQues");
 
+var logout = document.getElementById("logout");
+
 
 
 function submitClick(){
@@ -54,4 +56,8 @@ function submitQuestion(){
     var mQuestion = question.value;
     firebase_ref.child("Questions").child("My Questions").push().set(mQuestion);
     $('#askQuestion').modal('hide');
+}
+
+function logout(){
+    window.alert("Logged out successfull");
 }
