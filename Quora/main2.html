@@ -23,15 +23,20 @@
       </button>
       <a class="navbar-brand" href="#">Quora</a>
     </div>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input id="category" type="text" class="form-control" placeholder="Subscribe to ..">
+      </div>
+      <button type="submit" id="submitBtn" onclick="submitClick()" class="btn btn-danger">Subscribe</button>
+    </form>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <button class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#askQuestion">Ask Question</button>
         <button class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myQuestion">My Questions</button>
-        <button class="btn btn-success navbar-btn" data-toggle="modal" data-target="#askQuestion">My Profile</button>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
       </ul>
     </div>
   </div>

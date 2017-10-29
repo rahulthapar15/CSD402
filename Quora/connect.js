@@ -47,8 +47,8 @@ function submitClick(){
     // window.alert("Working");
     var mCategory = category.value;
     firebase_ref.child("Category").push().set(mCategory);
-
-    // window.alert("DONE");
+// window.alert("DONE");
+    
 }
 
 function submitQuestion(){
