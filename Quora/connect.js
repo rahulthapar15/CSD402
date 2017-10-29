@@ -7,16 +7,16 @@ var firebase_ref = firebase.database().ref();
 
 
         var cat_name = snap.val();
-        var btn = document.createElement("BUTTON");
-    var t = document.createTextNode(cat_name);
-    btn.appendChild(t);
-    // document.body.appendChild(btn);
-        $("#panel_body").append(btn);
-        btn.style.backgroundColor = '#D9534F';
-        btn.style.borderRadius = '17px';
-        btn.style.color = 'white';
-        btn.style.paddingLeft = '4%';
-        btn.style.paddingRight = '4%';
+    //     var btn = document.createElement("BUTTON");
+    // var t = document.createTextNode(cat_name);
+    // btn.appendChild(t);
+    // // document.body.appendChild(btn);
+    //     $("#panel_body").append(btn);
+    //     btn.style.backgroundColor = '#D9534F';
+    //     btn.style.borderRadius = '17px';
+    //     btn.style.color = 'white';
+    //     btn.style.paddingLeft = '4%';
+    //     btn.style.paddingRight = '4%';
 
 
     });

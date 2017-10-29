@@ -14,50 +14,7 @@ a{
   flex-wrap: wrap;
   margin: auto;
 }
-.feeds {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  max-width: 99%;
-}
-.feed {
-  height: 160px; 
-  display: flex;
-  max-width: 99%;
-  flex-direction: column;
-  flex: 1 300px;
-  padding: 0.1em;
-  margin: 1.2em;
-  margin-top: 2px;
-  border-radius: .5em;
-  transition: transform .5s;
-}
-.feed h1{
-  font-size: 20px;
-  color: black;
-  font-weight: 500;
-  backface-visibility: hidden;
-  text-align: center;
-}
-.feed button{
-  display: flex;
-  height: 40px;
-  width: 90px;
-  padding: 1%;
-  border-radius: 8px;
-  margin: 1.2em;
-}
-.feed p {
-  font-size: 1em;
-  font-weight: 500;
-  backface-visibility: hidden;
-}
 
-.feed a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
 .wrapper {
   margin: 3em auto;
   max-width: 960px;
@@ -231,6 +188,91 @@ td{
   font-size: 12px;
   color: #fff;
   border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+#logo {
+  width: 48px;
+  height: 48px;
+  margin: 3px -6px 0 6px;
+}
+
+.panel-body {
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.body-card {
+  border: 1px solid #E1E8ED;
+  margin: 5px 20px 0 60px;
+  border-radius: 5px;
+}
+
+.body-card > div {
+  padding-left: 0px;
+}
+
+.body-card > div > h4,
+h5 {
+  margin: 6px 0;
+}
+
+.body-card div img {
+  height: 123px;
+  border-radius: 3px 0 0 3px;
+}
+
+.body-card .col-xs-8 h5:nth-child(3) {
+  color: #8899A6;
+}
+
+.panel-footer {
+  background-color: white;
+  border-color: white;
+  padding-bottom: 7px;
+}
+
+
+.heading h5 {
+  color: #292f33;
+  font-size: 16px;
+}
+
+#title {
+  margin-top: 1px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #292f33;
+}
+
+.inTitle {
+  color: #8899a6;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 480px) {
+  .body-card {
+    margin: 0 10px 0 10px;
+    height: 123px;
+  }
+  .body-card > .col-xs-4 {
+    visibility: hidden;
+    display: none;
+  }
+  .body-card > .col-xs-8 {
+    width: 92%;
+    margin-left: 3px;
+  }
+  .panel-body > .row:first-child > div {
+    display: inline-block;
+  }
+  .panel-body > .row:first-child > .col-xs-10 {
+    width: 50%;
+  }
+
+  .fa-reply {
+    margin-left: 3px !important;
+  }
 }
 
 @media (min-width: 960px) {
