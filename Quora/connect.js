@@ -12,11 +12,11 @@ var firebase_ref = firebase.database().ref();
     btn.appendChild(t);
     // document.body.appendChild(btn);
         $("#panel_body").append(btn);
-        btn.style.backgroundColor = '#337AB7';
-        btn.style.borderRadius = '7px';
+        btn.style.backgroundColor = '#D9534F';
+        btn.style.borderRadius = '17px';
         btn.style.color = 'white';
-        btn.style.paddingLeft = '2%';
-        btn.style.paddingRight = '2%';
+        btn.style.paddingLeft = '4%';
+        btn.style.paddingRight = '4%';
 
 
     });
@@ -58,6 +58,6 @@ function submitQuestion(){
     $('#askQuestion').modal('hide');
 }
 
-function logout(){
-    window.alert("Logged out successfull");
+function User(){
+    window.alert("User clicked");
 }

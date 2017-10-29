@@ -64,10 +64,10 @@ a{
   padding: 0 1em;
 }
 .wrapper_1 {
-  margin: 3em auto 2px auto;
-  max-width: 960px;
+  /* margin: 3em auto 2px auto; */
+  width: 100%;
   max-height: 350px;
-  padding: 1em;
+  padding: 1%;
 }
 
 .post {

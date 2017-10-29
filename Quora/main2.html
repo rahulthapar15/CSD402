@@ -35,8 +35,8 @@
         <button class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myQuestion">My Questions</button>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+        <li><a href="#"><span data-toggle="modal" data-target="#askQuestion" class="glyphicon glyphicon-globe"></span></a></li>        
+        <li><a href="#"><span onclick="User()" class="glyphicon glyphicon-user"></span></a></li>
       </ul>
     </div>
   </div>
@@ -95,18 +95,14 @@
   </div>
 </div>
 
-
-
-
-
-
 <div class="wrapper_1">
-<div class="panel panel-primary">
+<div class="panel panel-primary" style="color:#D9534F">
   <div class="panel-heading">Categories</div>
     <div id="panel_body" class="panel-body"></div>
   </div>
+</div>
 
-  <div id="map" style="width:900px;height:200px;background:yellow"></div>
+  <!-- <div id="map" style="width:400px;height:200px;background:yellow"></div>
   <script>
     function initMap() {
         var myLatLng = {lat: 28.5258, lng: 77.5745};
@@ -129,8 +125,7 @@
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_GrrRmRI01MM&callback=initMap">
-</script>
-</div>
+</script> -->
 
   
 
