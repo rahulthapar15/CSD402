@@ -69,6 +69,19 @@ function addPost(){
     
 }
 
+//NEW LOCATION
+
+var new_location = document.getElementById("Newlocation");
+var blocation = document.getElementById("new_location");
+
+function submitLocation(){
+
+    var mLocation = new_location.value;
+    firebase_ref.child("Location").push().set(mLocation);
+    $('#location').modal('hide');
+    window.alert(mLocation);
+}
+
 function User(){
     window.alert("User clicked");
 }
