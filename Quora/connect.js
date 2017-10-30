@@ -36,8 +36,10 @@ var firebase_ref = firebase.database().ref();
 
 var category = document.getElementById("category");
 var submit = document.getElementById("submitBtn");
-var question = document.getElementById("question");
+var ques_title = document.getElementById("question_title");
 var quesSub_btn = document.getElementById("submitQues");
+
+var description = document.getElementById("description");
 
 var logout = document.getElementById("logout");
 
@@ -53,9 +55,18 @@ function submitClick(){
 
 function submitQuestion(){
 
-    var mQuestion = question.value;
-    firebase_ref.child("Questions").child("My Questions").push().set(mQuestion);
+    var mTitle = ques_title.value;
+    var mDes = description.value;
+    firebase_ref.child("Questions").child("My Questions").child("Title").push().set(mTitle);
+    firebase_ref.child("Questions").child("My Questions").child("Description").push().set(mDes);
+    addPost();
     $('#askQuestion').modal('hide');
+}
+
+var post_title_ref = firebase.database().ref().child("Questions").child("My Questions").child("Title");
+var post_desc_ref = firebase.database().ref().child("Questions").child("My Questions").child("Description");
+function addPost(){
+    
 }
 
 function User(){

@@ -35,7 +35,7 @@
         <button class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myQuestion">My Questions</button>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span data-toggle="modal" data-target="#askQuestion" class="glyphicon glyphicon-globe"></span></a></li>        
+        <li><a href="#"><span data-toggle="modal" data-target="#location" class="glyphicon glyphicon-globe"></span></a></li>        
         <li><a href="#"><span onclick="User()" class="glyphicon glyphicon-user"></span></a></li>
       </ul>
     </div>
@@ -49,8 +49,11 @@
 
     <!-- Modal content-->
     <div class="mainDiv" align="right">
-		<h1 align="left">Ask Your Question .</h1>
-		<textarea id="question" placeholder="Enter question here..."></textarea>
+      <h2 align="left">Ask your question ..</h2>
+		<h5 align="left">Title</h5>
+    <textarea id="question_title" placeholder="Enter question title..."></textarea>
+    <h5 align="left">Description</h5>
+    <textarea id="description" placeholder="Describe your question .."></textarea>
 		<button id="submitQues" onclick="submitQuestion()" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
 	</div>
 
@@ -76,11 +79,6 @@
   <div class="tbl-content">
     <table cellpadding="0" cellspacing="5" border="0">
       <tbody id="table_body">
-
-
-
-
-
       </tbody>
     </table>
   </div>
@@ -95,14 +93,15 @@
   </div>
 </div>
 
-<!-- <div class="wrapper_1">
-<div class="panel panel-primary" style="color:#D9534F">
-  <div class="panel-heading">Categories</div>
-    <div id="panel_body" class="panel-body"></div>
-  </div>
-</div> -->
+<!-- LOCATION MODAL -->
+<div id="location" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-  <!-- <div id="map" style="width:400px;height:200px;background:yellow"></div>
+       <!-- Modal content-->
+    <div class="mainDiv"  align="right">
+      <h2 align="center" style="font-size:20px;">LOCATION FILTER</h2>
+
+      <div id="map" style="width:400px;height:200px;background:yellow"></div>
   <script>
     function initMap() {
         var myLatLng = {lat: 28.5258, lng: 77.5745};
@@ -125,9 +124,15 @@
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_GrrRmRI01MM&callback=initMap">
-</script> -->
+</script>
+		
+		<button id="submitQues" onclick="submitQuestion()" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>		
+	</div>
+    
+                
+  </div>
+</div>
 
-  
 
 <div class="wrapper">
     <p><kbd>TRENDING</kbd></p>
@@ -148,58 +153,7 @@ src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_Gr
 </div>
 
   <div class="h-divider"></div>
-<!-- <div class="wrapper">
-  <div class="feeds ">
-<div class="feed default">
-          <a href="#" target="_blank">
-          <h1><dl>What is Google Percolator?</dl></h1></a>
-          <div class="posts">
-          <button style="background : #E0E0E0;">Answers [5]</button>
-          <button style="background : #00E676;">Upvotes</button>
-          <button style="background : #90A4AE;">Downvotes</button>
-          </div>
-        </div>
 
-
-        <div class="feed default">
-          <a href="#" target="_blank">
-          <h1><dl>Why does it seem like it is impossible to get a job in a big tech company ?</dl></h1></a>
-          <div class="posts">
-          <button style="background : #E0E0E0;">Answers [5]</button>
-          <button style="background : #00E676;">Upvotes</button>
-          <button style="background : #90A4AE;">Downvotes</button>
-          </div>
-        </div>
-
-        
-    </div>
-</div>
-
-<div class="wrapper">
-  <div class="feeds">
-<div class="feed default">
-          <a href="#" target="_blank">
-          <h1><dl>What are the most important warnings in life?</dl></h1></a>
-          <div class="posts">
-          <button style="background : #E0E0E0;">Answers [5]</button>
-          <button style="background : #00E676;">Upvotes</button>
-          <button style="background : #90A4AE;">Downvotes</button>
-          </div>
-        </div>
-
-        <div class="feed default">
-          <a href="#" target="_blank">
-          <h1><dl>What is the most interesting website you found on internet?</dl></h1></a>
-          <div class="posts">
-          <button style="background : #E0E0E0;">Answers [5]</button>
-          <button style="background : #00E676;">Upvotes</button>
-          <button style="background : #90A4AE;">Downvotes</button>
-          </div>
-        </div>
-    </div>
-</div>
-
-<div class="h-divider"></div> -->
   <div class="row">
   <div class="col-sm-9 col-md-6 col-lg-8" style="background-color:transparent;margin-left:17%;">
   <div class="panel panel-default bootcards-media">
@@ -225,9 +179,7 @@ src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_Gr
               </div>
               <div class="col-xs-8">
                 <h4>Using Android Text-to-Speech to Create a...</h4>
-                <h5>Theodor Pandeli creates an Android app with text-to-speech that answers all of life's most important questions.</h5>
-                <h5>sitepoint.com</h5>
-              </div>
+                <h5>Theodor Pandeli creates an Android app with text-to-speech that answers all of life's most important questions.</h5>              </div>
             </div>
           </div>
           <div class="panel-footer">
