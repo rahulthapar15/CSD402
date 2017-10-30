@@ -78,8 +78,8 @@ function submitLocation(){
 
     var mLocation = new_location.value;
     firebase_ref.child("Location").push().set(mLocation);
+    
     $('#location').modal('hide');
-    window.alert(mLocation);
 }
 
 function User(){
