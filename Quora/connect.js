@@ -78,7 +78,20 @@ function submitLocation(){
 
     var mLocation = new_location.value;
     firebase_ref.child("Location").push().set(mLocation);
+
+    var insertLocation = firebase_ref.child("Location");
+    insertLocation.set({
+        mLocation :{
+
+            question : "How are you",
+            answer : "I'm good"
+
+        }
+    });
     
+
+
+
     $('#location').modal('hide');
 }
 
