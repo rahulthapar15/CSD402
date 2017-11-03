@@ -77,12 +77,13 @@ var blocation = document.getElementById("new_location");
 function submitLocation(){
 
     var mLocation = new_location.value;
-    firebase_ref.child("Location").push().set(mLocation);
+  //  firebase_ref.child("Location").push().set(mLocation);
 
     var insertLocation = firebase_ref.child("Location");
-    insertLocation.set({
-        mLocation :{
-
+    insertLocation.push().set({
+       mLocation :{
+ 
+            city : mLocation,
             question : "How are you",
             answer : "I'm good"
 
