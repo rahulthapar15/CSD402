@@ -4,6 +4,9 @@
 <title>Fashion Club:Bootstrap CSD402</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -35,19 +38,12 @@
 	<div class="container">
 		<div class="col-md-7 navigation-agileits">
 			<nav class="navbar navbar-default">
-				<div class="navbar-header nav_2">
-					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div> 
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav ">
 						<li class=" active"><a href="index.html" class="hyper "><span>Home</span></a></li>	
 						<li><a href="about.html" class="hyper"><span>About</span></a></li>
-						<li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
+                        <li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
+                        <li><a class="hyper" data-toggle="modal" data-target="#addCategory"><span>Add Category</span></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -65,7 +61,7 @@
 				<form action="#" method="post" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
 					<input type="hidden" name="display" value="1" />
-					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					<button type="button" data-toggle="modal" data-target="#addToCart"><i class="fa fa-cart-arrow-down"></i></button>
 				</form>  
 			</div>
 		</div>
@@ -75,14 +71,14 @@
 
 <div class="top-products">
 	<div class="container">
-		<h3>Products</h3>
+		<h3 style="margin-top:20px;">Products</h3>
 		<div class="sap_tabs">			
 			<div id="horizontalTab">
-				<ul class="resp-tabs-list">
+				<ul class="resp-tabs-list" style="margin-top:20px;">
 					<li class="resp-tab-item"><span>Men's</span></li>
 					<li class="resp-tab-item"><span>Women</span></li>
 					<li class="resp-tab-item"><span>Handbags</span></li>	
-					<li class="resp-tab-item"><span>Cosmetics</span></li>						
+                    <li class="resp-tab-item"><span>Cosmetics</span></li>						
 				</ul>	
 				<div class="clearfix"> </div>	
 				<div class="resp-tabs-container">
@@ -638,6 +634,51 @@
 				fit: true   // 100% fit in a container
 			});
 		});		
-	</script>
+</script>
+
+
+<!-- Modal -->
+<!-- ADD CATEGORY -->
+<div id="addCategory" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ADD TO CART -->
+<div id="addToCart" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>
