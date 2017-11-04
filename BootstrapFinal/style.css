@@ -54,7 +54,9 @@ li a:hover {
 .card { 
     width: 280px; 
     height: 290px; 
-    background: red; 
+    border-color: grey;
+    border-width: 0.1px;
+    border-style: solid;
     margin-top:10px;
     border-radius: 10px;
 }
@@ -63,4 +65,23 @@ li a:hover {
     height:180px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+.card p{
+    text-align: center;
+    margin-left: 5px;
+    margin-top:20px;
+}
+.card button{
+    border-radius: 30px;
+    align-items: right;
+    margin-top:7px;
+    padding: 3%;
+    width:50%;
+    align-items: center;
+    margin-left:69px;
+    border-style: none;
+    background: #FFCDD2;
+}
+.card button:hover{
+    background: #E57373;
 }
