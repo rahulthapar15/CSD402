@@ -117,14 +117,13 @@ function loadJSON(file, callback) {
 
 
 function Trending_Delhi(){
-    // $('#trending_post').append("<div class='post post1'><p>" + data.name[0] + "</p></div>");
-    clearPosts();
+
 
     loadJSON("delhi.json", function (response) {
         var actual_JSON = JSON.parse(response);
-        $('#post_0').replaceWith("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
-        $('#post_1').replaceWith("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
-        $('#post_2').replaceWith("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
+        $('#trending_post_list').html("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
+        $('#trending_post_list').append("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
+        $('#trending_post_list').append("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
     });
 }
 function Trending_Noida() {
@@ -132,9 +131,9 @@ function Trending_Noida() {
    // clearPosts();
     loadJSON("noida.json", function (response) {
         var actual_JSON = JSON.parse(response);
-        $('#post_0').replaceWith("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
-        $('#post_1').replaceWith("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
-        $('#post_2').replaceWith("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
+        $('#trending_post_list').html("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
+        $('#trending_post_list').append("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
+        $('#trending_post_list').append("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
     });
 }
 function Trending_Gurugram() {
@@ -142,24 +141,18 @@ function Trending_Gurugram() {
    // clearPosts();
     loadJSON("gurugram.json", function (response) {
         var actual_JSON = JSON.parse(response);
-        $('#post_0').html("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
-        $('#post_1').html("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
-        $('#post_2').html("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
+        $('#trending_post_list').html("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
+        $('#trending_post_list').append("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
+        $('#trending_post_list').append("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
     });
 }
 function Trending() {
     //clearPosts();
-        $('#post_0').replaceWith("<div class='post p0' style='color:white';><p><strong>No Post to Display</strong></p></div>");
-        $('#post_1').replaceWith("<div class='post p1' style='color:white';><p><strong>No Post to Display</strong></p></div>");
-        $('#post_2').replaceWith("<div class='post p2' style='color:white';><p><strong>No Post to Display</strong></p></div>");
+    $('#trending_post_list').html("<div class='post p0' style='color:white';><p><strong>No Post Found</strong></p></div>");
+    $('#trending_post_list').append("<div class='post p1' style='color:white';><p><strong>No Post Found</strong></p></div>");
+    $('#trending_post_list').append("<div class='post p2' style='color:white';><p><strong>No Post Found</strong></p></div>");
 }
 
 function html(){
     window.alert("Hello");
-}
-function clearPosts(){
-    $("#post_0").empty();
-    $("#post_1").empty();
-    $("#post_2").empty();
-    
 }
