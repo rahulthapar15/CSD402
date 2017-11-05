@@ -16,7 +16,7 @@
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- //font -->
-<script src="js/jquery-1.11.1.min.js"></script>
+ <script src="js/jquery-1.11.1.min.js"></script> 
 </head>
 
 <body>
@@ -43,22 +43,21 @@
 						<li class=" active"><a href="index.html" class="hyper "><span>Home</span></a></li>	
 						<li><a href="about.html" class="hyper"><span>About</span></a></li>
                         <li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
-                        <li><a class="hyper" data-toggle="modal" data-target="#addCategory"><span>Add Category</span></a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 		<div class="col-md-4 search-agileinfo">
-			<form action="#" method="post">
-				<input type="search" name="Search" placeholder="Search for a Product..." required="">
-				<button type="submit" class="btn btn-default search" aria-label="Left Align">
-					<i class="fa fa-search" aria-hidden="true"> </i>
+			<form method="POST">
+				<input type="search" id="addItem" placeholder="Add new Category .." required="">
+				<button type="button" onclick="return add_down()" class="btn btn-default search" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-plus"></span>
 				</button>
 			</form>
 		</div>
 		<div class="col-md-1 cart-wthree">
 			<div class="cart"> 
-				<form action="#" method="post" class="last"> 
+				<form method="POST" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
 					<input type="hidden" name="display" value="1" />
 					<button type="button" data-toggle="modal" data-target="#addToCart"><i class="fa fa-cart-arrow-down"></i></button>
@@ -74,7 +73,7 @@
 		<h3 style="margin-top:20px;">Products</h3>
 		<div class="sap_tabs">			
 			<div id="horizontalTab">
-				<ul class="resp-tabs-list" style="margin-top:20px;">
+				<ul id="categories" class="resp-tabs-list" style="margin-top:20px;">
 					<li class="resp-tab-item"><span>Men's</span></li>
 					<li class="resp-tab-item"><span>Women</span></li>
 					<li class="resp-tab-item"><span>Handbags</span></li>	
@@ -636,28 +635,10 @@
 		});		
 </script>
 
+<script src="app.js"></script>
+
 
 <!-- Modal -->
-<!-- ADD CATEGORY -->
-<div id="addCategory" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
 
 <!-- ADD TO CART -->
 <div id="addToCart" class="modal fade" role="dialog">
