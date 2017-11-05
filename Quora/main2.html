@@ -11,7 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="main2.css">
 </head>
-<body onload="Trending()">
+<body>
     <!-- Navigation bar -->
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -28,7 +28,6 @@
         <input id="category" type="text" class="form-control" placeholder="Subscribe to ..">
       </div>
       <button type="submit" id="submitBtn" onclick="submitClick()" class="btn btn-danger">Subscribe</button>
-      <button type="submit" id="trending" onclick="Trending()" class="btn btn-danger">Trending</button>
     </form>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -142,12 +141,23 @@ src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAvwHdFW5wygWKtbmJ6LIY_Gr
 
 
 <div class="wrapper">
-    <p><kbd>TRENDING</kbd></p>
-    <div id="trending_post" class="posts">
-        <!-- <div class="post p0">
-          <a href="#" target="_blank">
-          <p>What is Google Percolator?</p></a>
-        </div> -->
+  <div class="dropdown">
+    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">TRENDING
+  <span class="caret"></span></button>
+    <ul id="cities" class="dropdown-menu">
+
+    </ul>
+  </div>
+    <div class="posts">
+         <div id="post_0" class="post p0">
+ 
+        </div> 
+        <div id="post_1" class="post p1">
+
+        </div>
+        <div id="post_2" class="post p2">
+
+        </div>
     </div>
 </div>
 

@@ -79,18 +79,20 @@ function submitLocation(){
     var mLocation = new_location.value;
   //  firebase_ref.child("Location").push().set(mLocation);
 
-    var insertLocation = firebase_ref.child("Location");
-    insertLocation.push().set({
-       'mLocation' :{
-            question : "How are you",
-            answer : "I'm good"
+    // var insertLocation = firebase_ref.child("Location");
+    // insertLocation.push().set({
+    //    'mLocation' :{
+    //         question : "How are you",
+    //         answer : "I'm good"
 
-        }
-    });
+    //     }
+    // });
 
-    //var newRef = insertLocation.push();
-    var postId = newPostRef.key;
-    window.alert(postId); 
+    // //var newRef = insertLocation.push();
+    // var postId = newPostRef.key;
+    // window.alert(postId); 
+
+    $('#cities').append("<li onclick='Trending()'><a>" + mLocation + "</a></li>");
 
 
     $('#location').modal('hide');
@@ -121,10 +123,13 @@ function Trending(){
     loadJSON("delhi.json", function (response) {
 
         var actual_JSON = JSON.parse(response);
-        // window.alert(actual_JSON[0].name);
-        $('#trending_post').append("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
-        $('#trending_post').append("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
-        $('#trending_post').append("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
+        $('#post_0').replaceWith("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
+        $('#post_1').replaceWith("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
+        $('#post_2').replaceWith("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
     });
    // window.alert("Hello");
+}
+
+function html(){
+    window.alert("Hello");
 }
