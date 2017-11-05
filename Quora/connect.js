@@ -81,16 +81,16 @@ function submitLocation(){
 
     var insertLocation = firebase_ref.child("Location");
     insertLocation.push().set({
-       mLocation :{
- 
-            city : mLocation,
+       'mLocation' :{
             question : "How are you",
             answer : "I'm good"
 
         }
     });
-    
 
+    //var newRef = insertLocation.push();
+    var postId = newPostRef.key;
+    window.alert(postId); 
 
 
     $('#location').modal('hide');
@@ -98,4 +98,33 @@ function submitLocation(){
 
 function User(){
     window.alert("User clicked");
+}
+
+function loadJSON(file, callback) {
+
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', file, true);
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+        }
+    };
+    xobj.send(null);
+}
+
+
+
+function Trending(){
+    // $('#trending_post').append("<div class='post post1'><p>" + data.name[0] + "</p></div>");
+    loadJSON("delhi.json", function (response) {
+
+        var actual_JSON = JSON.parse(response);
+        // window.alert(actual_JSON[0].name);
+        $('#trending_post').append("<div class='post p0' style='color:white';><p><strong>" + actual_JSON[0].question + "</strong></p></div>");
+        $('#trending_post').append("<div class='post p1' style='color:white';><p><strong>" + actual_JSON[1].question + "</strong></p></div>");
+        $('#trending_post').append("<div class='post p2' style='color:white';><p><strong>" + actual_JSON[2].question + "</strong></p></div>");
+    });
+   // window.alert("Hello");
 }
