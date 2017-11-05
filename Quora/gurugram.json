@@ -1,0 +1,14 @@
+[
+    {
+        "question": "How do I get started with Android application development with only a very basic knowledge about programming?",
+        "answer": "If you want to develop android app you need to have basic knowledge in JAVA and should get app development knowledge.You can get training from reputed android training institutes to get excel in app development."
+    },
+    {
+        "question": "What should I use for Android development, Android Studio or Eclipse?",
+        "answer": "Even with the enormous amount of tutorials you can find about Android Development on Eclipse, Android Studio is a far simpler way to develop for Android if you manage to get the hang of it."
+    },
+    {
+        "question": "How can I root my Android device?",
+        "answer": "Android Marshmallow is the latest Android version in the public right now. Rooting process can be named as the trending topic among Android users. Now chainfire released SuperSU v2.65 the next root privilege for Android Marshmallow users. SuperSU can be named as the best ever super user access management tool right now."
+    }
+]
