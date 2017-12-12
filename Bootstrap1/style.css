@@ -1,0 +1,19 @@
+body {
+  background: #1f252d;
+}
+.navbar{
+    color:white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.p0{
+    background: linear-gradient(to right,#7D62B6,#9069B9,#996DBB);
+    color:white;
+}
+.p1{
+    background: linear-gradient(to right,#1DE9B6,#64FFDA,#A7FFEB);
+}
+.p2{
+     background: linear-gradient(to right,#FF6F00,#FFB300,#FFECB3);
+}

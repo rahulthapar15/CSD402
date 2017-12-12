@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Rahthap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS  -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">  
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <span class="navbar-brand h1">rahulthapar15</span>
+        </nav>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick="Electronic()" class="btn btn-secondary">Electronics</button>
+            <button type="button" onclick="Clothes()" class="btn btn-secondary">Clothes</button>
+            <button type="button" onclick="Food()" class="btn btn-secondary">Food</button>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                                <div class="card" id="card1">
+                                    <div class="card-body">
+                                        
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="card p0 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">IPhone X</h4>
+                                                        <p class="card-text">$1000 USD</p>
+                                                        <button type="button" onclick="AddtoCart(1000,'IPhone X')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-4">
+                                                <div class="card p1 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Galaxy Note8</h4>
+                                                        <p class="card-text">$800 USD</p>
+                                                    <button type="button" onclick="AddtoCart(800,'Galaxy Note 8')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="card p2 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Moto G5SPlus</h4>
+                                                        <p class="card-text">$500 USD</p>
+                                                        <button type="button" onclick="AddtoCart(500,'Moto G5S Plus')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="card" id="card2">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="card p0 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Jeans</h4>
+                                                        <p class="card-text">$200 USD</p>
+                                                        <button type="button" onclick="AddtoCart(200,'Jeans')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="card p1 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Shirt</h4>
+                                                        <p class="card-text">$50 USD</p>
+                                                        <button type="button" onclick="AddtoCart(50,'Shirt')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="card p2 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Hoddie</h4>
+                                                        <p class="card-text">$100 USD</p>
+                                                        <button type="button" onclick="AddtoCart(100,'Hoodie')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="card" id="card3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="card p0 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Juice</h4>
+                                                        <p class="card-text">$5 USD</p>
+                                                        <button type="button" onclick="AddtoCart(5,'Juice')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="card p1 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Cereal</h4>
+                                                        <p class="card-text">$10 USD</p>
+                                                        <button type="button" onclick="AddtoCart(10,'Cereal')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="card p2 text-center">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">Jam</h4>
+                                                        <p class="card-text">$8 USD</p>
+                                                        <button type="button" onclick="AddtoCart(8,'Jam')" class="btn btn-outline-dark">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body>">
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="details">
+  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br>
+                            <button type="button" onclick="checkout()" class="btn btn-warning">Checkout</button>
+                            <br><br>
+                    <div id="finalpricecard" class="card">
+                        <div class="card-body>">
+                            <h3>Total Price</h3>
+                            <br>
+                            <h4 id="total_price" style="color:grey"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+</body>
+
+</html>
